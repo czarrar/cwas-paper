@@ -95,6 +95,7 @@ subjects_with_diffs <- laply(effect_sizes, function(es) {
     
 }, .progress="text", .parallel=run_parallel)
 
+
 ###
 # Distance Matrices
 ###
@@ -102,9 +103,11 @@ subjects_with_diffs <- laply(effect_sizes, function(es) {
 distances_with_diffs <- llply(distances_with_diffs, function(Dss) {
     
     llply(Dss, function(Ds) {
-        aaply())
+        aaply(Ds) {
+            as.vector(zdist(t(xs[,,ni])))
+        })
     })
     
     aaply(, 3, function())
-    as.vector(1 - corr(t(xs[,,ni])))
+    
 })
