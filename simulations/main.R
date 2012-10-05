@@ -6,9 +6,9 @@ source("lib_mdmr.R")
 source("lib_utils.R")
 
 # Settings
-run_parallel <- TRUE
-ncores <- 3
-nthreads <- 2
+run_parallel <- FALSE   # getting segfaults???
+nforks <- 3
+nthreads <- 4
 nsubs <- 200
 nnodes <- 100
 nnei <- 10
@@ -16,16 +16,10 @@ effect_sizes <- c(0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3)
 effect_size_noise <- 0.01   # 1%
 num_nodes_change <- nnodes/20
 num_conns_change_per_node <- c(1:5, 6, 8, 10, 12, 15)
+verbose <- TRUE
 
-if (run_parallel) {
-    library(doMC)
-    registerDoMC(ncores)
-    
-    if (system("hostname", intern=T) == "rocky") {
-        library(blasctl)
-        omp_set_num_threads(nthreads)
-    }
-}
+if (run_parallel)
+    set_parallel_procs(nforks, nthreads, verbose)
 
 grp <- factor(rep(c("A","B"),each=nsubs/2))
 
@@ -36,12 +30,14 @@ grp <- factor(rep(c("A","B"),each=nsubs/2))
 ###
 
 # Generate group adjacency matrix
+vcat(verbose, "Generating group adjacency matrix")
 g <- watts.strogatz.game(1, nnodes, nnei, 0.05)
 g <- simplify(g)   # removes loops and multiple connections
 group.adj <- get.adjacency(g)
 
 # TODO: HERE I DON'T TAKE INTO ACCOUNT THAT THIS IS A UNDIRECTED GRAPH
 # Add weights
+vcat(verbose, "Adding weights")
 group.wt <- group.adj
 conns <- which(group.adj==1)
 no_conns <- which(group.adj==0)
@@ -62,17 +58,19 @@ while (TRUE) {
     group.wt[no_conns][bad] <- rnorm(sum(bad), 0, 0.1)
 }
 
+vcat(verbose, "")
 
 ###
 # Subject Connectivity Matrices
 ###
 
 # each subject is a random variation on the group average
+vcat(verbose, "Generating subject weighted matrices")
 subjects.wt <- laply(1:nsubs, function(i) {
     subject.wt <- group.wt
     subject.wt[conns] <- subject.wt[conns] + runif(length(conns), min=-0.1, max=0.1)
-    subject.wt
-}, .progress="text", .parallel=F)
+    as.matrix(subject.wt)
+}, .progress="text", .parallel=run_parallel)
 
 # 1. create group difference (i.e., add effect size)
 subjects_with_diffs <- laply(effect_sizes, function(es) {
@@ -105,20 +103,20 @@ subjects_with_diffs <- laply(effect_sizes, function(es) {
     })
     
 }, .progress="text", .parallel=run_parallel)
-
-
-###
-# Distance Matrices
-###
-
-distances_with_diffs <- llply(distances_with_diffs, function(Dss) {
-    
-    llply(Dss, function(Ds) {
-        aaply(Ds) {
-            as.vector(zdist(t(xs[,,ni])))
-        })
-    })
-    
-    aaply(, 3, function())
-    
-})
+#
+#
+####
+## Distance Matrices
+####
+#
+#distances_with_diffs <- llply(distances_with_diffs, function(Dss) {
+#    
+#    llply(Dss, function(Ds) {
+#        aaply(Ds) {
+#            as.vector(zdist(t(xs[,,ni])))
+#        })
+#    })
+#    
+#    aaply(, 3, function())
+#    
+#})
