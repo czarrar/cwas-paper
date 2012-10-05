@@ -1,8 +1,14 @@
-source("lib_mdmr.R")
+library(igraph)
 library(plyr)
+library(doMC)
+
+source("lib_mdmr.R")
+source("lib_utils.R")
 
 # Settings
-run_parallel <- FALSE
+run_parallel <- TRUE
+ncores <- 3
+nthreads <- 2
 nsubs <- 200
 nnodes <- 100
 nnei <- 10
@@ -13,8 +19,14 @@ num_conns_change_per_node <- c(1:5, 6, 8, 10, 12, 15)
 
 if (run_parallel) {
     library(doMC)
-    registerDoMC(4)
+    registerDoMC(ncores)
+    
+    if (system("hostname", intern=T) == "rocky") {
+        library(blasctl)
+        omp_set_num_threads(nthreads)
+    }
 }
+
 grp <- factor(rep(c("A","B"),each=nsubs/2))
 
 
@@ -24,7 +36,6 @@ grp <- factor(rep(c("A","B"),each=nsubs/2))
 ###
 
 # Generate group adjacency matrix
-library(igraph)
 g <- watts.strogatz.game(1, nnodes, nnei, 0.05)
 g <- simplify(g)   # removes loops and multiple connections
 group.adj <- get.adjacency(g)
@@ -61,7 +72,7 @@ subjects.wt <- laply(1:nsubs, function(i) {
     subject.wt <- group.wt
     subject.wt[conns] <- subject.wt[conns] + runif(length(conns), min=-0.1, max=0.1)
     subject.wt
-}, .progress="text", .parallel=run_parallel)
+}, .progress="text", .parallel=F)
 
 # 1. create group difference (i.e., add effect size)
 subjects_with_diffs <- laply(effect_sizes, function(es) {
