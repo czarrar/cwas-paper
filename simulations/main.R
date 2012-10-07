@@ -15,6 +15,7 @@ many_num_conns_change_per_node <- c(1, seq(2,10,2), 14, 18)
 ## iterations
 niters <- 10
 
+settings <- c()
 # Other settings
 settings$verbose <- TRUE
 ## parallel
