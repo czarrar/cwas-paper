@@ -27,7 +27,7 @@ settings$nnodes <- 100
 settings$nnei <- 12
 ## group differences
 settings$effect_size_noise <- 0.01   # proportion or percentage 1%
-settings$num_nodes_change <- nnodes/2
+settings$num_nodes_change <- settings$nnodes/2
 settings$crit.pval <- 0.05
 
 # Set Parallelization
