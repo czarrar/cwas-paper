@@ -33,7 +33,7 @@ settings$crit.pval <- 0.05
 if (settings$parallel)
     set_parallel_procs(settings$nforks, settings$nthreads, settings$verbose)
 
-res <- ldply <- function(1:niters, function(ii) {
+res <- ldply(1:niters, function(ii) {
     vcat(settings$verbose, "ITERATION: %i", ii)
     
     ###
