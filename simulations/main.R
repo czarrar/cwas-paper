@@ -67,7 +67,7 @@ res <- ldply(1:niters, function(ii) {
 
         
         res <- mdply(expand.grid(effect_size=many_effect_sizes, num_conns_change=many_num_conns_change_per_node), 
-                        function(effect_size, num_conns_change)) {
+                        function(effect_size, num_conns_change) {
                             vcat(settings$verbose, "EFFECT SIZE: %f", effect_size)
                             vcat(settings$verbose, "# OF CONNECTIONS: %i", num_conns_change)
                             
