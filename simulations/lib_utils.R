@@ -1,9 +1,76 @@
 zdist <- function(mat, method="cor") {
     switch(method, 
-        cor = 1 - corr(mat), 
+        cor = 1 - cor(mat), 
         stop("Unsupported method for zdist")
     )
 }
+
+constrain_rnorm <- function(n, mean = 0, sd = 1, min=--Inf, max=Inf, limit=5000) {
+    vals <- rnorm(n, mean, sd)
+    for (i in 1:limit) {
+        bad <- vals<min | vals>max
+        if (sum(bad) == 0) break
+        vals[bad] <- rnorm(sum(bad), mean, sd)
+    }
+    if (i == limit)
+        warning("constrain_rnorm didn't converge after ", limit, " loops")
+    vals
+}
+
+###
+# Match 2 different cluster memberships
+###
+# INPUT:
+## template.m - ideal vector of cluster memberships
+## comparison.m - vector of cluster memberships to match to ideal
+## match.method - method in matchClasses (rowmax, greedy, exact)
+match_cluster_memberships <- function(template.m, comparison.m, match.method="exact", iter=10) {
+	library(e1071)
+	num.regions = length(comparison.m)
+	new.m = vector(mode="numeric", length=num.regions)
+
+	if(length(unique(template.m)) != length(unique(comparison.m))) {
+	
+		return(matchUnequalClasses(template.m, comparison.m))
+	
+	} else {
+		tab = table(template.m, comparison.m)
+		conversion = matchClasses(tab, method=match.method, iter=iter)
+
+		for (template.val in 1:num.regions) {
+		    comparison.val = conversion[template.val]
+			new.m[comparison.m==comparison.val] = template.val
+		}
+	
+		return(new.m)
+	}
+}
+
+matchUnequalClasses <- function(template.m, comparison.m) {
+	tab = table(comparison.m, template.m)
+	
+	# Checks
+	if(nrow(tab)<ncol(tab))
+		stop("template.m must have less partitions than comparison.m")
+	if(min(unique(template.m))!=1 | min(unique(comparison.m))!=1)
+		stop("partitions template.m and comparison.m must start with 1")
+		
+	num.col = ncol(tab)
+	
+	for(i in 1:num.col) {
+		which.leading = order(tab[,i], decreasing=TRUE)[1]
+		if(which.leading!=i & which.leading>i) {
+			tmp.m = comparison.m
+			tmp.m[comparison.m==i] = which.leading
+			tmp.m[comparison.m==which.leading] = i
+			comparison.m = tmp.m
+			tab = table(comparison.m, template.m)
+		}
+	}
+	
+	return(comparison.m)
+}
+
 
 vcat <- function(verbose, msg, ..., newline=TRUE) {
     if (verbose) {

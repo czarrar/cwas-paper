@@ -5,118 +5,124 @@ library(doMC)
 source("lib_mdmr.R")
 source("lib_utils.R")
 
-# Settings
-run_parallel <- FALSE   # getting segfaults???
-nforks <- 3
-nthreads <- 4
-nsubs <- 200
-nnodes <- 100
-nnei <- 10
-effect_sizes <- c(0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3)
-effect_size_noise <- 0.01   # 1%
-num_nodes_change <- nnodes/20
-num_conns_change_per_node <- c(1:5, 6, 8, 10, 12, 15)
-verbose <- TRUE
+# Settings to vary
+## subject
+many_nsubs <- c(20, 50, 100, 150, 200, 250, 300)
+## group differences
+many_effect_sizes <- c(0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3)
+## connections to change per node
+many_num_conns_change_per_node <- c(1, seq(2,10,2), 14, 18)
+## iterations
+niters <- 10
 
-if (run_parallel)
-    set_parallel_procs(nforks, nthreads, verbose)
+# Other settings
+settings$verbose <- TRUE
+## parallel
+settings$parallel <- FALSE   # getting segfaults???
+settings$nforks <- 3
+settings$nthreads <- 4
+## graph
+settings$nnodes <- 100
+settings$nnei <- 12
+## group differences
+settings$effect_size_noise <- 0.01   # proportion or percentage 1%
+settings$num_nodes_change <- nnodes/2
+settings$crit.pval <- 0.05
 
-grp <- factor(rep(c("A","B"),each=nsubs/2))
+# Set Parallelization
+if (settings$parallel)
+    set_parallel_procs(settings$nforks, settings$nthreads, settings$verbose)
 
+res <- ldply <- function(1:niters, function(ii) {
+    vcat(settings$verbose, "ITERATION: %i", ii)
+    
+    ###
+    # Group Connectivity Matrix
+    ###
 
+    source("01_group_mat.R")
 
-###
-# Group Connectivity Matrix
-###
+    # 1. Generate group adjacency matrix
+    group.adj <- create_adjacency_matrix(settings)
 
-# Generate group adjacency matrix
-vcat(verbose, "Generating group adjacency matrix")
-g <- watts.strogatz.game(1, nnodes, nnei, 0.05)
-g <- simplify(g)   # removes loops and multiple connections
-group.adj <- get.adjacency(g)
-
-# TODO: HERE I DON'T TAKE INTO ACCOUNT THAT THIS IS A UNDIRECTED GRAPH
-# Add weights
-vcat(verbose, "Adding weights")
-group.wt <- group.adj
-conns <- which(group.adj==1)
-no_conns <- which(group.adj==0)
-## for connections
-group.wt[conns] <- rnorm(length(conns), 0.4, 0.1)
-while (TRUE) {
-    bad <- group.wt[conns]<0.2 | group.wt[conns]>0.6
-    if (sum(bad) == 0)
-        break
-    group.wt[conns][bad] <- rnorm(sum(bad), 0.4, 0.1)
-}
-## for non-connections
-group.wt[no_conns] <- rnorm(length(no_conns), 0, 0.1)
-while (TRUE) {
-    bad <- group.wt[no_conns]<(-0.2) | group.wt[no_conns]>0.2
-    if (sum(bad) == 0)
-        break
-    group.wt[no_conns][bad] <- rnorm(sum(bad), 0, 0.1)
-}
-
-vcat(verbose, "")
-
-###
-# Subject Connectivity Matrices
-###
-
-# each subject is a random variation on the group average
-vcat(verbose, "Generating subject weighted matrices")
-subjects.wt <- laply(1:nsubs, function(i) {
-    subject.wt <- group.wt
-    subject.wt[conns] <- subject.wt[conns] + runif(length(conns), min=-0.1, max=0.1)
-    as.matrix(subject.wt)
-}, .progress="text", .parallel=run_parallel)
-
-# 1. create group difference (i.e., add effect size)
-subjects_with_diffs <- laply(effect_sizes, function(es) {
-
-    # 2. create differences for a different number of connections
-    laply(num_conns_change_per_node, function(num_conns) {
-        # select nodes to change
-        nodes <- which(colSums(group.adj)>=num_conns)
-        if (length(nodes) > num_nodes_change)
-            nodes <- sort(sample(nodes, num_nodes_change))
+    # 2. Add weights
+    group.wt <- add_weights_to_matrix(group.adj, settings)
+    
+    
+    res <- ldply(many_nsubs, function(nsubs) {
+        vcat(settings$verbose, "# OF SUBJECTS: %i", nsubs)
         
-        # select connections to change
-        change_mat <- apply(group.adj[,nodes], 2, function(x) {
-            inds <- sample(which(x>0), num_conns)
-            conns_to_use <- vector("logical", length(x))
-            conns_to_use[inds] <- T
-            conns_to_use
-        })
-        change_inds <- which(change_mat)
+        settings$nsubs <- nsubs
+        grp.label <- factor(rep(c("A","B"),each=settings$nsubs/2))
+        df <- data.frame(group=grp.label)
         
-        # c. add in group difference with bit of noise too
-        for (si in which(grp=="A")) {
-            x <- subjects.wt[si,,]
-            es_noise <- runif(length(change_inds), min=0, max=es*effect_size_noise*2)
-            x[change_inds] <- x[change_inds] + es + es_noise
-            subjects.wt[si,,] <- x
-        }
+        ###
+        # Subject Connectivity Matrices
+        ###
+
+        source("02_subject_mats.R")
+
+        # 3. Generate subject matrices
+        subjects.wt <- create_weighted_subject_matrices(group.adj, settings)
+
         
-        subjects.wt
+        res <- mdply(expand.grid(effect_size=many_effect_sizes, num_conns_change=many_num_conns_change_per_node), 
+                        function(effect_size, num_conns_change)) {
+                            vcat(settings$verbose, "EFFECT SIZE: %f", effect_size)
+                            vcat(settings$verbose, "# OF CONNECTIONS: %i", num_conns_change)
+                            
+                            settings$effect_size <- effect_size
+                            settings$num_conns_change_per_node <- num_conns_change
+                            
+                            ###
+                            # Add Group Differences
+                            ###
+
+                            # can vary effect size and number of connections effected
+
+                            source("03_group_differences.R")
+
+                            # 4. Select nodes to change
+                            nodes <- select_nodes(group.adj, settings)
+
+                            # 5. Select connections to change
+                            conns <- select_connections(nodes, group.adj, settings)
+
+                            # 6. Add in group differences with a bit of noise
+                            subjects.wt <- add_group_differences(subjects.wt, grp.label, conns, settings)
+
+
+                            ###
+                            # Tests
+                            ###
+
+                            source("04_tests.R")
+
+                            # Regression (at each connection)
+                            res.aov <- anova_performance(subjects.wt, df, conns, settings)
+
+                            # Degree and then regression
+                            res.degree <- degree_centrality_performance(subjects.wt, df, nodes, settings)
+
+                            # Distances & K-Means & MDMR
+                            distances <- compute_distances(subjects.wt, settings)
+                            res.mdmr <- mdmr_performance(distances, df, nodes, settings)
+                            
+                            data.frame(
+                                method = factor(c("glm", "degree", "mdmr")), 
+                                sensitivity = (res.aov$sensitivity, res.degree$sensitivity, res$mdmr$sensitivity), 
+                                specificity = (res.aov$specificity, res.degree$specificity, res$mdmr$specificity), 
+                            )
+                        }
+            )
+        
+        res$subjects <- nsubs
+        
+        res
     })
     
-}, .progress="text", .parallel=run_parallel)
-#
-#
-####
-## Distance Matrices
-####
-#
-#distances_with_diffs <- llply(distances_with_diffs, function(Dss) {
-#    
-#    llply(Dss, function(Ds) {
-#        aaply(Ds) {
-#            as.vector(zdist(t(xs[,,ni])))
-#        })
-#    })
-#    
-#    aaply(, 3, function())
-#    
-#})
+    res$iteration <- ii
+    
+    res
+})
+
