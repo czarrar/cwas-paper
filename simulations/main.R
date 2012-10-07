@@ -109,9 +109,9 @@ res <- ldply(1:niters, function(ii) {
                             res.mdmr <- mdmr_performance(distances, df, nodes, settings)
                             
                             data.frame(
-                                method = factor(c("glm", "degree", "mdmr")), 
-                                sensitivity = (res.aov$sensitivity, res.degree$sensitivity, res$mdmr$sensitivity), 
-                                specificity = (res.aov$specificity, res.degree$specificity, res$mdmr$specificity), 
+                                method = c("glm", "degree", "mdmr"), 
+                                sensitivity = c(res.aov$sensitivity, res.degree$sensitivity, res$mdmr$sensitivity), 
+                                specificity = c(res.aov$specificity, res.degree$specificity, res$mdmr$specificity)
                             )
                         }
             )
