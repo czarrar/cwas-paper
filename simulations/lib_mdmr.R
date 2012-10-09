@@ -97,34 +97,41 @@ mdmr <- function(formula, many_dmats, predictors, nperms = 999, strata = NULL,
     
     vcat(verbose, "...creating gower's centered matrices")
     C <- I - ones %*% t(ones)/nobs
-    independent_Gs <- t(aaply(many_dmats, 2, function(x) {
+#    independent_Gs <- t(aaply(many_dmats, 2, function(x) {
+    independent_Gs <- apply(many_dmats, 2, function(x) {
         dmat <- matrix(x, nobs, nobs)
         A <- -(dmat^2)/2
         G <- C %*% A %*% C
         as.vector(G)
-    }, .progress="text", .parallel=run_parallel))
+    })
+#    }, .progress="text", .parallel=run_parallel))
     names(dim(independent_Gs)) <- names(dim(many_dmats))
     dimnames(independent_Gs) <- dimnames(many_dmats)
     
     vcat(verbose, "...generating permuted H2s")
     many_permuted_H2s <- lapply(1:nterms, function(f) {
-        permuted_H2s <- t(laply(1:nperms, function(p) {
+#        permuted_H2s <- t(laply(1:nperms, function(p) {
+        permuted_H2s <- sapply(1:nperms, function(p) {
             as.vector(many_H2s[[f]][permat[,p],permat[,p]])
-        }, .progress="text", .parallel=run_parallel))
+        })
+#        }, .progress="text", .parallel=run_parallel))
         names(dim(permuted_H2s)) <- c("subjects^2", "permutations")
         dimnames(permuted_H2s) <- list(obs.squared=1:nobs^2, permutation=1:nperms)
         permuted_H2s
     })
     
     vcat(verbose, "...generating permuted IHs")
-    permuted_IHs <- t(laply(1:nperms, function(p) {
+#    permuted_IHs <- t(laply(1:nperms, function(p) {
+    permuted_IHs <- sapply(1:nperms, function(p) {
         as.vector(IH[permat[,p],permat[,p]])
-    }, .progress="text", .parallel=run_parallel))
+    })
+#    }, .progress="text", .parallel=run_parallel))
     names(dim(permuted_IHs)) <- c("subjects^2", "permutations")
     dimnames(permuted_IHs) <- list(obs.squared=1:nobs^2, permutation=1:nperms)
     
     vcat(verbose, "...calculating pseudo-F statistic")
-    many_permuted_and_indepenent_Fs <- llply(1:nterms, function(f) {
+#    many_permuted_and_indepenent_Fs <- llply(1:nterms, function(f) {
+    many_permuted_and_indepenent_Fs <- lapply(1:nterms, function(f) {
         permuted_H2s <- many_permuted_H2s[[f]]
         MS.Exp <- crossprod(permuted_H2s, independent_Gs)/df.Exp[f]
         MS.Res <- crossprod(permuted_IHs, independent_Gs)/df.Res
@@ -132,15 +139,18 @@ mdmr <- function(formula, many_dmats, predictors, nperms = 999, strata = NULL,
         names(dim(res)) <- c("permutations", "tests")
         dimnames(res) <- list(permutation=1:nperms, test=1:ntests)
         res
-    }, .progress="text", .parallel=run_parallel)
+    })
+#    }, .progress="text", .parallel=run_parallel)
     
     # ntests x nfactors
     vcat(verbose, "...determining p-values")
     ps <- sapply(1:nterms, function(f) {
-        t(aaply(many_permuted_and_indepenent_Fs[[f]], 2, function(perm_Fs) {
+#        t(aaply(many_permuted_and_indepenent_Fs[[f]], 2, function(perm_Fs) {
+        apply(many_permuted_and_indepenent_Fs[[f]], 2, function(perm_Fs) {
             # note: 1st F is from original non-permuted hat matrix
             sum(perm_Fs[1]<=perm_Fs)/nperms
-        }, .progress="text", .parallel=run_parallel))
+        })
+#        }, .progress="text", .parallel=run_parallel))
     })
     
     vcat(verbose, "...determining sum of squares")

@@ -19,9 +19,9 @@ settings <- c()
 # Other settings
 settings$verbose <- TRUE
 ## parallel
-settings$parallel <- FALSE   # getting segfaults???
-settings$nforks <- 3
-settings$nthreads <- 4
+settings$parallel <- TRUE   # getting segfaults???
+settings$nforks <- 5
+settings$nthreads <- 2
 ## graph
 settings$nnodes <- 100
 settings$nnei <- 12
@@ -125,5 +125,5 @@ res <- ldply(1:niters, function(ii) {
     res$iteration <- ii
     
     res
-})
+}, .parallel=settings$parallel)
 

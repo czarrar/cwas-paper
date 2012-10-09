@@ -2,11 +2,13 @@ anova_performance <- function(subjects.wt, df, conns, settings) {
     vcat(settings$verbose, "Running ANOVA on every connection")
     
     # nnodes x nnodes
-    aov.pvals <- aaply(subjects.wt, 2, function(x) {
+    #aov.pvals <- aaply(subjects.wt, 2, function(x) {
+    aov.pvals <- apply(subjects.wt, 2, function(x) {
         res <- summary(aov(t(x) ~ group, df))
         pvals <- as.numeric(sapply(res, function(tab) tab$Pr[1]))
         pvals
-    }, .progress="text", .parallel=settings$parallel)
+    }
+    #}, .progress="text", .parallel=settings$parallel)
     aov.pvals <- t(aov.pvals)   # make output like apply
 
     # sensitivity => TP/(TP+FN)
@@ -24,8 +26,9 @@ anova_performance <- function(subjects.wt, df, conns, settings) {
 degree_centrality_performance <- function(subjects.wt, df, conns, settings) {
     vcat(settings$verbose, "Running degree centrality on every node")
 
-    deg <- aaply(subjects.wt, 2, colMeans, .progress="text", .parallel=settings$parallel)
-    deg <- t(deg)   # make output like apply
+    #deg <- aaply(subjects.wt, 2, colMeans, .progress="text", .parallel=settings$parallel)
+    deg <- apply(subjects.wt, 2, colMeans)
+    #deg <- t(deg)   # make output like apply
     res <- summary(aov(deg ~ group, df))
     deg.pvals <- as.numeric(sapply(res, function(tab) tab$Pr[1]))
 
@@ -43,9 +46,11 @@ degree_centrality_performance <- function(subjects.wt, df, conns, settings) {
 
 compute_distances <- function(subjects.wt, settings) {
     vcat(settings$verbose, "For each node, computing distances between subject connectivity maps")
-    distances <- aaply(subjects.wt, 2, function(x) {
+#    distances <- aaply(subjects.wt, 2, function(x) {
+    distances <- apply(subjects.wt, 2, function(x) {
         as.vector(zdist(x))
-    }, .progress="text", .parallel=settings$parallel)
+    })
+#    }, .progress="text", .parallel=settings$parallel)
     distances <- t(distances)   # make output like apply
     names(dim(distances)) <- c("subjects^2", "nodes")
     dimnames(distances) <- dimnames(list(subject.squared=1:settings$nsubs^2, node=1:settings$nnode))

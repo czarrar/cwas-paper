@@ -92,8 +92,11 @@ set_parallel_procs <- function(nforks=1, nthreads=1, verbose=FALSE) {
     is.installed <- function(mypkg) is.element(mypkg, installed.packages()[,1]) 
   
     vcat(verbose, "Setting %i parallel forks", nforks)
-    suppressPackageStartupMessages(library("doMC"))
-    registerDoMC()
+    suppressPackageStartupMessages(library("doParallel"))
+    cl <- makeForkCluster(nforks)
+    registerDoParallel(cl)()
+#    suppressPackageStartupMessages(library("doMC"))
+#    registerDoMC()
     nprocs <- getDoParWorkers()
     if (nforks > nprocs) {
         vstop("# of forks %i is greater than the actual # of processors (%i)", 
