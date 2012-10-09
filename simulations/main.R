@@ -111,8 +111,8 @@ res <- ldply(1:niters, function(ii) {
                             
                             data.frame(
                                 method = c("glm", "degree", "mdmr"), 
-                                sensitivity = c(res.aov$sensitivity, res.degree$sensitivity, res$mdmr$sensitivity), 
-                                specificity = c(res.aov$specificity, res.degree$specificity, res$mdmr$specificity)
+                                sensitivity = c(res.aov$sensitivity, res.degree$sensitivity, res.mdmr$sensitivity), 
+                                specificity = c(res.aov$specificity, res.degree$specificity, res.mdmr$specificity)
                             )
                         }
             )
