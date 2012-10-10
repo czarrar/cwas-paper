@@ -94,7 +94,7 @@ set_parallel_procs <- function(nforks=1, nthreads=1, verbose=FALSE) {
     vcat(verbose, "Setting %i parallel forks", nforks)
     suppressPackageStartupMessages(library("doParallel"))
     cl <- makeForkCluster(nforks)
-    registerDoParallel(cl)()
+    registerDoParallel(cl)
 #    suppressPackageStartupMessages(library("doMC"))
 #    registerDoMC()
     nprocs <- getDoParWorkers()
@@ -119,9 +119,10 @@ set_parallel_procs <- function(nforks=1, nthreads=1, verbose=FALSE) {
         # cover all our blases
         vcat(verbose, "...using GOTOBLAS or Other")
         suppressPackageStartupMessages(library("blasctl"))
-        if (existsFunction("blas_set_num_threads", where=topenv(.GlobalEnv)))
-        blas_set_num_threads(nthreads)
-        omp_set_num_threads(nthreads)
+        if (existsFunction("blas_set_num_threads", where=topenv(.GlobalEnv))) {
+            blas_set_num_threads(nthreads)
+            omp_set_num_threads(nthreads)
+        }
     } else {
         vcat(verbose, "...NOT using any multithreading BLAS library")
     }

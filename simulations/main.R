@@ -1,6 +1,6 @@
 library(igraph)
 library(plyr)
-library(doMC)
+library(Rsge)
 
 source("lib_mdmr.R")
 source("lib_utils.R")
@@ -8,10 +8,13 @@ source("lib_utils.R")
 # Settings to vary
 ## subject
 many_nsubs <- c(20, 50, 100, 150, 200, 250, 300)
+#many_nsubs <- c(100)
 ## group differences
 many_effect_sizes <- c(0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3)
+#many_effect_sizes <- c(0.06, 0.1, 0.15)
 ## connections to change per node
-many_num_conns_change_per_node <- c(1, seq(2,10,2), 14, 18)
+many_num_conns_change_per_node <- c(1, seq(2,10,2), 14)
+#many_num_conns_change_per_node <- c(2, 4)
 ## iterations
 niters <- 10
 
@@ -20,7 +23,7 @@ settings <- c()
 settings$verbose <- TRUE
 ## parallel
 settings$parallel <- TRUE   # getting segfaults???
-settings$nforks <- 5
+settings$nforks <- 60
 settings$nthreads <- 2
 ## graph
 settings$nnodes <- 100
@@ -30,9 +33,12 @@ settings$effect_size_noise <- 0.01   # proportion or percentage 1%
 settings$num_nodes_change <- settings$nnodes/2
 settings$crit.pval <- 0.05
 
+
+sge.options(sge.user.options = sprintf("-S /bin/bash -pe mpi %i", settings$nthreads))
+
 # Set Parallelization
-if (settings$parallel)
-    set_parallel_procs(settings$nforks, settings$nthreads, settings$verbose)
+#if (settings$parallel)
+#    set_parallel_procs(settings$nforks, settings$nthreads, settings$verbose)
 
 res <- ldply(1:niters, function(ii) {
     vcat(settings$verbose, "ITERATION: %i", ii)
@@ -67,8 +73,21 @@ res <- ldply(1:niters, function(ii) {
         subjects.wt <- create_weighted_subject_matrices(group.adj, settings)
 
         
-        res <- mdply(expand.grid(effect_size=many_effect_sizes, num_conns_change=many_num_conns_change_per_node), 
-                        function(effect_size, num_conns_change) {
+        combos <- expand.grid(
+            effect_size=many_effect_sizes, 
+            num_conns_change=many_num_conns_change_per_node
+        )
+        
+        res <- sge.parLapply(1:nrow(combos), function(i) {
+                            source("lib_mdmr.R")
+                            source("lib_utils.R")
+                            
+                            blas_set_num_threads(settings$nthreads)
+                            omp_set_num_threads(settings$nthreads)
+                            
+                            effect_size <- combos$effect_size[i]
+                            num_conns_change <- combos$num_conns_change[i]
+                            
                             vcat(settings$verbose, "EFFECT SIZE: %f", effect_size)
                             vcat(settings$verbose, "# OF CONNECTIONS: %i", num_conns_change)
                             
@@ -105,25 +124,30 @@ res <- ldply(1:niters, function(ii) {
                             # Degree and then regression
                             res.degree <- degree_centrality_performance(subjects.wt, df, nodes, settings)
 
-                            # Distances & K-Means & MDMR
+                            # Distances & MDMR
                             distances <- compute_distances(subjects.wt, settings)
                             res.mdmr <- mdmr_performance(distances, df, nodes, settings)
                             
                             data.frame(
+                                effect.size = settings$effect_size, 
+                                connections = settings$num_conns_change_per_node, 
                                 method = c("glm", "degree", "mdmr"), 
                                 sensitivity = c(res.aov$sensitivity, res.degree$sensitivity, res.mdmr$sensitivity), 
                                 specificity = c(res.aov$specificity, res.degree$specificity, res.mdmr$specificity)
                             )
-                        }
+                        }, njobs=settings$nforks, trace=TRUE, debug=TRUE, 
+                        function.savelist=c("settings", "combos", "subjects.wt", "group.adj", "group.wt", "grp.label", "df"), 
+                        packages=c("igraph", "plyr", "blasctl")
             )
         
-        res$subjects <- nsubs
+        res <- ldply(res, function(x) x)
+        res <- cbind(subjects=nsubs, res)
         
         res
     })
     
-    res$iteration <- ii
+    res <- cbind(iteration=ii, res)
     
     res
-}, .parallel=settings$parallel)
+})
 

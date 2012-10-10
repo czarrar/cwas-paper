@@ -26,7 +26,7 @@ mdmr <- function(formula, many_dmats, predictors, nperms = 999, strata = NULL,
 {
     TOL <- 1e-07
     
-    if (!is.matrix(many_dmats) || nrow(sqrt(many_dmats)) != nrow(predictors))
+    if (!is.matrix(many_dmats) || sqrt(nrow(many_dmats)) != nrow(predictors))
         stop("many_dmats must be a matrix of n^2 by t where n=# of obs/subj and t=# of tests")
     
     formula[[2]] <- NULL
