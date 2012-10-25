@@ -60,8 +60,21 @@ compute_distances <- function(subjects.wt, settings) {
 mdmr_performance <- function(distances, df, nodes, settings) {
     vcat(settings$verbose, "Running MDMR on every node")
     
-    res <- mdmr(. ~ group, distances, df, nperms=4999)
-    mdmr.pvals <- sapply(res$aov.tab, function(tab) tab$Pr[1])
+    # split up permutations
+    if (nrow(df) > 250) {
+        res1 <- mdmr(. ~ group, distances, df, nperms=2449)
+        mdmr.pvals1 <- sapply(res1$aov.tab, function(tab) tab$Pr[1])
+        rm(res1); gc()
+        
+        res2 <- mdmr(. ~ group, distances, df, nperms=2450)
+        mdmr.pvals2 <- sapply(res2$aov.tab, function(tab) tab$Pr[1])
+        rm(res2); gc()
+        
+        mdmr.pvals <- c(mdmr.pvals1, mdmr.pvals2[-1])
+    } else {
+        res <- mdmr(. ~ group, distances, df, nperms=4999)
+        mdmr.pvals <- sapply(res$aov.tab, function(tab) tab$Pr[1])
+    }
     
     # sensitivity => TP/(TP+FN)
     # specificity => TN/(TN+FP)

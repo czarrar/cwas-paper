@@ -7,7 +7,7 @@ source("lib_utils.R")
 
 # Settings to vary
 ## subject
-many_nsubs <- c(20, 50, 100, 150, 200, 250, 300)
+many_nsubs <- c(24, 50, 100, 150, 200, 250, 300)
 #many_nsubs <- c(100)
 ## group differences
 many_effect_sizes <- c(0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3)
@@ -23,8 +23,8 @@ settings <- c()
 settings$verbose <- TRUE
 ## parallel
 settings$parallel <- TRUE   # getting segfaults???
-settings$nforks <- 60
-settings$nthreads <- 2
+settings$nforks <- 30
+settings$nthreads <- 4
 ## graph
 settings$nnodes <- 100
 settings$nnei <- 12

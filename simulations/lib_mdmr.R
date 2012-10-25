@@ -107,6 +107,7 @@ mdmr <- function(formula, many_dmats, predictors, nperms = 999, strata = NULL,
 #    }, .progress="text", .parallel=run_parallel))
     names(dim(independent_Gs)) <- names(dim(many_dmats))
     dimnames(independent_Gs) <- dimnames(many_dmats)
+    rm(many_dmats); gc()
     
     vcat(verbose, "...generating permuted H2s")
     many_permuted_H2s <- lapply(1:nterms, function(f) {
