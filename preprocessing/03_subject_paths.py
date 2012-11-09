@@ -85,5 +85,5 @@ for i,row in df.T.iteritems():
         bad_ids.append(i)
 
 # save
-ofname = "/home2/data/Projects/CWAS/share/preprocessing/subinfo/01_paths.csv"
+ofname = "/home2/data/Projects/CWAS/share/subinfo/01_paths.csv"
 df.to_csv(ofname)

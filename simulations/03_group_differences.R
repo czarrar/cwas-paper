@@ -46,3 +46,24 @@ add_group_differences <- function(subjects.wt, grp.label, conns, settings) {
     
     subjects.wt
 }
+
+add_bi_group_differences <- function(subjects.wt, grp.label, conns, settings) {
+    vcat(settings$verbose, "Adding positive/negative group differences")
+    
+    # split connections in half
+    n <- length(conns$change)
+    inds <- sample(1:n)
+    pos_inds <- inds[1:(n/2)]
+    neg_inds <- inds[(n/2+1):n]
+    for (si in which(grp.label=="A")) {
+        x <- subjects.wt[,,si]
+        min_noise <- -(settings$effect_size * settings$effect_size_noise)
+        max_noise <- settings$effect_size * settings$effect_size_noise
+        es_noise <- runif(n, min=min_noise, max=max_noise)
+        x[conns$change[pos_inds]] <- x[conns$change[pos_inds]] + settings$effect_size + es_noise[pos_inds]
+        x[conns$change[neg_inds]] <- x[conns$change[neg_inds]] - settings$effect_size + es_noise[neg_inds]
+        subjects.wt[,,si] <- x
+    }
+    
+    subjects.wt
+}

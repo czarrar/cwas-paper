@@ -6,8 +6,8 @@ library(tools)
 
 ## @knitr gather-files
 # for beijing only use session 1
-# note: for ann arbor: line 16 or sub49687, the handedness was adjusted from L to B (for ambidextrous)
-# nore: for vtech: I removed the first line that indicated the scan num associated with sleep status and incoporated it into the 2nd (now 1st) line
+# note: for ann arbor, line 16 or sub49687, the handedness was adjusted from L to B (for ambidextrous)
+# nore: for vtech, I removed the first line that indicated the scan num associated with sleep status and incoporated it into the 2nd (now 1st) line
 files = list(
     BeijingEOEC = "/home2/data/Originals/BeijingEOEC/BeijingEOEC_phenotypic.csv", 
     Berlin = "/home2/data/Originals/Berlin/Berlin_phenotypic.csv", 
@@ -42,7 +42,23 @@ raw_phenotypes <- llply(files, function(f) {
         read.table(f)
 })
 
-# Eyes
+
+## @knitr fixes
+
+# Fix Virgina Tech which has the code labels for certain columns as additional rows
+raw_phenotypes$VirginiaTech <- raw_phenotypes$VirginiaTech[1:25,]
+
+# Remove the 1 subject from Berlin missing Age information
+raw_phenotypes$Berlin <- raw_phenotypes$Berlin[raw_phenotypes$Berlin$New.Age.Scan<500,]
+
+# Pad subject ID by 3 for Berlin
+raw_phenotypes$Berlin$INDI.ID <- sprintf("%07i", raw_phenotypes$Berlin$INDI.ID)
+
+# Pad subject ID by 2 for QuironValencia
+raw_phenotypes$QuironValencia$ID <- sprintf("%07i", raw_phenotypes$QuironValencia$ID)
+
+
+## @knitr eyes
 eyes <- list(
     # note other scans BeijingEOEC are mixed but here i only preprocessed the 1st scan
     BeijingEOEC = "closed", 
@@ -50,35 +66,34 @@ eyes <- list(
     QuironValencia = "open", 
     VirginiaTech = "open"
 )
-raw_phenotypes$Berlin$Eyes <- factor(raw_phenotypes$Berlin$Eyes, 
-                                        labels=c("open", "closed"))
-save(raw_phenotypes, file="raw_phenotypes.rda")
+raw_phenotypes$Berlin$Eyes.Opened.Closed <- factor(raw_phenotypes$Berlin$Eyes.Opened.Closed, 
+                                                labels=c("open", "closed"))
 
+## @knitr col2phenos
 # Read in csv with links btw site and columns
 col2phenos <- read.csv("/home2/data/Projects/CWAS/share/preprocessing/col2phenos.csv")
 
+## @knitr combine-phenos
 phenos <- ldply(names(files), function(site) {
-    cat(site, "\n")
-    
     i <- which(col2phenos$site == site)    
 
     sdf <- data.frame(
         site    = site, 
-        id      = raw_phenotypes[[site]][[col2phenos$id[i]]], 
-        age     = raw_phenotypes[[site]][[col2phenos$age[i]]], 
+        id      = as.character(raw_phenotypes[[site]][[col2phenos$id[i]]]), 
+        age     = as.numeric(raw_phenotypes[[site]][[col2phenos$age[i]]]), 
         sex     = raw_phenotypes[[site]][[col2phenos$sex[i]]]
     )
     
     if (is.na(col2phenos$handedness[i])) {
         sdf$handedness <- NA
     } else {
-        sdf$handedness <- raw_phenotypes[[site]][[col2phenos$handedness[i]]]
+        sdf$handedness <- as.character(raw_phenotypes[[site]][[col2phenos$handedness[i]]])
     }
     
     if (!is.null(eyes[[site]])) {
         sdf$eyes <- eyes[[site]]
     } else if (!is.na(col2phenos$eyes[i])) {
-        sdf$eyes <- raw_phenotypes[[site]][[col2phenos$eyes[i]]]
+        sdf$eyes <- as.character(raw_phenotypes[[site]][[col2phenos$eyes[i]]])
     } else {
         sdf$eyes <- NA
     }
@@ -86,4 +101,17 @@ phenos <- ldply(names(files), function(site) {
     sdf
 })
 
-write.csv(phenos, file="xxx.csv")
+# Fix differences in sex (not literally)
+phenos$sex <- factor(substr(toupper(phenos$sex), 1, 1))
+
+# Fix differences in handedness codes
+h <- substr(toupper(phenos$handedness), 1, 1)
+h[h=="B"] <- "A"
+h[h=="U"] <- NA
+phenos$handedness <- factor(h)
+
+# Factorize eyes
+phenos$eyes <- factor(phenos$eyes)
+
+# Save
+write.csv(phenos, file="/home2/data/Projects/CWAS/share/subinfo/02_phenos.csv")
