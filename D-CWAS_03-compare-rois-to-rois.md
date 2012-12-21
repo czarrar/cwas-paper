@@ -1,0 +1,68 @@
+This script will examine the ROI-based MDMR results for our old permutation approach relative to the new approach. The gist is that the results are fairly similar between these approaches in context of age and gender effects while regressing out mean FD. The particular sample was taken from the Rockland dataset with N=102 (same number of males and females).
+
+## The Approaches
+
+The old permutation approach involved permuting the hat matrices H2 and IH. These hat matrices are n x n where n = the number of observations or subjects. H2 basically reflects the distances between participants of your predictor variable (age or gender), while IH is the identity subtracted from the distances between participants of all variables of interest. IH serves to measure the error variance. For each permutation, the rows and columns of these matrices are permuted.
+
+In the new permutation approach, the rows of the columns reflecting the predictor variables are first permuted and then H2 and IH are generated. This is conceptually a cleaner approach and fits with the approach taken in other neuroimaging packages like randomise. 
+
+## Setup
+
+
+```r
+library(bigmemory)
+```
+
+```
+## Loading required package: methods
+```
+
+```
+## Loading required package: bigmemory.sri
+```
+
+```
+## bigmemory >= 4.0 is a major revision since 3.1.2; please see package
+## biganalytics and http://www.bigmemory.org for more information.
+```
+
+```r
+library(ggplot2)
+library(plyr)
+setwd("/home/data/Projects/CWAS/age+gender/01_resolution/cwas/rois_to_rois_k1600")
+
+# Read in files
+pvals.files <- Sys.glob("age+sex*.mdmr/pvals.desc")
+list.pvals <- lapply(pvals.files, attach.big.matrix)
+names(list.pvals) <- c("hat_no_motion", "rhs_no_motion", "hat_yes_motion", "garbage", 
+    "rhs_yes_motion")
+list.pvals <- list.pvals[-4]
+
+# Convert to data frame for plotting
+fnames <- c("Old Approach", "New Approach", "Old Approach", "New Approach")
+mnames <- c("Motion Not Included", "Motion Not Included", "Motion Included", 
+    "Motion Included")
+df <- ldply(1:length(list.pvals), function(pi) {
+    pvals <- list.pvals[[pi]]
+    data.frame(approach = rep(fnames[pi], nrow(pvals) * 2), covariate = rep(mnames[pi], 
+        nrow(pvals) * 2), condition = rep(c("age", "gender"), each = nrow(pvals)), 
+        pvals = as.vector(pvals[, ]), logp = -log10(as.vector(pvals[, ])), zstats = qt(as.vector(pvals[, 
+            ]), Inf, lower.tail = F))
+})
+```
+
+
+## Visualize
+
+
+```r
+lthresh <- -log10(0.05)
+p <- ggplot(df, aes(x = logp, color = approach)) + geom_vline(xintercept = lthresh, 
+    linetype = "dashed") + geom_density() + facet_grid(covariate ~ condition)
+print(p)
+```
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+
+
+Plotted above are density plots of the -log10 p-values from the CWAS analyses of 1200 ROIs (ROI to ROI). The first and second columns are the results for age and gender, respectively, while the first and second rows indicate whether mean FD was not or was included in the model. Age effects are very strong and nearly all the ROIs are significant, whereas the gender effects are weak with nearly all ROIs being non-significant. Including mean FD as covariate decreases the number of significant ROIs for both age and gender effects.
