@@ -37,6 +37,8 @@ dims <- surfer_montage_dims(coords)
 ```
 
 
+Below are the inflated surface maps for the L-DOPA CWAS. Here we used 3200 parcellations and for each parcellations examined how its voxelwise connectivity with the rest of the brain varied within subjects for L-DOPA versus placebo.
+
 
 ```r
 # Visualize
@@ -45,5 +47,3 @@ invisible(surfer_montage_viz(images, coords))
 
 ![plot of chunk viz-surface](figure/viz-surface.png) 
 
-
-Above are the inflated surface maps for the L-DOPA CWAS. Here we used 3200 parcellations and for each parcellations examined how its voxelwise connectivity with the rest of the brain varied within subjects for L-DOPA versus placebo.
