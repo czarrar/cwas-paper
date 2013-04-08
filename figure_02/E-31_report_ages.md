@@ -189,7 +189,7 @@ dims <- surfer_montage_dims(coords)
 ```
 
 
-The range here is 2 - 3.25 (-log10p).
+The range here is 2 - 3.5 (-log10p).
 
 
 ```r
