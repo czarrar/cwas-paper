@@ -1,0 +1,298 @@
+Setup
+Gathering individual connectivity
+Group-mean clustering
+Group-Mean and Parcellation
+started at  1354947053.1
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_009.npy as a npy filetype
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_020.npy as a npy filetype
+adding  1
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_048.npy as a npy filetype
+adding  2
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_015.npy as a npy filetype
+adding  3
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_059.npy as a npy filetype
+adding  4
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_030.npy as a npy filetype
+adding  5
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_036.npy as a npy filetype
+adding  6
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_026.npy as a npy filetype
+adding  7
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_014.npy as a npy filetype
+adding  8
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_025.npy as a npy filetype
+adding  9
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_004.npy as a npy filetype
+adding  10
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_060.npy as a npy filetype
+adding  11
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_023.npy as a npy filetype
+adding  12
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_053.npy as a npy filetype
+adding  13
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_019.npy as a npy filetype
+adding  14
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_056.npy as a npy filetype
+adding  15
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_008.npy as a npy filetype
+adding  16
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_037.npy as a npy filetype
+adding  17
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_049.npy as a npy filetype
+adding  18
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_017.npy as a npy filetype
+adding  19
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_050.npy as a npy filetype
+adding  20
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_054.npy as a npy filetype
+adding  21
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_052.npy as a npy filetype
+adding  22
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_057.npy as a npy filetype
+adding  23
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_021.npy as a npy filetype
+adding  24
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_039.npy as a npy filetype
+adding  25
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_043.npy as a npy filetype
+adding  26
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_040.npy as a npy filetype
+adding  27
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_006.npy as a npy filetype
+adding  28
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_055.npy as a npy filetype
+adding  29
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_034.npy as a npy filetype
+adding  30
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_051.npy as a npy filetype
+adding  31
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_058.npy as a npy filetype
+adding  32
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_042.npy as a npy filetype
+adding  33
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_046.npy as a npy filetype
+adding  34
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_045.npy as a npy filetype
+adding  35
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_035.npy as a npy filetype
+adding  36
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_018.npy as a npy filetype
+adding  37
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_022.npy as a npy filetype
+adding  38
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_041.npy as a npy filetype
+adding  39
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_005.npy as a npy filetype
+adding  40
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_032.npy as a npy filetype
+adding  41
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_028.npy as a npy filetype
+adding  42
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_010.npy as a npy filetype
+adding  43
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_013.npy as a npy filetype
+adding  44
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_001.npy as a npy filetype
+adding  45
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_016.npy as a npy filetype
+adding  46
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_029.npy as a npy filetype
+adding  47
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_033.npy as a npy filetype
+adding  48
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_038.npy as a npy filetype
+adding  49
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_031.npy as a npy filetype
+adding  50
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_027.npy as a npy filetype
+adding  51
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_012.npy as a npy filetype
+adding  52
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_002.npy as a npy filetype
+adding  53
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_047.npy as a npy filetype
+adding  54
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_003.npy as a npy filetype
+adding  55
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_024.npy as a npy filetype
+adding  56
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_007.npy as a npy filetype
+adding  57
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_011.npy as a npy filetype
+adding  58
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_044.npy as a npy filetype
+adding  59
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_000.npy as a npy filetype
+adding  60
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_063.npy as a npy filetype
+adding  61
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_061.npy as a npy filetype
+adding  62
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_062.npy as a npy filetype
+adding  63
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_070.npy as a npy filetype
+adding  64
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_069.npy as a npy filetype
+adding  65
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_073.npy as a npy filetype
+adding  66
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_071.npy as a npy filetype
+adding  67
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_064.npy as a npy filetype
+adding  68
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_075.npy as a npy filetype
+adding  69
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_076.npy as a npy filetype
+adding  70
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_085.npy as a npy filetype
+adding  71
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_082.npy as a npy filetype
+adding  72
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_066.npy as a npy filetype
+adding  73
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_096.npy as a npy filetype
+adding  74
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_074.npy as a npy filetype
+adding  75
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_099.npy as a npy filetype
+adding  76
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_068.npy as a npy filetype
+adding  77
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_065.npy as a npy filetype
+adding  78
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_083.npy as a npy filetype
+adding  79
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_078.npy as a npy filetype
+adding  80
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_077.npy as a npy filetype
+adding  81
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_081.npy as a npy filetype
+adding  82
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_079.npy as a npy filetype
+adding  83
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_087.npy as a npy filetype
+adding  84
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_080.npy as a npy filetype
+adding  85
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_067.npy as a npy filetype
+adding  86
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_084.npy as a npy filetype
+adding  87
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_090.npy as a npy filetype
+adding  88
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_101.npy as a npy filetype
+adding  89
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_100.npy as a npy filetype
+adding  90
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_086.npy as a npy filetype
+adding  91
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_095.npy as a npy filetype
+adding  92
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_094.npy as a npy filetype
+adding  93
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_072.npy as a npy filetype
+adding  94
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_091.npy as a npy filetype
+adding  95
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_089.npy as a npy filetype
+adding  96
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_093.npy as a npy filetype
+adding  97
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_098.npy as a npy filetype
+adding  98
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_088.npy as a npy filetype
+adding  99
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_092.npy as a npy filetype
+adding  100
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_limbic_097.npy as a npy filetype
+adding  101
+finished reading in data and calculating connectivity after  4.32398295403 
+
+finished calculating eigenvectors  36.1874439716 
+
+finished discretisation  5  at  36.2069401741 
+
+finished  5  after  36.2412669659 
+
+finished discretisation  10  at  36.2643871307 
+
+finished  10  after  36.3014800549 
+
+finished discretisation  20  at  36.3248319626 
+
+finished  20  after  36.3702640533 
+
+finished discretisation  25  at  36.3999531269 
+
+finished  25  after  36.4487481117 
+
+finished discretisation  40  at  36.5285711288 
+
+finished  40  after  36.5913071632 
+
+finished discretisation  50  at  36.6708230972 
+
+finished  50  after  36.7388789654 
+
+finished discretisation  80  at  36.8277411461 
+
+finished  80  after  36.9189300537 
+
+finished discretisation  100  at  37.0939259529 
+
+finished  100  after  37.2039511204 
+
+finished discretisation  150  at  37.5172259808 
+
+finished  150  after  37.6706321239 
+
+finished discretisation  160  at  38.0284171104 
+
+finished  160  after  38.1826810837 
+
+finished discretisation  200  at  38.6517500877 
+
+finished  200  after  38.8401930332 
+
+finished discretisation  250  at  39.7327530384 
+
+finished  250  after  39.9659950733 
+
+finished discretisation  300  at  41.7091729641 
+
+finished  300  after  41.9800131321 
+
+finished discretisation  320  at  44.0854091644 
+
+finished  320  after  44.3711020947 
+
+finished discretisation  350  at  46.6823949814 
+
+finished  350  after  46.9898040295 
+
+finished discretisation  400  at  49.7181069851 
+
+finished  400  after  50.0672709942 
+
+finished discretisation  450  at  53.5461101532 
+
+finished  450  after  53.9346981049 
+
+finished discretisation  500  at  58.4889280796 
+
+finished  500  after  58.9181110859 
+
+finished discretisation  550  at  62.5795331001 
+
+finished  550  after  63.0393090248 
+
+finished discretisation  600  at  68.2522039413 
+
+finished  600  after  68.7533931732 
+
+finished discretisation  640  at  74.6328091621 
+
+finished  640  after  75.1649880409 
+
+finished after  75.1649980545 
+

@@ -1,0 +1,8 @@
+new("big.matrix.descriptor"
+    , description = structure(list(sharedType = "FileBacked", filename = "gower.bin", 
+    totalRows = 10000, totalCols = 12, rowOffset = c(0, 10000
+    ), colOffset = c(0, 12), nrow = 10000, ncol = 12, rowNames = NULL, 
+    colNames = NULL, type = "double", separated = FALSE), .Names = c("sharedType", 
+"filename", "totalRows", "totalCols", "rowOffset", "colOffset", 
+"nrow", "ncol", "rowNames", "colNames", "type", "separated"))
+)

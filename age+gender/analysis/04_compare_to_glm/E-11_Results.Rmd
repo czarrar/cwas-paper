@@ -1,0 +1,94 @@
+# Compare GLM to MDMR
+
+Here, we will examine how well results from MDMR reflect a simplified representation of running a multiple regression at each connection. In other words, how similar is our multivariate analysis to a more standard univariate analysis. The answer, very similar!
+
+## Setup
+
+```{r setup-libraries, messages='hide', results='hide'}
+library(plyr)
+library(reshape)
+library(ggplot2)
+```
+
+Load functions that calculate dice. Use cor for pearson and kendall_ref for kendalls W.
+
+```{r setup-functions}
+source("E-10_Results-similarity-functions.R")
+```
+
+The df_file contains the columns: sample, factor, roi, mdmr, glm.wt, glm.uwt, and consistency. Basically, it is everything I will need for later. Some notes:
+
+* sample: discovery and replication
+* factor: age and sex
+* roi: 3200 parcellations
+* glm.wt: for each ROI, the sum of all the t-stats relating connectivity strength to a factor (age or sex)
+* glm.uwt: for each ROI, the % of connections significantly related to a factor (age or sex)
+* consistency: for each ROI, the consistency (spearmans rho) between discovery and replication t-stats relativing connectivity strength related to a factor (age or sex)
+
+```{r setup-paths}
+basedir <- "/home2/data/Projects/CWAS"
+datadir <- file.path(basedir, "age+gender/04_compare_to_glm")
+df_file <- file.path(datadir, "comparison/01_dataframe_glm+mdmr.csv")
+```
+
+The base theme here builds on the `theme_tufte` in the `ggthemes` package.
+
+```{r setup-themes}
+mytheme <- theme_bw() + theme(
+    legend.background = element_blank(),
+    legend.key        = element_blank(),
+    panel.background  = element_blank(),
+    panel.border      = element_blank(),
+    strip.background  = element_blank(),
+    plot.background   = element_blank(),
+    axis.line         = element_blank(),
+    panel.grid.minor  = element_blank()
+)
+```
+
+## Inputs
+
+```{r inputs}
+df <- read.csv(df_file)
+```
+
+
+## MDMR vs GLM
+
+I take the correlation between the MDMR and summary GLM values.
+
+```{r summarize_mdmr-vs-glm}
+tab <- ddply(df, .(sample, factor), function(sdf) {
+    c(r=cor(sdf$mdmr, sdf$glm.uwt, method="s"))
+})
+print(tab)
+```
+
+```{r plot_mdmr-vs-glm, fig.width=12, fig.height=12, results='asis'}
+ggplot(df, aes(mdmr, glm.uwt)) +
+    geom_point() + 
+    geom_smooth() + 
+    facet_grid(sample ~ factor) + 
+    xlab("MDMR Significance (-log10p)") + 
+    ylab("Summary SCA\nPercent of Individual Connections with Significant Associations")
+#    mytheme
+```
+
+## MDMR vs GLM Consistency
+
+```{r summarize_mdmr-vs-consistency}
+tab <- ddply(df, .(sample, factor), function(sdf) {
+    c(r=cor(sdf$mdmr, sdf$consistency, method="s"))
+})
+print(tab)
+```
+
+```{r plot_mdmr-vs-consistency, fig.width=12, fig.height=12, results='asis'}
+ggplot(df, aes(mdmr, consistency)) +
+    geom_point() + 
+    geom_smooth() + 
+    facet_grid(sample ~ factor) + 
+    xlab("MDMR Significance (-log10p)") + 
+    ylab("Correlation of SCA\nDiscovery vs Replication Sample")
+#    mytheme
+```

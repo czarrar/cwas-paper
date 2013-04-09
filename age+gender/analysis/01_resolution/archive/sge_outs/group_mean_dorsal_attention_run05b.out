@@ -1,0 +1,298 @@
+Setup
+Gathering individual connectivity
+Group-mean clustering
+Group-Mean and Parcellation
+started at  1354947052.57
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_015.npy as a npy filetype
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_020.npy as a npy filetype
+adding  1
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_030.npy as a npy filetype
+adding  2
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_048.npy as a npy filetype
+adding  3
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_060.npy as a npy filetype
+adding  4
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_004.npy as a npy filetype
+adding  5
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_059.npy as a npy filetype
+adding  6
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_019.npy as a npy filetype
+adding  7
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_037.npy as a npy filetype
+adding  8
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_008.npy as a npy filetype
+adding  9
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_053.npy as a npy filetype
+adding  10
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_049.npy as a npy filetype
+adding  11
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_014.npy as a npy filetype
+adding  12
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_017.npy as a npy filetype
+adding  13
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_056.npy as a npy filetype
+adding  14
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_026.npy as a npy filetype
+adding  15
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_036.npy as a npy filetype
+adding  16
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_023.npy as a npy filetype
+adding  17
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_025.npy as a npy filetype
+adding  18
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_052.npy as a npy filetype
+adding  19
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_050.npy as a npy filetype
+adding  20
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_054.npy as a npy filetype
+adding  21
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_057.npy as a npy filetype
+adding  22
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_021.npy as a npy filetype
+adding  23
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_042.npy as a npy filetype
+adding  24
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_006.npy as a npy filetype
+adding  25
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_046.npy as a npy filetype
+adding  26
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_040.npy as a npy filetype
+adding  27
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_039.npy as a npy filetype
+adding  28
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_055.npy as a npy filetype
+adding  29
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_032.npy as a npy filetype
+adding  30
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_043.npy as a npy filetype
+adding  31
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_051.npy as a npy filetype
+adding  32
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_005.npy as a npy filetype
+adding  33
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_034.npy as a npy filetype
+adding  34
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_045.npy as a npy filetype
+adding  35
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_041.npy as a npy filetype
+adding  36
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_031.npy as a npy filetype
+adding  37
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_022.npy as a npy filetype
+adding  38
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_001.npy as a npy filetype
+adding  39
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_058.npy as a npy filetype
+adding  40
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_028.npy as a npy filetype
+adding  41
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_010.npy as a npy filetype
+adding  42
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_018.npy as a npy filetype
+adding  43
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_035.npy as a npy filetype
+adding  44
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_029.npy as a npy filetype
+adding  45
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_033.npy as a npy filetype
+adding  46
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_013.npy as a npy filetype
+adding  47
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_027.npy as a npy filetype
+adding  48
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_012.npy as a npy filetype
+adding  49
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_016.npy as a npy filetype
+adding  50
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_038.npy as a npy filetype
+adding  51
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_002.npy as a npy filetype
+adding  52
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_007.npy as a npy filetype
+adding  53
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_024.npy as a npy filetype
+adding  54
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_003.npy as a npy filetype
+adding  55
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_047.npy as a npy filetype
+adding  56
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_011.npy as a npy filetype
+adding  57
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_044.npy as a npy filetype
+adding  58
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_000.npy as a npy filetype
+adding  59
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_063.npy as a npy filetype
+adding  60
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_061.npy as a npy filetype
+adding  61
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_062.npy as a npy filetype
+adding  62
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_070.npy as a npy filetype
+adding  63
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_069.npy as a npy filetype
+adding  64
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_073.npy as a npy filetype
+adding  65
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_064.npy as a npy filetype
+adding  66
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_071.npy as a npy filetype
+adding  67
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_075.npy as a npy filetype
+adding  68
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_076.npy as a npy filetype
+adding  69
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_066.npy as a npy filetype
+adding  70
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_082.npy as a npy filetype
+adding  71
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_085.npy as a npy filetype
+adding  72
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_068.npy as a npy filetype
+adding  73
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_065.npy as a npy filetype
+adding  74
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_074.npy as a npy filetype
+adding  75
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_096.npy as a npy filetype
+adding  76
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_099.npy as a npy filetype
+adding  77
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_080.npy as a npy filetype
+adding  78
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_078.npy as a npy filetype
+adding  79
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_083.npy as a npy filetype
+adding  80
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_077.npy as a npy filetype
+adding  81
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_067.npy as a npy filetype
+adding  82
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_081.npy as a npy filetype
+adding  83
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_079.npy as a npy filetype
+adding  84
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_084.npy as a npy filetype
+adding  85
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_087.npy as a npy filetype
+adding  86
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_090.npy as a npy filetype
+adding  87
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_086.npy as a npy filetype
+adding  88
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_101.npy as a npy filetype
+adding  89
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_100.npy as a npy filetype
+adding  90
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_072.npy as a npy filetype
+adding  91
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_095.npy as a npy filetype
+adding  92
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_094.npy as a npy filetype
+adding  93
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_091.npy as a npy filetype
+adding  94
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_089.npy as a npy filetype
+adding  95
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_093.npy as a npy filetype
+adding  96
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_098.npy as a npy filetype
+adding  97
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_088.npy as a npy filetype
+adding  98
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_092.npy as a npy filetype
+adding  99
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_097.npy as a npy filetype
+adding  100
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_dorsal_attention_009.npy as a npy filetype
+adding  101
+finished reading in data and calculating connectivity after  7.19060993195 
+
+finished calculating eigenvectors  97.3493390083 
+
+finished discretisation  5  at  97.3606128693 
+
+finished  5  after  97.4296879768 
+
+finished discretisation  10  at  97.451253891 
+
+finished  10  after  97.5226728916 
+
+finished discretisation  20  at  97.5758600235 
+
+finished  20  after  97.6548950672 
+
+finished discretisation  25  at  97.7219350338 
+
+finished  25  after  97.8099720478 
+
+finished discretisation  40  at  97.9321160316 
+
+finished  40  after  98.0269629955 
+
+finished discretisation  50  at  98.1459469795 
+
+finished  50  after  98.2491919994 
+
+finished discretisation  80  at  98.6174678802 
+
+finished  80  after  98.7454738617 
+
+finished discretisation  100  at  99.266217947 
+
+finished  100  after  99.4168510437 
+
+finished discretisation  150  at  100.222599983 
+
+finished  150  after  100.410525084 
+
+finished discretisation  160  at  101.421128988 
+
+finished  160  after  101.617938042 
+
+finished discretisation  200  at  103.080996037 
+
+finished  200  after  103.316063881 
+
+finished discretisation  250  at  105.487489939 
+
+finished  250  after  105.765260935 
+
+finished discretisation  300  at  108.425878048 
+
+finished  300  after  108.740679979 
+
+finished discretisation  320  at  112.128793001 
+
+finished  320  after  112.46873498 
+
+finished discretisation  350  at  116.241599083 
+
+finished  350  after  116.602118015 
+
+finished discretisation  400  at  121.062205076 
+
+finished  400  after  121.462342978 
+
+finished discretisation  450  at  126.397871017 
+
+finished  450  after  126.835994959 
+
+finished discretisation  500  at  134.031894922 
+
+finished  500  after  134.508019924 
+
+finished discretisation  550  at  141.514997959 
+
+finished  550  after  142.03182292 
+
+finished discretisation  600  at  150.856957912 
+
+finished  600  after  151.408030033 
+
+finished discretisation  640  at  166.382129908 
+
+finished  640  after  166.975949049 
+
+finished after  166.975960016 
+

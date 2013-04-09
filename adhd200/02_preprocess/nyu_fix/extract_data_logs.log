@@ -1,0 +1,124 @@
+DEBUG 2013-04-03 17:13:18,686 332 extracting data for subject: 3457975
+DEBUG 2013-04-03 17:13:18,686 315 No sessions
+DEBUG 2013-04-03 17:13:18,731 230 site for sub 3457975 -> NYU
+DEBUG 2013-04-03 17:13:18,731 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,731 332 extracting data for subject: 0010001
+DEBUG 2013-04-03 17:13:18,732 315 No sessions
+DEBUG 2013-04-03 17:13:18,741 230 site for sub 0010001 -> NYU
+DEBUG 2013-04-03 17:13:18,741 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,741 332 extracting data for subject: 0010002
+DEBUG 2013-04-03 17:13:18,741 315 No sessions
+DEBUG 2013-04-03 17:13:18,750 230 site for sub 0010002 -> NYU
+DEBUG 2013-04-03 17:13:18,750 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,751 332 extracting data for subject: 0010007
+DEBUG 2013-04-03 17:13:18,751 315 No sessions
+DEBUG 2013-04-03 17:13:18,760 230 site for sub 0010007 -> NYU
+DEBUG 2013-04-03 17:13:18,760 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,760 332 extracting data for subject: 0010028
+DEBUG 2013-04-03 17:13:18,760 315 No sessions
+DEBUG 2013-04-03 17:13:18,769 230 site for sub 0010028 -> NYU
+DEBUG 2013-04-03 17:13:18,769 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,770 332 extracting data for subject: 0010033
+DEBUG 2013-04-03 17:13:18,770 315 No sessions
+DEBUG 2013-04-03 17:13:18,778 230 site for sub 0010033 -> NYU
+DEBUG 2013-04-03 17:13:18,779 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,779 332 extracting data for subject: 0010035
+DEBUG 2013-04-03 17:13:18,779 315 No sessions
+DEBUG 2013-04-03 17:13:18,788 230 site for sub 0010035 -> NYU
+DEBUG 2013-04-03 17:13:18,788 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,788 332 extracting data for subject: 0010051
+DEBUG 2013-04-03 17:13:18,788 315 No sessions
+DEBUG 2013-04-03 17:13:18,797 230 site for sub 0010051 -> NYU
+DEBUG 2013-04-03 17:13:18,797 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,797 332 extracting data for subject: 0010062
+DEBUG 2013-04-03 17:13:18,798 315 No sessions
+DEBUG 2013-04-03 17:13:18,806 230 site for sub 0010062 -> NYU
+DEBUG 2013-04-03 17:13:18,806 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,807 332 extracting data for subject: 0010071
+DEBUG 2013-04-03 17:13:18,807 315 No sessions
+DEBUG 2013-04-03 17:13:18,815 230 site for sub 0010071 -> NYU
+DEBUG 2013-04-03 17:13:18,816 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,816 332 extracting data for subject: 0010075
+DEBUG 2013-04-03 17:13:18,816 315 No sessions
+DEBUG 2013-04-03 17:13:18,824 230 site for sub 0010075 -> NYU
+DEBUG 2013-04-03 17:13:18,825 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,825 332 extracting data for subject: 0010087
+DEBUG 2013-04-03 17:13:18,825 315 No sessions
+DEBUG 2013-04-03 17:13:18,834 230 site for sub 0010087 -> NYU
+DEBUG 2013-04-03 17:13:18,834 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,834 332 extracting data for subject: 0010104
+DEBUG 2013-04-03 17:13:18,834 315 No sessions
+DEBUG 2013-04-03 17:13:18,843 230 site for sub 0010104 -> NYU
+DEBUG 2013-04-03 17:13:18,843 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,843 332 extracting data for subject: 0010107
+DEBUG 2013-04-03 17:13:18,844 315 No sessions
+DEBUG 2013-04-03 17:13:18,852 230 site for sub 0010107 -> NYU
+DEBUG 2013-04-03 17:13:18,852 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,853 332 extracting data for subject: 0010108
+DEBUG 2013-04-03 17:13:18,853 315 No sessions
+DEBUG 2013-04-03 17:13:18,861 230 site for sub 0010108 -> NYU
+DEBUG 2013-04-03 17:13:18,862 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,862 332 extracting data for subject: 0010115
+DEBUG 2013-04-03 17:13:18,862 315 No sessions
+DEBUG 2013-04-03 17:13:18,871 230 site for sub 0010115 -> NYU
+DEBUG 2013-04-03 17:13:18,871 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,871 332 extracting data for subject: 0010116
+DEBUG 2013-04-03 17:13:18,871 315 No sessions
+DEBUG 2013-04-03 17:13:18,880 230 site for sub 0010116 -> NYU
+DEBUG 2013-04-03 17:13:18,880 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,880 332 extracting data for subject: 1023964
+DEBUG 2013-04-03 17:13:18,881 315 No sessions
+DEBUG 2013-04-03 17:13:18,889 230 site for sub 1023964 -> NYU
+DEBUG 2013-04-03 17:13:18,889 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,890 332 extracting data for subject: 1208795
+DEBUG 2013-04-03 17:13:18,890 315 No sessions
+DEBUG 2013-04-03 17:13:18,898 230 site for sub 1208795 -> NYU
+DEBUG 2013-04-03 17:13:18,899 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,899 332 extracting data for subject: 1471736
+DEBUG 2013-04-03 17:13:18,899 315 No sessions
+DEBUG 2013-04-03 17:13:18,907 230 site for sub 1471736 -> NYU
+DEBUG 2013-04-03 17:13:18,908 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,908 332 extracting data for subject: 1511464
+DEBUG 2013-04-03 17:13:18,908 315 No sessions
+DEBUG 2013-04-03 17:13:18,917 230 site for sub 1511464 -> NYU
+DEBUG 2013-04-03 17:13:18,917 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,917 332 extracting data for subject: 1740607
+DEBUG 2013-04-03 17:13:18,917 315 No sessions
+DEBUG 2013-04-03 17:13:18,926 230 site for sub 1740607 -> NYU
+DEBUG 2013-04-03 17:13:18,926 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,927 332 extracting data for subject: 2773205
+DEBUG 2013-04-03 17:13:18,927 315 No sessions
+DEBUG 2013-04-03 17:13:18,935 230 site for sub 2773205 -> NYU
+DEBUG 2013-04-03 17:13:18,935 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,936 332 extracting data for subject: 2821683
+DEBUG 2013-04-03 17:13:18,936 315 No sessions
+DEBUG 2013-04-03 17:13:18,944 230 site for sub 2821683 -> NYU
+DEBUG 2013-04-03 17:13:18,945 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,945 332 extracting data for subject: 2854839
+DEBUG 2013-04-03 17:13:18,945 315 No sessions
+DEBUG 2013-04-03 17:13:18,954 230 site for sub 2854839 -> NYU
+DEBUG 2013-04-03 17:13:18,954 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,954 332 extracting data for subject: 2983819
+DEBUG 2013-04-03 17:13:18,954 315 No sessions
+DEBUG 2013-04-03 17:13:18,963 230 site for sub 2983819 -> NYU
+DEBUG 2013-04-03 17:13:18,963 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,963 332 extracting data for subject: 2996531
+DEBUG 2013-04-03 17:13:18,963 315 No sessions
+DEBUG 2013-04-03 17:13:18,972 230 site for sub 2996531 -> NYU
+DEBUG 2013-04-03 17:13:18,972 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,973 332 extracting data for subject: 3349205
+DEBUG 2013-04-03 17:13:18,973 315 No sessions
+DEBUG 2013-04-03 17:13:18,981 230 site for sub 3349205 -> NYU
+DEBUG 2013-04-03 17:13:18,981 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,982 332 extracting data for subject: 4060823
+DEBUG 2013-04-03 17:13:18,982 315 No sessions
+DEBUG 2013-04-03 17:13:18,990 230 site for sub 4060823 -> NYU
+DEBUG 2013-04-03 17:13:18,991 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:18,991 332 extracting data for subject: 8009688
+DEBUG 2013-04-03 17:13:18,991 315 No sessions
+DEBUG 2013-04-03 17:13:19,000 230 site for sub 8009688 -> NYU
+DEBUG 2013-04-03 17:13:19,000 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']
+DEBUG 2013-04-03 17:13:19,000 332 extracting data for subject: 9907452
+DEBUG 2013-04-03 17:13:19,000 315 No sessions
+DEBUG 2013-04-03 17:13:19,009 230 site for sub 9907452 -> NYU
+DEBUG 2013-04-03 17:13:19,009 231 scan parameters for the above site ['alt+z', 'None', 'None', '16', '2']

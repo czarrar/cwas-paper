@@ -1,0 +1,7 @@
+Site,TR (seconds),Reference (slice no),Acquisition (pattern)
+KKI,2.5,24,seq+z
+NYU,2,16,alt+z
+OHSU,2.5,18,alt+z2
+Peking1,2.0,16,alt+z
+Peking2,2.0,16,alt+z
+Peking3,2.0,15,alt+z2

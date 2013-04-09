@@ -1,0 +1,29 @@
+#list of subjects that are to be excluded 
+exclusionSubjectList: None
+
+#list of subjects that are included 
+subjectList: [
+    "0010001", "0010002", "0010007", "0010028", "0010033", "0010035", "0010051", 
+    "0010062", "0010071", "0010075", "0010087", "0010104", "0010107", "0010108",
+    "0010115", "0010116", "1023964", "1208795", "1471736", "1511464", "1740607",
+    "2773205", "2821683", "2854839", "2983819", "2996531", "3349205", "3457975",
+    "4060823", "8009688", "9907452",
+]
+
+
+#Anatomical Path
+#Put %s where site and subjects are in the path
+anatomicalTemplate: '/home2/data/Projects/CWAS/adhd200/Originals/%s/%s/mprage.nii.gz'
+
+#Functional Path
+#Put  %s where site and subjects are in the path
+functionalTemplate: '/home2/data/Projects/CWAS/adhd200/Originals/%s/%s/rest.nii.gz'
+
+#list of sites
+#if None extract data runs on all sites
+siteList: None
+
+#slice timing parameters csv file path
+scanParametersCSV: 'slice_timing.csv'
+
+outputSubjectListLocation: "/home2/data/Projects/CWAS/share/adhd200/02_preprocess/nyu_fix"

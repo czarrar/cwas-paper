@@ -1,0 +1,78 @@
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input concat_xfm requires inputs: in_file2
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input concat_xfm requires inputs: in_file2
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:359: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part

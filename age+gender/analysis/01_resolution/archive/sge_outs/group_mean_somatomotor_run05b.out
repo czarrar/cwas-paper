@@ -1,0 +1,298 @@
+Setup
+Gathering individual connectivity
+Group-mean clustering
+Group-Mean and Parcellation
+started at  1354947053.19
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_009.npy as a npy filetype
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_015.npy as a npy filetype
+adding  1
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_020.npy as a npy filetype
+adding  2
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_060.npy as a npy filetype
+adding  3
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_008.npy as a npy filetype
+adding  4
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_030.npy as a npy filetype
+adding  5
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_004.npy as a npy filetype
+adding  6
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_053.npy as a npy filetype
+adding  7
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_052.npy as a npy filetype
+adding  8
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_048.npy as a npy filetype
+adding  9
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_037.npy as a npy filetype
+adding  10
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_026.npy as a npy filetype
+adding  11
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_049.npy as a npy filetype
+adding  12
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_017.npy as a npy filetype
+adding  13
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_056.npy as a npy filetype
+adding  14
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_014.npy as a npy filetype
+adding  15
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_059.npy as a npy filetype
+adding  16
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_023.npy as a npy filetype
+adding  17
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_019.npy as a npy filetype
+adding  18
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_050.npy as a npy filetype
+adding  19
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_057.npy as a npy filetype
+adding  20
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_054.npy as a npy filetype
+adding  21
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_036.npy as a npy filetype
+adding  22
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_025.npy as a npy filetype
+adding  23
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_039.npy as a npy filetype
+adding  24
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_042.npy as a npy filetype
+adding  25
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_021.npy as a npy filetype
+adding  26
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_046.npy as a npy filetype
+adding  27
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_006.npy as a npy filetype
+adding  28
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_001.npy as a npy filetype
+adding  29
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_005.npy as a npy filetype
+adding  30
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_055.npy as a npy filetype
+adding  31
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_045.npy as a npy filetype
+adding  32
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_028.npy as a npy filetype
+adding  33
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_040.npy as a npy filetype
+adding  34
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_032.npy as a npy filetype
+adding  35
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_043.npy as a npy filetype
+adding  36
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_034.npy as a npy filetype
+adding  37
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_022.npy as a npy filetype
+adding  38
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_041.npy as a npy filetype
+adding  39
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_031.npy as a npy filetype
+adding  40
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_035.npy as a npy filetype
+adding  41
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_018.npy as a npy filetype
+adding  42
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_051.npy as a npy filetype
+adding  43
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_058.npy as a npy filetype
+adding  44
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_033.npy as a npy filetype
+adding  45
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_010.npy as a npy filetype
+adding  46
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_012.npy as a npy filetype
+adding  47
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_029.npy as a npy filetype
+adding  48
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_007.npy as a npy filetype
+adding  49
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_027.npy as a npy filetype
+adding  50
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_038.npy as a npy filetype
+adding  51
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_013.npy as a npy filetype
+adding  52
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_024.npy as a npy filetype
+adding  53
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_047.npy as a npy filetype
+adding  54
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_011.npy as a npy filetype
+adding  55
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_016.npy as a npy filetype
+adding  56
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_002.npy as a npy filetype
+adding  57
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_003.npy as a npy filetype
+adding  58
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_044.npy as a npy filetype
+adding  59
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_000.npy as a npy filetype
+adding  60
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_063.npy as a npy filetype
+adding  61
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_061.npy as a npy filetype
+adding  62
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_062.npy as a npy filetype
+adding  63
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_070.npy as a npy filetype
+adding  64
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_069.npy as a npy filetype
+adding  65
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_073.npy as a npy filetype
+adding  66
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_064.npy as a npy filetype
+adding  67
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_071.npy as a npy filetype
+adding  68
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_075.npy as a npy filetype
+adding  69
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_066.npy as a npy filetype
+adding  70
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_076.npy as a npy filetype
+adding  71
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_068.npy as a npy filetype
+adding  72
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_065.npy as a npy filetype
+adding  73
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_082.npy as a npy filetype
+adding  74
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_074.npy as a npy filetype
+adding  75
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_085.npy as a npy filetype
+adding  76
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_067.npy as a npy filetype
+adding  77
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_080.npy as a npy filetype
+adding  78
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_078.npy as a npy filetype
+adding  79
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_077.npy as a npy filetype
+adding  80
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_083.npy as a npy filetype
+adding  81
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_084.npy as a npy filetype
+adding  82
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_096.npy as a npy filetype
+adding  83
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_081.npy as a npy filetype
+adding  84
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_079.npy as a npy filetype
+adding  85
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_087.npy as a npy filetype
+adding  86
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_099.npy as a npy filetype
+adding  87
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_072.npy as a npy filetype
+adding  88
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_086.npy as a npy filetype
+adding  89
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_090.npy as a npy filetype
+adding  90
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_100.npy as a npy filetype
+adding  91
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_101.npy as a npy filetype
+adding  92
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_094.npy as a npy filetype
+adding  93
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_095.npy as a npy filetype
+adding  94
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_089.npy as a npy filetype
+adding  95
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_091.npy as a npy filetype
+adding  96
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_093.npy as a npy filetype
+adding  97
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_088.npy as a npy filetype
+adding  98
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_092.npy as a npy filetype
+adding  99
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_098.npy as a npy filetype
+adding  100
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_somatomotor_097.npy as a npy filetype
+adding  101
+finished reading in data and calculating connectivity after  14.5262901783 
+
+finished calculating eigenvectors  251.556322098 
+
+finished discretisation  5  at  251.594739199 
+
+finished  5  after  251.710477114 
+
+finished discretisation  10  at  251.77593708 
+
+finished  10  after  251.893792152 
+
+finished discretisation  20  at  251.958969116 
+
+finished  20  after  252.08466506 
+
+finished discretisation  25  at  252.20434618 
+
+finished  25  after  252.335480213 
+
+finished discretisation  40  at  252.525593996 
+
+finished  40  after  252.669812202 
+
+finished discretisation  50  at  252.94137311 
+
+finished  50  after  253.093061209 
+
+finished discretisation  80  at  253.69851017 
+
+finished  80  after  253.885431051 
+
+finished discretisation  100  at  254.689301014 
+
+finished  100  after  254.892543077 
+
+finished discretisation  150  at  256.334148169 
+
+finished  150  after  256.567769051 
+
+finished discretisation  160  at  258.123556137 
+
+finished  160  after  258.365193129 
+
+finished discretisation  200  at  260.521247149 
+
+finished  200  after  260.795590162 
+
+finished discretisation  250  at  263.939359188 
+
+finished  250  after  264.258452177 
+
+finished discretisation  300  at  268.458853006 
+
+finished  300  after  268.827865124 
+
+finished discretisation  320  at  273.860242128 
+
+finished  320  after  274.244846106 
+
+finished discretisation  350  at  279.782913208 
+
+finished  350  after  280.187677145 
+
+finished discretisation  400  at  287.143418074 
+
+finished  400  after  287.58595705 
+
+finished discretisation  450  at  296.046626091 
+
+finished  450  after  296.540498018 
+
+finished discretisation  500  at  306.083178043 
+
+finished  500  after  306.618543148 
+
+finished discretisation  550  at  320.066344023 
+
+finished  550  after  320.643526077 
+
+finished discretisation  600  at  345.852314234 
+
+finished  600  after  346.466613054 
+
+finished discretisation  640  at  366.369741201 
+
+finished  640  after  367.00695014 
+
+finished after  367.006961107 
+

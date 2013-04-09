@@ -1,0 +1,298 @@
+Setup
+Gathering individual connectivity
+Group-mean clustering
+Group-Mean and Parcellation
+started at  1354947053.2
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_009.npy as a npy filetype
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_015.npy as a npy filetype
+adding  1
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_020.npy as a npy filetype
+adding  2
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_048.npy as a npy filetype
+adding  3
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_026.npy as a npy filetype
+adding  4
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_036.npy as a npy filetype
+adding  5
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_025.npy as a npy filetype
+adding  6
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_059.npy as a npy filetype
+adding  7
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_004.npy as a npy filetype
+adding  8
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_056.npy as a npy filetype
+adding  9
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_030.npy as a npy filetype
+adding  10
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_014.npy as a npy filetype
+adding  11
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_023.npy as a npy filetype
+adding  12
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_049.npy as a npy filetype
+adding  13
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_060.npy as a npy filetype
+adding  14
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_037.npy as a npy filetype
+adding  15
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_053.npy as a npy filetype
+adding  16
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_019.npy as a npy filetype
+adding  17
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_057.npy as a npy filetype
+adding  18
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_017.npy as a npy filetype
+adding  19
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_008.npy as a npy filetype
+adding  20
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_054.npy as a npy filetype
+adding  21
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_052.npy as a npy filetype
+adding  22
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_050.npy as a npy filetype
+adding  23
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_039.npy as a npy filetype
+adding  24
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_043.npy as a npy filetype
+adding  25
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_006.npy as a npy filetype
+adding  26
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_055.npy as a npy filetype
+adding  27
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_021.npy as a npy filetype
+adding  28
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_040.npy as a npy filetype
+adding  29
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_058.npy as a npy filetype
+adding  30
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_034.npy as a npy filetype
+adding  31
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_035.npy as a npy filetype
+adding  32
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_022.npy as a npy filetype
+adding  33
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_005.npy as a npy filetype
+adding  34
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_018.npy as a npy filetype
+adding  35
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_046.npy as a npy filetype
+adding  36
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_045.npy as a npy filetype
+adding  37
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_051.npy as a npy filetype
+adding  38
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_042.npy as a npy filetype
+adding  39
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_028.npy as a npy filetype
+adding  40
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_010.npy as a npy filetype
+adding  41
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_041.npy as a npy filetype
+adding  42
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_016.npy as a npy filetype
+adding  43
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_033.npy as a npy filetype
+adding  44
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_032.npy as a npy filetype
+adding  45
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_012.npy as a npy filetype
+adding  46
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_027.npy as a npy filetype
+adding  47
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_029.npy as a npy filetype
+adding  48
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_001.npy as a npy filetype
+adding  49
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_003.npy as a npy filetype
+adding  50
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_024.npy as a npy filetype
+adding  51
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_013.npy as a npy filetype
+adding  52
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_038.npy as a npy filetype
+adding  53
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_002.npy as a npy filetype
+adding  54
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_047.npy as a npy filetype
+adding  55
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_031.npy as a npy filetype
+adding  56
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_007.npy as a npy filetype
+adding  57
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_011.npy as a npy filetype
+adding  58
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_044.npy as a npy filetype
+adding  59
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_000.npy as a npy filetype
+adding  60
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_063.npy as a npy filetype
+adding  61
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_061.npy as a npy filetype
+adding  62
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_062.npy as a npy filetype
+adding  63
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_070.npy as a npy filetype
+adding  64
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_069.npy as a npy filetype
+adding  65
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_073.npy as a npy filetype
+adding  66
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_071.npy as a npy filetype
+adding  67
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_064.npy as a npy filetype
+adding  68
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_075.npy as a npy filetype
+adding  69
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_076.npy as a npy filetype
+adding  70
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_085.npy as a npy filetype
+adding  71
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_082.npy as a npy filetype
+adding  72
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_099.npy as a npy filetype
+adding  73
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_096.npy as a npy filetype
+adding  74
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_074.npy as a npy filetype
+adding  75
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_066.npy as a npy filetype
+adding  76
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_083.npy as a npy filetype
+adding  77
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_068.npy as a npy filetype
+adding  78
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_065.npy as a npy filetype
+adding  79
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_078.npy as a npy filetype
+adding  80
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_077.npy as a npy filetype
+adding  81
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_087.npy as a npy filetype
+adding  82
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_081.npy as a npy filetype
+adding  83
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_079.npy as a npy filetype
+adding  84
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_080.npy as a npy filetype
+adding  85
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_090.npy as a npy filetype
+adding  86
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_084.npy as a npy filetype
+adding  87
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_100.npy as a npy filetype
+adding  88
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_101.npy as a npy filetype
+adding  89
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_086.npy as a npy filetype
+adding  90
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_067.npy as a npy filetype
+adding  91
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_095.npy as a npy filetype
+adding  92
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_094.npy as a npy filetype
+adding  93
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_098.npy as a npy filetype
+adding  94
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_072.npy as a npy filetype
+adding  95
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_089.npy as a npy filetype
+adding  96
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_091.npy as a npy filetype
+adding  97
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_093.npy as a npy filetype
+adding  98
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_088.npy as a npy filetype
+adding  99
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_092.npy as a npy filetype
+adding  100
+Reading /home2/data/Projects/CWAS/age+gender/01_resolution/spatial_cluster/scorr_conn_frontoparietal_097.npy as a npy filetype
+adding  101
+finished reading in data and calculating connectivity after  9.40482902527 
+
+finished calculating eigenvectors  165.94088006 
+
+finished discretisation  5  at  165.960621834 
+
+finished  5  after  166.050400019 
+
+finished discretisation  10  at  166.096914053 
+
+finished  10  after  166.187598944 
+
+finished discretisation  20  at  166.254803896 
+
+finished  20  after  166.353116989 
+
+finished discretisation  25  at  166.420718908 
+
+finished  25  after  166.528462887 
+
+finished discretisation  40  at  166.732588053 
+
+finished  40  after  166.848439932 
+
+finished discretisation  50  at  167.03143096 
+
+finished  50  after  167.167544842 
+
+finished discretisation  80  at  167.546198845 
+
+finished  80  after  167.696408033 
+
+finished discretisation  100  at  168.344301939 
+
+finished  100  after  168.511899948 
+
+finished discretisation  150  at  169.70428896 
+
+finished  150  after  169.910479069 
+
+finished discretisation  160  at  171.201839924 
+
+finished  160  after  171.425991058 
+
+finished discretisation  200  at  173.184108973 
+
+finished  200  after  173.438539028 
+
+finished discretisation  250  at  176.025970936 
+
+finished  250  after  176.331347942 
+
+finished discretisation  300  at  179.757928848 
+
+finished  300  after  180.092705011 
+
+finished discretisation  320  at  184.216486931 
+
+finished  320  after  184.576122046 
+
+finished discretisation  350  at  189.152639866 
+
+finished  350  after  189.528519869 
+
+finished discretisation  400  at  195.310271025 
+
+finished  400  after  195.725858927 
+
+finished discretisation  450  at  202.73948884 
+
+finished  450  after  203.197197914 
+
+finished discretisation  500  at  211.518921852 
+
+finished  500  after  212.018272877 
+
+finished discretisation  550  at  223.232584 
+
+finished  550  after  223.780315876 
+
+finished discretisation  600  at  236.180031061 
+
+finished  600  after  236.76688385 
+
+finished discretisation  640  at  276.19974184 
+
+finished  640  after  276.814885855 
+
+finished after  276.81489706 
+

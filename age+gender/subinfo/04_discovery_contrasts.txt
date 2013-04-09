@@ -1,0 +1,5 @@
+"(Intercept)" "siteBaltimore" "siteBangor" "siteBeijing A" "siteBeijing AEOEC" "siteBerlin" "siteCambridge" "siteCleveland" "siteIcbm" "siteLeiden A" "siteLeiden B" "siteMunchen" "siteNew York A" "siteNew York B" "siteNewark" "siteOrangeburg" "siteQueensland" "siteQuiron-Valencia" "siteRockland" "siteSaint Louis" "siteVirginia Tech" "runRun 2" "runRun 3" "mean_FD" "age" "sexMale"
+"age_pos" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+"age_neg" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0
+"sex_pos" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+"sex_neg" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1

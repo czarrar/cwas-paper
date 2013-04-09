@@ -1,0 +1,1 @@
+These set of analyses will focus on assessing the best approach for correcting for multiple comparisons. It will use the Rockland sample dataset from 01_resolution.

@@ -1,0 +1,372 @@
+-
+    subject_id: '3457975'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/3457975/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/3457975/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010001'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010001/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010001/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010002'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010002/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010002/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010007'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010007/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010007/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010028'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010028/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010028/session_1/rest_2/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010033'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010033/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010033/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010035'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010035/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010035/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010051'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010051/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010051/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010062'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010062/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010062/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010071'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010071/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010071/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010075'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010075/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010075/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010087'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010087/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010087/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010104'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010104/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010104/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010107'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010107/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010107/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010108'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010108/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010108/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010115'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010115/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010115/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '0010116'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/0010116/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/0010116/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '1023964'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/1023964/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/1023964/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '1208795'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/1208795/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/1208795/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '1471736'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/1471736/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/1471736/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '1511464'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/1511464/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/1511464/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '1740607'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/1740607/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/1740607/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '2773205'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/2773205/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/2773205/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '2821683'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/2821683/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/2821683/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '2854839'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/2854839/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/2854839/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '2983819'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/2983819/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/2983819/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '2996531'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/2996531/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/2996531/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '3349205'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/3349205/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/3349205/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '4060823'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/4060823/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/4060823/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '8009688'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/8009688/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/8009688/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'
+-
+    subject_id: '9907452'
+    unique_id: ''
+    anat: '/data/Originals/ADHD200/usable_copy/unsorted/9907452/session_1/anat_1/mprage.nii.gz'
+    rest: 
+      rest: '/data/Originals/ADHD200/usable_copy/unsorted/9907452/session_1/rest_1/rest.nii.gz'
+    scan_parameters:
+        tr: '2'
+        acquisition: 'alt+z'
+        reference: '16'
+        first_tr: 'None'
+        last_tr: 'None'

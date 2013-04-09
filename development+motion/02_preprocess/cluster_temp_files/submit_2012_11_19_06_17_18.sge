@@ -1,0 +1,11 @@
+#! /bin/bash
+#$ -cwd
+#$ -S /bin/bash
+#$ -V
+#$ -t 1-77
+#$ -q all.q
+#$ -pe mpi 1
+#$ -e /home2/data/Projects/CWAS/share/development+motion/02_preprocess/cluster_temp_files/c-pac_2012_11_19_06_17_18.err
+#$ -o /home2/data/Projects/CWAS/share/development+motion/02_preprocess/cluster_temp_files/c-pac_2012_11_19_06_17_18.out
+source ~/.bashrc
+python -c "import CPAC; CPAC.pipeline.cpac_pipeline.run(\"run_config.py\" , \"CPAC_subject_list.py\", \"$SGE_TASK_ID\" , \"/home2/data/Projects/CWAS/share/development+motion/02_preprocess/cluster_temp_files/strategies.obj\") " 
