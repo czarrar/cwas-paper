@@ -25,6 +25,4 @@
 # Generate report page
 # see http://czarrar.github.com/cwas-paper/50_dev-motion/report_surfaces.html
 # after doing git commit and push
-rdir="/home2/data/Projects/CWAS/reports"
-mkdir ${rdir}/50_LDOPA 2> /dev/null
-../../lib/x_knit.R 40_report-surfaces.Rmd ${rdir}/50_LDOPA report_surfaces
+./42_generate-report.bash

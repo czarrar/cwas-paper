@@ -98,3 +98,24 @@ surfer_montage_viz <-  function(images, coords) {
     
     return(NULL)
 }
+
+plot_rasterimage_dims <- function(image) {
+    dims <- list()
+    
+    dims$width <- dim(image)[1]
+    dims$height <- dim(colorbar)[2]
+    
+    max_dim <- max(dims$width, dims$height)
+    dims$fig.width <- (dims$width/max_dim) * 10
+    dims$fig.height <- (dims$height/max_dim) * 10
+    
+    return(dims)
+}
+
+plot_rasterimage_viz <- function(image, dims) {
+    par(mar=rep(0,4), oma=rep(0,4))
+    plot(c(0,dims$width), c(0,dims$height), type = "n", 
+         xlab="", ylab="", frame.plot=FALSE, xaxt='n', yaxt='n', 
+         xaxs="i", yaxs="i")
+    rasterImage(image, 0, 0, dims$width, dims$height)
+}
