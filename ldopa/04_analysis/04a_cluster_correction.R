@@ -7,34 +7,6 @@ library(plyr)
 source("y_inline_connectir.R")
 basedir <- "/home2/data/Projects/CWAS"
 
-# Convert roi-level data to be voxelwise
-rois_to_voxelwise <- cxxfunction( signature(sA = "object", sRow = "numeric", sRoiInds='List', sNvoxs = "numeric"), 
-' 
-  try{
-    BM_TO_ARMA_ONCE(sA, A)
-    double row = DOUBLE_DATA(sRow)[0] - 1;
-    Rcpp::List list_roi_inds(sRoiInds);
-    double nvoxs = DOUBLE_DATA(sNvoxs)[0];
-    
-    arma::vec voxs(nvoxs);
-    for (size_t i = 0; i < A.n_cols; ++i) {
-        SEXP s_roi_inds = list_roi_inds[i];
-        Rcpp::NumericVector roi_inds(s_roi_inds);
-        int ninds = roi_inds.size();
-        for (int j = 0; j < ninds; ++j)
-            voxs[roi_inds[j]-1] = A(row,i);
-    }
-    
-    return Rcpp::wrap( voxs );
-  } catch( std::exception &ex ) {
-    forward_exception_to_r( ex );
-  } catch(...) { 
-    ::Rf_error( "c++ exception (unknown reason)" ); 
-  }
-  return R_NilValue; // -Wall
-', plugin = "connectir")
-
-
 ## Terms and Factors
 
 terms <- c("conditions")
@@ -126,8 +98,33 @@ perms.clust.sizes <- laply(1:nperms, function(i) {
 
 # Cluster information for original data
 vox.fstats <- rois_to_voxelwise(list.fperms[[fi]], as.double(1), rois.inds, as.double(nvoxs))
-list.clust.vals <- lapply(fstats_for_pvals[,fi], function(vox.thresh) 
-                            cluster.table(vox.fstats, vox.thresh, hdr$dim, mask))
+orig.clust.tables <- lapply(fstats_for_pvals[,fi], function(vox.thresh) {
+    ct <- cluster.table(vox.fstats, vox.thresh, hdr$dim, mask)
+})
+orig.clust.sizes <- lapply(orig.clust.tables, function(ct) ct$size)
+orig.clusts <- lapply(orig.clust.tables, function(ct) ct$clust)
 
-# Save output as nifti
-# TODO
+# Cluster size significance
+## since p < 0.05 is the only significant one, use that
+orig.clust.sig <- sapply(orig.clust.sizes, function(ocs) {
+    sapply(ocs, function(s) sum(s<perms.clust.sizes[,1])/nperms)
+})
+
+# Get significant clusters in voxelwise
+clust <- orig.clusts[[1]][mask]
+w.clusts <- which(rev(orig.clust.sig[[1]]<0.05))
+clust.keep <- clust*0    # empty vector
+for (i in 1:length(w.clusts)) clust.keep[clust==w.clusts[i]] <- 1
+    
+# Correct p-values
+vox.pvals <- rois_to_voxelwise(as.big.matrix(t(Pmat[,,drop=F])), as.double(fi), rois.inds, as.double(nvoxs))
+corr.pvals <- vox.pvals[,1] * clust.keep
+corr.logp <- -log10(vox.pvals[,1]) * clust.keep
+print(range(corr.logp[clust.keep==1]))
+
+# Save
+corr.logp.file <- file.path(mdmr.dir, sprintf("clust_logp_%s.nii.gz", factors[fi]))
+write.nifti(corr.logp, hdr, mask, outfile=corr.logp.file)
+
+# Save the permutations for later reference
+save(perms.clust.sizes, file=file.path(mdmr.dir, sprintf("ref_perms_clust_sizes_%s.rda", factors[fi])))
