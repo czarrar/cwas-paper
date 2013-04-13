@@ -5,4 +5,4 @@
 # after doing git commit and push
 rdir="/home2/data/Projects/CWAS/reports"
 mkdir ${rdir}/figure_04 2> /dev/null
-../../lib/x_knit.R 40_report-dev-motion.Rmd ${rdir}/figure_04 report_dev_motion
+../../lib/x_knit.R 40_report-adhd.Rmd ${rdir}/figure_04 report_adhd
