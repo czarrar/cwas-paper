@@ -21,9 +21,13 @@ for i,mdmr in enumerate(mdmrs):
     for j,factor in enumerate(factors):
         mdmr_dir = "/home2/data/Projects/CWAS/%s/cwas/%s/%s" % (study, sdist, mdmr)
         
+        """Bring up the visualization"""
+        brain = Brain("fsaverage_copy", "lh", "iter8_inflated",
+                      config_opts=dict(background="white"), 
+                      subjects_dir="/home2/data/PublicProgram/freesurfer")
+        
         """Get the volume => surface file"""
         cwas_file = path.join(mdmr_dir, "surf_lh_clust_logp_%s.nii.gz" % factor)
-
 
         """Project the volume file and return as an array"""
         orig_file = path.join(mdmr_dir, "clust_logp_%s.nii.gz" % factor)
