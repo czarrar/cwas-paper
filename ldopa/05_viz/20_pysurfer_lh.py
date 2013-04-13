@@ -13,7 +13,7 @@ mdmr_dir = "/home2/data/Projects/CWAS/ldopa/cwas/rois_random_k3200/ldopa_subject
 factor = "drug"
 
 """Bring up the visualization"""
-brain = Brain("fsaverage_copy", "lh", "caret_inflated",
+brain = Brain("fsaverage_copy", "lh", "iter8_inflated",
               config_opts=dict(background="white"), 
               subjects_dir="/home2/data/PublicProgram/freesurfer")
 
