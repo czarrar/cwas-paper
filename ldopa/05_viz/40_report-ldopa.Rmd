@@ -21,7 +21,11 @@ vizdir <- file.path(basedir, "ldopa/viz")
 setwd(vizdir)
 
 # Load the images
-filenames <- list.files(pattern="med|lat")
+filenames.lh <- list.files(path=vizdir, full.names=T, 
+                        pattern="zpics_surface_lh_(med|lat)")
+filenames.rh <- list.files(path=vizdir, full.names=T, 
+                        pattern="zpics_surface_rh_(med|lat)")
+filenames <- c(filenames.lh, rev(filenames.rh))
 images <- lapply(filenames, readJPEG)
 
 # Coordinates
@@ -33,7 +37,7 @@ dims <- surfer_montage_dims(coords)
 
 Below are the inflated surface maps for the L-DOPA CWAS. Here we used 3200 parcellations and for each parcellations examined how its voxelwise connectivity with the rest of the brain varied within subjects for L-DOPA versus placebo.
 
-```{r viz-ldopa, fig.width=dims$height, fig.height=dims$width}
+```{r viz-ldopa, fig.width=dims$width, fig.height=dims$height}
 # Visualize
 invisible(surfer_montage_viz(images, coords))
 ```

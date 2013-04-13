@@ -2,7 +2,8 @@
 
 # This script will convert MNI152 output to MNI305 for freesurfer
 
-sdists="cwas cwas_regress_motion"
+sdists="cwas"
+# sdists="cwas cwas_regress_motion" # not doing cwas_regression_motion anymore
 
 for sdist in ${sdists}; do
     echo "sdist: ${sdist}"
@@ -13,30 +14,63 @@ for sdist in ${sdists}; do
     mdir="${sdir}/age+motion_sex+tr.mdmr"
     cd $mdir
     # age
-    rm -f mni305_log_fdr_pvals_age.nii.gz
-    mri_vol2vol --inv \
-        --targ log_fdr_pvals_age.nii.gz \
-        --mov $FREESURFER_HOME/subjects/fsaverage/mri/orig.mgz \
-        --reg $FREESURFER_HOME/average/mni152.register.dat \
-        --o mni305_log_fdr_pvals_age.nii.gz
+    factor="age"
+    mri_vol2surf \
+        --mov clust_logp_${factor}.nii.gz \
+        --mni152reg \
+        --projfrac 0.5 \
+        --interp trilinear \
+        --hemi lh \
+        --out surf_lh_clust_logp_${factor}.nii.gz \
+        --reshape
+    mri_vol2surf \
+        --mov clust_logp_${factor}.nii.gz \
+        --mni152reg \
+        --projfrac 0.5 \
+        --interp trilinear \
+        --hemi rh \
+        --out surf_rh_clust_logp_${factor}.nii.gz \
+        --reshape    
     # motion
-    rm -f mni305_log_fdr_pvals_mean_FD.nii.gz
-    mri_vol2vol --inv \
-        --targ log_fdr_pvals_mean_FD.nii.gz \
-        --mov $FREESURFER_HOME/subjects/fsaverage/mri/orig.mgz \
-        --reg $FREESURFER_HOME/average/mni152.register.dat \
-        --o mni305_log_fdr_pvals_mean_FD.nii.gz
+    factor="mean_FD"
+    mri_vol2surf \
+        --mov clust_logp_${factor}.nii.gz \
+        --mni152reg \
+        --projfrac 0.5 \
+        --interp trilinear \
+        --hemi lh \
+        --out surf_lh_clust_logp_${factor}.nii.gz \
+        --reshape
+    mri_vol2surf \
+        --mov clust_logp_${factor}.nii.gz \
+        --mni152reg \
+        --projfrac 0.5 \
+        --interp trilinear \
+        --hemi rh \
+        --out surf_rh_clust_logp_${factor}.nii.gz \
+        --reshape    
     
     ## just age
     echo "...age"
     mdir="${sdir}/age_sex+tr.mdmr"
     cd $mdir
     # age
-    rm -f mni305_log_fdr_pvals_age.nii.gz
-    mri_vol2vol --inv \
-        --targ log_fdr_pvals_age.nii.gz \
-        --mov $FREESURFER_HOME/subjects/fsaverage/mri/orig.mgz \
-        --reg $FREESURFER_HOME/average/mni152.register.dat \
-        --o mni305_log_fdr_pvals_age.nii.gz
+    factor="age"
+    mri_vol2surf \
+        --mov clust_logp_${factor}.nii.gz \
+        --mni152reg \
+        --projfrac 0.5 \
+        --interp trilinear \
+        --hemi lh \
+        --out surf_lh_clust_logp_${factor}.nii.gz \
+        --reshape
+    mri_vol2surf \
+        --mov clust_logp_${factor}.nii.gz \
+        --mni152reg \
+        --projfrac 0.5 \
+        --interp trilinear \
+        --hemi rh \
+        --out surf_rh_clust_logp_${factor}.nii.gz \
+        --reshape    
 done
 
