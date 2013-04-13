@@ -1,6 +1,5 @@
-surfer_montage_coords <- function(images) {
+surfer_montage_coords <- function(images, nrows=1, ncols=4) {
     # Check number of images
-    nrows <- 2; ncols <- 2  # TODO: make this dynamic
     n <- nrows*ncols
     if (length(images) != n)
         stop("# of images is not same as layout rows/cols")
@@ -33,14 +32,14 @@ surfer_montage_coords <- function(images) {
     tile.xleft[,-1] <- tile.xleft[,-ncol(tile.xleft)]
     tile.xleft[,1] <- 0
     for (i in ncol(tile.xleft):2)
-        tile.xleft[,i] <- rowSums(tile.xleft[,1:i])
+        tile.xleft[,i] <- rowSums(tile.xleft[,1:i,drop=F])
 
     # For each tile, the bottom-most y coordinate
     tile.ybottom <- tile.cols
     tile.ybottom[-nrow(tile.ybottom),] <- tile.ybottom[-1,]
     tile.ybottom[nrow(tile.ybottom),] <- 0
     for (i in (nrow(tile.ybottom)-1):1)
-        tile.ybottom[i,] <- colSums(tile.ybottom[i:nrow(tile.ybottom),])
+        tile.ybottom[i,] <- colSums(tile.ybottom[i:nrow(tile.ybottom),,drop=F])
     
     # For each image, the left and right x coordinates
     images.xleft <- (tile.rows - images.rows)/2 + tile.xleft
@@ -53,25 +52,31 @@ surfer_montage_coords <- function(images) {
     # width/height in pixels
     width.pixels <- sum(max.rows); height.pixels <- sum(max.cols)
     
+    # width/heigh in regular numbers (essentially flip stuff)
+    width.image <- sum(apply(images.cols, 2, max))
+    height.image <- sum(apply(images.rows, 1, max))
+    
     return(list(
         xleft = images.xleft, 
         ybottom = images.ybottom, 
         xright = images.xright, 
         ytop = images.ytop, 
         width = width.pixels, 
-        height = height.pixels
+        height = height.pixels, 
+        fig.width = width.image, 
+        fig.height = height.image
     ))
 }
 
 surfer_montage_dims <- function(coords) {
-    m <- max(coords$width, coords$height)
+    m <- max(coords$fig.width, coords$fig.height)
     return(list(
-        width = (coords$width/m)*10, 
-        height = (coords$height/m)*10
+        width = (coords$fig.width/m)*10, 
+        height = (coords$fig.height/m)*10
     ))
 }
 
-surfer_montage_viz <-  function(images, coords) {    
+surfer_montage_viz <-  function(images, coords, hemi.labels=F) {    
     ## Plot
     
     n <- length(images)
@@ -91,31 +96,12 @@ surfer_montage_viz <-  function(images, coords) {
                     coords$xright[i], coords$ytop[i])
     }
     
-    # add hemisphere labels
-    text(round(coords$width*0.05), round(coords$height*0.5), "L", cex=2.4)
-    text(coords$width-round(coords$width*0.05), round(coords$height*0.5), 
-         "R", cex=2.4)
+    if (hemi.labels) {
+        # add hemisphere labels
+        text(round(coords$width*0.05), round(coords$height*0.5), "L", cex=2.4)
+        text(coords$width-round(coords$width*0.05), round(coords$height*0.5), 
+             "R", cex=2.4)
+    }
     
     return(NULL)
-}
-
-plot_rasterimage_dims <- function(image) {
-    dims <- list()
-    
-    dims$width <- dim(image)[1]
-    dims$height <- dim(colorbar)[2]
-    
-    max_dim <- max(dims$width, dims$height)
-    dims$fig.width <- (dims$width/max_dim) * 10
-    dims$fig.height <- (dims$height/max_dim) * 10
-    
-    return(dims)
-}
-
-plot_rasterimage_viz <- function(image, dims) {
-    par(mar=rep(0,4), oma=rep(0,4))
-    plot(c(0,dims$width), c(0,dims$height), type = "n", 
-         xlab="", ylab="", frame.plot=FALSE, xaxt='n', yaxt='n', 
-         xaxs="i", yaxs="i")
-    rasterImage(image, 0, 0, dims$width, dims$height)
 }

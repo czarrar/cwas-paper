@@ -17,12 +17,16 @@ mdmr_dir = "/home2/data/Projects/CWAS/development+motion/cwas/rois_random_k3200/
 factor = "age"
 
 """Bring up the visualization"""
-brain = Brain("fsaverage_copy", "rh", "iter8_inflated",
-              config_opts=dict(background="white"), 
-              subjects_dir="/home2/data/PublicProgram/freesurfer")
+for i in [2,4,6,8]:
+    brain = Brain("fsaverage_copy", "lh", "iter%i_inflated" % i,
+                  config_opts=dict(background="white"), 
+                  subjects_dir="/home2/data/PublicProgram/freesurfer")
+    brain.save_imageset("zpics_iter%i_lh" % i, ['med', 'lat'], 'jpg')
+    brain.close()
+
 
 """Get the volume => surface file"""
-cwas_file = path.join(mdmr_dir, "surf_rh_clust_logp_%s.nii.gz" % factor)
+cwas_file = path.join(mdmr_dir, "surf_lh_clust_logp_%s.nii.gz" % factor)
 
 
 """Project the volume file and return as an array"""
@@ -41,10 +45,10 @@ else:
 You can pass this array to the add_overlay method for
 a typical activation overlay (with thresholding, etc.)
 """
-brain.add_overlay(cwas_file, min=data_min, max=data_max, name="%s_rh" % factor)
+brain.add_overlay(cwas_file, min=data_min, max=data_max, name="%s_lh" % factor)
 
 ## get overlay and color bar
-tmp1 = brain.overlays["%s_rh" % factor]
+tmp1 = brain.overlays["%s_lh" % factor]
 lut = tmp1.pos_bar.lut.table.to_array()
 
 ## update color scheme
@@ -59,7 +63,7 @@ brain.hide_colorbar()
 Save some images
 """
 odir = "/home/data/Projects/CWAS/development+motion/viz"
-brain.save_imageset(path.join(odir, "zpics_surface_%s_rh" % "only_age"), 
+brain.save_imageset(path.join(odir, "zpics_surface_%s_lh" % "only_age"), 
                     ['med', 'lat', 'ros', 'caud'], 'jpg')
 
 brain.close()
@@ -73,12 +77,12 @@ mdmr_dir = "/home2/data/Projects/CWAS/development+motion/cwas/rois_random_k3200/
 factor = "age"
 
 """Bring up the visualization"""
-brain = Brain("fsaverage_copy", "rh", "iter8_inflated",
+brain = Brain("fsaverage_copy", "lh", "iter8_inflated",
               config_opts=dict(background="white"), 
               subjects_dir="/home2/data/PublicProgram/freesurfer")
 
 """Get the volume => surface file"""
-cwas_file = path.join(mdmr_dir, "surf_rh_clust_logp_%s.nii.gz" % factor)
+cwas_file = path.join(mdmr_dir, "surf_lh_clust_logp_%s.nii.gz" % factor)
 
 
 """Project the volume file and return as an array"""
@@ -97,10 +101,10 @@ else:
 You can pass this array to the add_overlay method for
 a typical activation overlay (with thresholding, etc.)
 """
-brain.add_overlay(cwas_file, min=data_min, max=data_max, name="%s_rh" % factor)
+brain.add_overlay(cwas_file, min=data_min, max=data_max, name="%s_lh" % factor)
 
 ## get overlay and color bar
-tmp1 = brain.overlays["%s_rh" % factor]
+tmp1 = brain.overlays["%s_lh" % factor]
 lut = tmp1.pos_bar.lut.table.to_array()
 
 ## update color scheme
@@ -115,7 +119,7 @@ brain.hide_colorbar()
 Save some images
 """
 odir = "/home/data/Projects/CWAS/development+motion/viz"
-brain.save_imageset(path.join(odir, "zpics_surface_%s_rh" % "age_with_motion"), 
+brain.save_imageset(path.join(odir, "zpics_surface_%s_lh" % "age_with_motion"), 
                     ['med', 'lat', 'ros', 'caud'], 'jpg')
 
 brain.close()
@@ -129,12 +133,12 @@ mdmr_dir = "/home2/data/Projects/CWAS/development+motion/cwas/rois_random_k3200/
 factor = "mean_FD"
 
 """Bring up the visualization"""
-brain = Brain("fsaverage_copy", "rh", "iter8_inflated",
+brain = Brain("fsaverage_copy", "lh", "iter8_inflated",
               config_opts=dict(background="white"), 
               subjects_dir="/home2/data/PublicProgram/freesurfer")
 
 """Get the volume => surface file"""
-cwas_file = path.join(mdmr_dir, "surf_rh_clust_logp_%s.nii.gz" % factor)
+cwas_file = path.join(mdmr_dir, "surf_lh_clust_logp_%s.nii.gz" % factor)
 
 """Project the volume file and return as an array"""
 orig_file = path.join(mdmr_dir, "clust_logp_%s.nii.gz" % factor)
@@ -152,10 +156,10 @@ else:
 You can pass this array to the add_overlay method for
 a typical activation overlay (with thresholding, etc.)
 """
-brain.add_overlay(cwas_file, min=data_min, max=data_max, name="%s_rh" % factor)
+brain.add_overlay(cwas_file, min=data_min, max=data_max, name="%s_lh" % factor)
 
 ## get overlay and color bar
-tmp1 = brain.overlays["%s_rh" % factor]
+tmp1 = brain.overlays["%s_lh" % factor]
 lut = tmp1.pos_bar.lut.table.to_array()
 
 ## update color scheme
@@ -170,7 +174,7 @@ brain.hide_colorbar()
 Save some images
 """
 odir = "/home/data/Projects/CWAS/development+motion/viz"
-brain.save_imageset(path.join(odir, "zpics_surface_%s_rh" % "motion_with_age"), 
+brain.save_imageset(path.join(odir, "zpics_surface_%s_lh" % "motion_with_age"), 
                     ['med', 'lat', 'ros', 'caud'], 'jpg')
 
 brain.close()
