@@ -6,7 +6,7 @@ import os
 import Image, ImageChops
 from glob import glob
 
-os.chdir("/home2/data/Projects/CWAS/development+motion/viz")
+os.chdir("/home2/data/Projects/CWAS/adhd200/viz")
 
 fpaths = glob("*.jpg")
 
