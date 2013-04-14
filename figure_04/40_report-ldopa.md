@@ -26,7 +26,9 @@ vizdir <- file.path(basedir, "ldopa/viz")
 setwd(vizdir)
 
 # Load the images
-filenames <- list.files(pattern = "med|lat")
+filenames.lh <- list.files(path = vizdir, full.names = T, pattern = "zpics_surface_lh_(med|lat)")
+filenames.rh <- list.files(path = vizdir, full.names = T, pattern = "zpics_surface_rh_(med|lat)")
+filenames <- c(filenames.lh, rev(filenames.rh))
 images <- lapply(filenames, readJPEG)
 
 # Coordinates
@@ -45,5 +47,5 @@ Below are the inflated surface maps for the L-DOPA CWAS. Here we used 3200 parce
 invisible(surfer_montage_viz(images, coords))
 ```
 
-![plot of chunk viz-surface](figure/viz-surface.png) 
+![plot of chunk viz-ldopa](figure/viz-ldopa.png) 
 
