@@ -17,14 +17,14 @@ setwd(vizdir)
 
 Below are the inflated surface maps for the ADHD200 nyc sample CWAS. Here we used 3200 parcellations and for each parcellation, we examined how its voxelwise connectivity with the rest of the brain varied between subjects for age and if included mean FD.
 
-### ADHD-I vs ADHD-C
+### ADHD-C vs ADHD-I
 
-```{r adhdi-vs-adhdc-setup}
+```{r adhdc-vs-adhdi-setup}
 # Load the images
 filenames.lh <- list.files(path=vizdir, full.names=T, 
-                        pattern="zpics_surface_adhdi_vs_adhdc_lh_(med|lat)")
+                        pattern="zpics_surface_adhdc_vs_adhdi_lh_(med|lat)")
 filenames.rh <- list.files(path=vizdir, full.names=T, 
-                        pattern="zpics_surface_adhdi_vs_adhdc_rh_(med|lat)")
+                        pattern="zpics_surface_adhdc_vs_adhdi_rh_(med|lat)")
 filenames <- c(filenames.lh, rev(filenames.rh))
 images <- lapply(filenames, readJPEG)
 
@@ -35,7 +35,7 @@ coords <- surfer_montage_coords(images, 1, 4)
 dims <- surfer_montage_dims(coords)
 ```
 
-```{r adhdi-vs-adhdc-surface, fig.width=dims$width, fig.height=dims$height}
+```{r adhdc-vs-adhdi-surface, fig.width=dims$width, fig.height=dims$height}
 # Visualize
 invisible(surfer_montage_viz(images, coords))
 ```
