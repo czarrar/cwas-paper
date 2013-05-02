@@ -11,9 +11,9 @@ library(connectir)
 basedir <- "/home2/data/Projects/CWAS"
 
 sdists <- c("cwas/rois_random_k3200")
-mdmrs <- c("adhdc_vs_adhdi_gender+age+iq+meanFD.mdmr", 
-           "tdc_vs_adhdc_gender+age+iq+meanFD.mdmr", 
-           "tdc_vs_adhdi_gender+age+iq+meanFD.mdmr")
+mdmrs <- c("adhdc_vs_adhdi_gender+age+iq+mean_FD.mdmr", 
+           "tdc_vs_adhdc_gender+age+iq+mean_FD.mdmr", 
+           "tdc_vs_adhdi_gender+age+iq+mean_FD.mdmr")
 mdmr_factors <- list(c("adhc_vs_adhdi"), c("tdc_vs_adhdc"), c("tdc_vs_adhdi"))
 
 for (sdist in sdists) {

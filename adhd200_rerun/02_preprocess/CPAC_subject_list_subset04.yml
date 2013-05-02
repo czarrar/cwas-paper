@@ -1,0 +1,80 @@
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010040/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010040/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010040/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010040'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010041/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010041/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010041'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010042/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010042/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010042'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010043/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010043/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010043/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010043'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010044/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010044/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010044/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010044'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010045/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010045/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010045/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010045'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010046/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010046/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010046/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010046'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010047/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010047/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010047'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010048/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010048/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010048/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: 0010048
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010049/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010049/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: 0010049
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010050/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010050/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010050/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010050'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/0010051/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/0010051/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/0010051/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '0010051'
+  unique_id: session_1

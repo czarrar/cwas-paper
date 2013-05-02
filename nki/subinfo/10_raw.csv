@@ -1,4 +1,4 @@
-Subject ID,Age,Sex,Dominant Hand,Download Group
+Id,Age,Sex,Handedness,DownloadGroup
 0136018,6,F,None,group_0
 0118439,9,F,Left,group_0
 0148071,9,F,Right,group_0

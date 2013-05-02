@@ -1,0 +1,55 @@
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3457975/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3457975/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/3457975/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3457975'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3518345/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3518345/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/3518345/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3518345'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3542588/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3542588/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/3542588/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3542588'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3601861/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3601861/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/3601861/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3601861'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3619797/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3619797/session_1/rest_1/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3619797'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3650634/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3650634/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/3650634/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3650634'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/3653737/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/3653737/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/3653737/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '3653737'
+  unique_id: session_1
+- anat: /data/Originals/ADHD200/nyu_only/NYU/9907452/session_1/anat_1/mprage_noface.nii.gz
+  rest: {rest_1_rest: /data/Originals/ADHD200/nyu_only/NYU/9907452/session_1/rest_1/rest.nii.gz,
+    rest_2_rest: /data/Originals/ADHD200/nyu_only/NYU/9907452/session_1/rest_2/rest.nii.gz}
+  scan_parameters: {acquisition: alt+z, first_tr: None, last_tr: None, reference: '16',
+    tr: '2'}
+  subject_id: '9907452'
+  unique_id: session_1

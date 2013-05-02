@@ -7,7 +7,7 @@
 ###
 
 basedir <- "/home2/data/Projects/CWAS/share/adhd200"
-funcpaths <- read.table(file.path(basedir, "subinfo/04a_compcor_funcpaths_4mm.txt"))[,1]
+funcpaths <- read.table(file.path(basedir, "subinfo/05_compcor_funcpaths_4mm.txt"))[,1]
 funcpaths <- as.character(funcpaths)
 
 cmd <- "fslmaths %s -Tmin -abs -bin %s"

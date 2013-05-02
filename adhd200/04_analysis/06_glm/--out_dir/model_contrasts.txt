@@ -1,0 +1,2 @@
+ Intercept group[T.TDC] gender[T.Male] center(age) center(iq) center(mean_FD)
+group 0.0 1.0 0.0 0.0 0.0 0.0

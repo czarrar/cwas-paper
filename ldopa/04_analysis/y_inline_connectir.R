@@ -89,8 +89,10 @@ mat sizes(0,1); mat masses(0,1);
 for(size_t i = 0; i < n_voxs; ++i)
 {
     c_ind = all_inds(i);
-    // TODO: check to see if this will work?
+    
     if (voxs_to_use(c_ind) == 0) continue;
+    
+    printf("\\nnum: %.2f\\n", clust_num);
     
     // One less voxel
     voxs_to_use(c_ind) = 0;
@@ -99,6 +101,8 @@ for(size_t i = 0; i < n_voxs; ++i)
     clust_num = clust_num + 1;
     clust_size = 1;
     clust_mass = raw_vals(c_ind);
+    
+    printf("size: %.2f\\n", clust_size);
     
     // Save center index
     center_inds.insert_rows(0, 1, false);
@@ -149,6 +153,7 @@ for(size_t i = 0; i < n_voxs; ++i)
     sizes(clust_i,0) = clust_size;
     masses(clust_i,0) = clust_mass;
     
+    printf("size: %.1f\\n", clust_size);
 }
 
 return Rcpp::List::create(Rcpp::Named("n") = Rcpp::wrap( clust_num ),
@@ -157,7 +162,6 @@ return Rcpp::List::create(Rcpp::Named("n") = Rcpp::wrap( clust_num ),
                           Rcpp::Named("clust") = Rcpp::wrap( clust_vals ));
 '
 
-
 inline_cluster_table <- cxxfunction( 
     signature(R_all_inds = "numeric", R_voxs_to_use = "numeric", 
               R_clust_vals = "numeric", R_raw_vals = "numeric", 
@@ -165,6 +169,7 @@ inline_cluster_table <- cxxfunction(
     body = cluster_table_src, 
     plugin = "RcppArmadillo"
 )
+
 
 # New cluster table making use of c++ inline function
 cpp.cluster.table <- function(x, vox.thr=0, dims=NULL, mask=NULL, 

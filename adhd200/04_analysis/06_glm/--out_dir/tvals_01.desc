@@ -1,0 +1,8 @@
+new("big.matrix.descriptor"
+    , description = structure(list(sharedType = "FileBacked", filename = "tvals_01.bin", 
+    totalRows = 16027, totalCols = 2419, rowOffset = c(0, 16027
+    ), colOffset = c(0, 2419), nrow = 16027, ncol = 2419, rowNames = NULL, 
+    colNames = NULL, type = "double", separated = FALSE), .Names = c("sharedType", 
+"filename", "totalRows", "totalCols", "rowOffset", "colOffset", 
+"nrow", "ncol", "rowNames", "colNames", "type", "separated"))
+)

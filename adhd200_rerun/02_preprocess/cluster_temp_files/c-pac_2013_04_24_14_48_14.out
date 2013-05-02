@@ -1,0 +1,2075 @@
+******************** /home2/data/PublicProgram/fsl-4.1.9/data/standard/MNI152_T1_2mm_brain.nii.gz
+[<CPAC.pipeline.cpac_pipeline.strategy instance at 0x2bc37e8>]
+Warning key movement_parameters already exists in resource pool, replacing with (resting_preproc_0010023_session_1.fristons_parameter_model_0, 'outputspec.movement_file') 
+130424-14:48:27,210 workflow INFO:
+	 Creating detailed dot file: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010023_session_1/graph_detailed.dot
+130424-14:48:29,634 workflow INFO:
+	 Creating dot file: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010022_session_1/graph.dot
+anat_preproc  ~~~  1
+anat_mni_register  ~~~  2
+seg_preproc  ~~~  4
+func_preproc  ~~~  8
+fristons_parameter_model  ~~~  16
+anat_to_func_register  ~~~  32
+func_to_mni  ~~~  64
+gen_motion_stats  ~~~  128
+nuisance  ~~~  256
+frequency_filter  ~~~  1024
+anat_preproc_anat_mni_register_seg_preproc_func_preproanat_preproc  ~~~  1
+anat_mni_register  ~~~  2
+seg_preproc  ~~~  4
+func_preproc  ~~~  8
+fristons_parameter_model  ~~~  16
+anat_to_func_register  ~~~  32
+func_to_mni  ~~~  64
+gen_motion_stats  ~~~  128
+nuisance  ~~~  256
+frequency_filter  ~~~  1024
+anat_preproc_anat_mni_register_seg_preproc_func_preproc_fristons_parameter_model_anat_to_func_register_func_to_mni_gen_motion_stats_nuisance_frequency_filter_  ~~~~~  1535  ~~~~~~  HackettCity
+130424-14:48anat_preproc  ~~~  1
+anat_mni_register  ~~~  2
+seg_preproc  ~~~  4
+func_preproc  ~~~  8
+fristons_parameter_model  ~~~  16
+anat_to_func_register  ~~~  32
+func_to_mni  ~~~  64
+gen_motion_stats  ~~~  128
+nuisance  ~~~  256
+frequency_filter  ~~~  1024
+anat_preproc_anat_mni_register_seg_preproc_func_preproc_fristons_parameter_model_anat_to_func_register_func_to_mni_gen_motion_stats_nuisance_frequency_filter_  ~~~~~  1535  ~~~~~~  HackettCity
+130424-14:48:33,647 workflow INFO:
+	 Converting dotfile: /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010009_session_1/strategy.dot to png format
+/home2/data/PreProc/ADHD200/pipeline_HackettCity/0010009_session_1 *
+130424-14:48:41,805 workflow INFO:
+	 ['check', 'execution', 'logging']
+130424-14:48:48,648 workflow INFO:
+	 Running in parallel.
+130424-14:48:48,714 workflow INFO:
+	 Submitting 8 jobs
+130424-14:48:48,714 workflow INFO:
+	 Executing: selectrest.c0 ID: 31
+130424-14:48:48,715 workflow INFO:
+	 Executing: select_spatial_map.a0 ID: 137
+130424-14:48:48,717 workflow INFO:
+	 Executing: scan_params_0.c0 ID: 221
+130424-14:48:48,719 workflow INFO:
+	 Executing: selectrest.c1 ID: 268
+130424-14:48:48,723 workflow INFO:
+	 Executing: anat_deoblique ID: 414
+130424-14:48:48,725 workflow INFO:
+	 Executing: scan_params_0.c1 ID: 419
+130424-14:48:48,724 workflow INFO:
+	 Executing node selectrest.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/func_gather_0/_scan_rest_1_rest/selectrest
+130424-14:48:48,725 workflow INFO:
+	 Executing node scan_params_0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/_scan_rest_1_rest/scan_params_0
+130424-14:48:48,726 workflow INFO:
+	 Executing node select_spatial_map.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/spatial_map_dataflow_0/_spatial_map_PNAS_Smith09_rsn10/select_spatial_map
+130424-14:48:48,728 workflow INFO:
+	 Executing: select_mask.a0 ID: 438
+130424-14:48:48,730 workflow INFO:
+	 Executing: select_roi.a0 ID: 576
+130424-14:48:48,732 workflow INFO:
+	 Executing node selectrest.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/func_gather_0/_scan_rest_2_rest/selectrest
+130424-14:48:48,735 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:48,736 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:48,7anat_preproc  ~~~  1
+anat_mni_register  ~~~  2
+seg_preproc  ~~~  4
+func_preproc  ~~~  8
+fristons_parameter_model  ~~~  16
+anat_to_func_register  ~~~  32
+func_to_mni  ~~~  64
+gen_motion_stats  ~~~  128
+nuisance  ~~~  256
+frequency_filter  ~~~  1024
+anat_preproc_anat_mni_register_seg_preproc_func_preproc_fristons_parameter_model_anat_to_func_register_func_to_mni_gen_motion_stats_nuisance_frequency_filter_  ~~~~~  1535  ~~~~~~  HackettCity
+130424-14:48:34,412 workflow INFO:
+	 Converting dotfile: /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010028_session_1/strategy.dot to png format
+/home2/data/PreProc/ADHD200/pipeline_HackettCity/0010028_session_1 *
+130424-14:48:42,639 workflow INFO:
+	 ['check', 'execution', 'logging']
+130424-14:48:51,64 workflow INFO:
+	 Running in parallel.
+130424-14:48:51,136 workflow INFO:
+	 Submitting 8 jobs
+130424-14:48:51,137 workflow INFO:
+	 Executing: select_mask.a0 ID: 114
+130424-14:48:51,138 workflow INFO:
+	 Executing: scan_params_0.c0 ID: 305
+130424-14:48:51,140 workflow INFO:
+	 Executing: select_roi.a0 ID: 336
+130424-14:48:51,142 workflow INFO:
+	 Executing: anat_deoblique ID: 345
+130424-14:48:51,145 workflow INFO:
+	 Executing: scan_params_0.c1 ID: 411
+130424-14:48:51,147 workflow INFO:
+	 Executing: selectrest.c0 ID: 445
+130424-14:48:51,147 workflow INFO:
+	 Executing node select_mask.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/template_dataflow_0/_mask_MaskOf85Percent_3mm_GM/select_mask
+130424-14:48:51,149 workflow INFO:
+	 Executing: selectrest.c1 ID: 530
+130424-14:48:51,149 workflow INFO:
+	 Executing node scan_params_0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/_scan_rest_1_rest/scan_params_0
+130424-14:48:51,151 workflow INFO:
+	 Executing node select_roi.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/roi_dataflow_0/_roi_PNAS_smith10_plus5/select_roi
+130424-14:48:51,152 workflow INFO:
+	 Executing: select_spatial_map.a0 ID: 562
+130424-14:48:51,155 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,155 workflow INFO:
+	 Executing node anat_deoblique in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/anat_preproc_0/anat_deoblique
+130424-14:48:51,156 workflow INFO:
+	 Executing node scan_params_0.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/_scan_rest_2_rest/scan_params_0
+130424-14:48:51,158 workflow INFO:
+	 Executing node selectrest.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/func_gather_0/_scan_rest_1_rest/selectrest
+130424-14:48:51,159 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,161 workflow INFO:
+	 Executing node selectrest.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/func_gather_0/_scan_rest_2_rest/selectrest
+130424-14:48:51,162 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,162 workflow INFO:
+	 Executing node select_spatial_map.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010028_session_1/spatial_map_dataflow_0/_spatial_map_PNAS_Smith09_rsn10/select_spatial_map
+130424-14:48:51,166 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,167 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,167 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,168 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,170 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:53,166 workflow INFO:
+	 [Job finished] jobname: select_mask.a0 jobid: 114
+130424-14:48:53,212 workflow INFO:
+	 [Job finished] jobname: scan_params_0.c0 jobid: 305
+130424-14:48:53,233 workflow INFO:
+	 [Job finished] jobname: select_roi.a0 jobid: 336
+130424-14:48:53,256 workflow INFO:
+	 [Job finished] jobname: anat_deoblique jobid: 345
+130424-14:48:53,274 workflow INFO:
+	 [Job finished] jobname: scan_params_0.c1 jobid: 411
+130424-14:48:53,292 workflow INFO:
+	 [Job finished] jobname: selectrest.c0 jobid: 445
+130424-14:48:53,311 workflow INFO:
+	 [Job finished] jobname: selectrest.c1 jobid: 530
+130424-14:48:53,329 workflow INFO:
+	 [Job finished] jobname: select_spatial_map.a0 jobid: 562
+130424-14:48:53,358 workflow INFO:
+	 Submitting 5 jproc_0/_scan_rest_1_rest/func_get_idx
+130424-14:48:51,180 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:51,182 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:53,146 workflow INFO:
+	 [Job finished] jobname: convert_tr_0.c1 jobid: 51
+130424-14:48:53,187 workflow INFO:
+	 [Job finished] jobname: convert_tr_0.c0 jobid: 228
+130424-14:48:53,207 workflow INFO:
+	 [Job finished] jobname: func_get_idx.c0 jobid: 511
+130424-14:48:53,226 workflow INFO:
+	 [Job finished] jobname: anat_reorient jobid: 531
+130424-14:48:53,248 workflow INFO:
+	 [Job finished] jobname: func_get_idx.c1 jobid: 533
+130424-14:48:53,274 workflow INFO:
+	 Submitting 4 jobs
+130424-14:48:53,275 workflow INFO:
+	 Executing: anat_skullstrip ID: 48
+130424-14:48:53,276 workflow INFO:
+	 Executing: func_drop_trs.c1 ID: 142
+130424-14:48:53,278 workflow INFO:
+	 Executing: func_drop_trs.c0 ID: 244
+130424-14:48:53,280 workflow INFO:
+	 Executing: sinker_8 ID: 440
+130424-14:48:53,296 workflow INFO:
+	 Executing node anat_skullstrip in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/anat_preproc_0/anat_skullstrip
+130424-14:48:53,301 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:53,311 workflow INFO:
+	 Executing node sinker_8 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/sinker_8
+130424-14:48:53,315 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:53,327 workflow INFO:
+	 Executing node func_drop_trs.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/func_preproc_0/_scan_rest_2_rest/func_drop_trs
+130424-14:48:53,328 workflow INFO:
+	 Executing node func_drop_trs.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/func_preproc_0/_scan_rest_1_rest/func_drop_trs
+130424-14:48:53,332 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:53,333 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:55,295 workflow INFO:
+	 [Job finished] jobname: anat_skullstrip jobid: 48
+130424-14:48:55,320 workflow INFO:
+	 [Job finished] jobname: func_drop_trs.c1 jobid: 142
+130424-14:48:55,341 workflow INFO:
+	 [Job finished] jobname: func_drop_trs.c0 jobid: 244
+130424-14:48:55,361 workflow INFO:
+	 [Job finished] jobname: sinker_8 jobid: 440
+130424-14:48:55,389 workflow INFO:
+	 Submitting 4 jobs
+130424-14:48:55,389 workflow INFO:
+	 Executing: link_8 ID: 137
+130424-14:48:55,391 workflow INFO:
+	 Executing: func_slice_timing_correction.c1 ID: 273
+130424-14:48:55,393 workflow INFO:
+	 Executing: func_slice_timing_correction.c0 ID: 388
+130424-14:48:55,395 workflow INFO:
+	 Executing: anat_brain_only ID: 482
+130424-14:48:55,411 workflow INFO:
+	 Executing node link_8 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/link_8
+130424-14:48:55,430 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:55,435 workflow INFO:
+	 Executing node anat_brain_only in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/anat_preproc_0/anat_brain_only
+130424-14:48:55,440 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:55,449 workflow INFO:
+	 Executing node func_slice_timing_correction.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/func_preproc_0/_scan_rest_1_rest/func_slice_timing_correction
+130424-14:48:55,452 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:55,461 workflow INFO:
+	 Executing node func_slice_timing_correction.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/func_preproc_0/_scan_rest_2_rest/func_slice_timing_correction
+130424-14:48:55,465 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,459 workflow INFO:
+	 [Job finished] jobname: func_slice_timing_correction.c1 jobid: 142
+130424-14:48:57,477 workflow INFO:
+	 [Job finished] jobname: link_8 jobid: 160
+130424-14:48:57,496 workflow INFO:
+	 [Job finished] jobname: func_slice_timing_correction.c0 jobid: 472
+130424-14:48:57,516 workflow INFO:
+	 [Job finished] jobname: anat_brain_only jobid: 499
+130424-14:48:57,548 workflow INFO:
+	 Submitting 7 jobs
+130424-14:48:57,548 workflow INFO:
+	 Executing: segment ID: 141
+130424-14:48:57,549 workflow INFO:
+	 Executing: sinker_61.c1 ID: 242
+130424-14:48:57,554 workflow INFO:
+	 Executing: linear_reg_0 ID: 254
+130424-14:48:57,555 workflow INFO:
+	 Executing: func_deoblique.c1 ID: 266
+130424-14:48:57,557 workflow INFO:
+	 Executing: sinker_5 ID: 292
+130424-14:48:57,560 workflow INFO:
+	 Executing: func_deoblique.c0 ID: 430
+130424-14:48:57,562 workflow INFO:
+	 Executing: sinker_61.c0 ID: 501
+130424-14:48:57,564 workflow INFO:
+	 Executing node segment in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/seg_preproc_0/segment
+130424-14:48:57,565 workflow INFO:
+	 Executing node sinker_61.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/_scan_rest_2_rest/sinker_61
+130424-14:48:57,568 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,569 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,571 workflow INFO:
+	 Executing node func_deoblique.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/func_preproc_0/_scan_rest_2_rest/func_deoblique
+130424-14:48:57,571 workflow INFO:
+	 Executing node linear_reg_0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/anat_mni_register_0/linea130424-14:48:59,532 workflow INFO:
+	 [Job finished] jobname: sinker_5 jobid: 14
+me2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/sinker_5
+130424-14:48:57,574 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,574 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,575 workflow INFO:
+	 Executing node func_deoblique.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/func_preproc_0/_scan_rest_1_rest/func_deoblique
+130424-14:48:57,576 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,578 workflow INFO:
+	 Executing node sinker_61.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/_scan_rest_1_rest/sinker_61
+130424-14:48:57,578 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:57,582 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:48:59,576 workflow INFO:
+	 [Job finished] jobname: segment jobid: 141
+130424-14:48:59,596 workflow INFO:
+	 [Job finished] jobname: sinker_61.c1 jobid: 242
+130424-14:48:59,615 workflow INFO:
+	 [Job finished] jobname: linear_reg_0 jobid: 254
+130424-14:48:59,637 workflow INFO:
+	 [Job finished] jobname: func_deoblique.c1 jobid: 266
+130424-14:48:59,657 workflow INFO:
+	 [Job finished] jobname: sinker_5 jobid: 292
+130424-14:48:59,676 workflow INFO:
+	 [Job finished] jobname: func_deoblique.c0 jobid: 430
+130424-14:48:59,696 workflow INFO:
+	 [Job finished] jobname: sinker_61.c0 jobid: 501
+130424-14:48:59,723 workflow INFO:
+	 Submitting 13 jobs
+130424-14:48:59,724 workflow INFO:
+	 Executing: wm_bb_mask ID: 12
+130424-14:48:59,725 workflow INFO:
+	 Executing: func_reorient.c0 ID: 52
+130424-14:48:59,726 workflow INFO:
+	 Executing: sinker_10 ID: 87
+130424-14:48:59,730 workflow INFO:
+	 Executing: func_reorient.c1 ID: 148
+130424-14:48:59,732 workflow INFO:
+	 Executing: inv_linear_reg0_xfm ID: 262
+130424-14:48:59,733 workflow INFO:
+	 Executing: sinker_60 ID: 321
+130424-14:48:59,737 workflow INFO:
+	 Executing: nonlinear_reg_1 ID: 350
+130424-14:48:59,739 workflow INFO:
+	 Executing: link_5 ID: 393
+130424-14:48:59,740 workflow INFO:
+	 Executing node func_reorient.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient
+130424-14:48:59,740 workflow INFO:
+	 Executing node wm_bb_mask in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010034_session_1/func_to_mni_0/wm_bb_mask
+130424-14:48:59,741 workflow INFO:
+	 Executing: link_61.c1 ID: 431
+130424-14:4
+130424-14:49:00,442 workflow INFO:
+	 Executing: link_5 ID: 138
+130424-14:49:00,444 workflow INFO:
+	 Executing: sinker_58 ID: 178
+130424-14:49:00,448 workflow INFO:
+	 Executing: nonlinear_reg_1 ID: 181
+130424-14:49:00,451 workflow INFO:
+	 Executing: link_61.c0 ID: 217
+130424-14:49:00,451 workflow INFO:
+	 Executing node inv_linear_reg0_xfm in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/anat_mni_register_0/inv_linear_reg0_xfm
+130424-14:49:00,454 workflow INFO:
+	 Executing: sinker_10 ID: 274
+130424-14:49:00,457 workflow INFO:
+	 Executing: sinker_59 ID: 413
+130424-14:49:00,458 workflow INFO:
+	 Executing node sinker_57 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/sinker_57
+130424-14:49:00,459 workflow INFO:
+	 Executing node wm_bb_mask in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/func_to_mni_0/wm_bb_mask
+130424-14:49:00,460 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,460 workflow INFO:
+	 Executing: func_reorient.c0 ID: 460
+130424-14:49:00,461 workflow INFO:
+	 Executing node sinker_60 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/sinker_60
+130424-14:49:00,462 workflow INFO:
+	 Executing node link_5 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/link_5
+130424-14:49:00,462 workflow INFO:
+	 Executing: link_61.c1 ID: 510
+130424-14:49:00,464 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,464 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,465 workflow INFO:
+	 Executing: func_reorient.c1 ID: 583
+130424-14:49:00,465 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,466 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,466 workflow INFO:
+	 Executing node link_61.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/_scan_rest_1_rest/link_61
+130424-14:49:00,470 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,471 workflow INFO:
+	 Executing node sinker_58 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/sinker_58
+130424-14:49:00,479 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,481 workflow INFO:
+	 Executing node nonlinear_reg_1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/anat_mni_register_0/nonlinear_reg_1
+130424-14:49:00,485 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,485 workflow INFO:
+	 Executing node sinker_10 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/sinker_10
+130424-14:49:00,487 workflow INFO:
+	 Executing node func_reorient.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/func_preproc_0/_scan_rest_1_rest/func_reorient
+130424-14:49:00,487 workflow INFO:
+	 Executing node sinker_59 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/sinker_59
+130424-14:49:00,489 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,490 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,491 workflow INFO:
+	 Executing node func_reorient.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/func_preproc_0/_scan_rest_2_rest/func_reorient
+130424-14:49:00,491 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,494 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,496 workflow INFO:
+	 Executing node link_61.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010015_session_1/_scan_rest_2_rest/link_61
+130424-14:49:00,501 workflow INFO:
+	 Collecting precomput130424-14:49:02,742 workflow INFO:
+	 [Job finished] jobname: GM_prior_mni_to_t1 jobid: 44
+m jobid: 26
+130424-14:49:02,504 workflow INFO:
+	 [Job finished] jobname: sinker_57 jobid: 51
+130424-14:49:02,524 workflow INFO:
+	 [Job finished] jobname: wm_bb_mask jobid33_session_1/anat_mni_register_0/inv_linear_reg0_xfm
+130424-14:49:00,308 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,309 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,311 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:00,316 workflow INFO:
+	 Executing node sinker_60 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010033_session_1/sinker_60
+130424-14:49:00,321 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:02,603 workflow INFO:
+	 [Job finished] jobname: link_59 jobid: 5
+130424-14:49:02,631 workflow INFO:
+	 [Job finished] jobname: sinker_11 jobid: 74
+130424-14:49:02,644 workflow INFO:
+	 [Job finished] jobname: func_get_mean_RPI.c0 jobid: 127
+130424-14:49:02,655 workflow INFO:
+	 [Job finished] jobname: link_58 jobid: 132
+130424-14:49:02,667 workflow INFO:
+	 [Job finished] jobname: GM_prior_mni_to_t1 jobid: 139
+130424-14:49:02,679 workflow INFO:
+	 [Job finished] jobname: link_10 jobid: 161
+130424-14:49:02,690 workflow INFO:
+	 [Job finished] jobname: link_57 jobid: 180
+130424-14:49:02,702 workflow INFO:
+	 [Job finished] jobname: WM_prior_mni_to_t1 jobid: 218
+130424-14:49:02,714 workflow INFO:
+	 [Job finished] jobname: wm_bb_edge jobid: 227
+130424-14:49:02,725 workflow INFO:
+	 [Job finished] jobname: brain_warp jobid: 229
+130424-14:49:02,737 workflow INFO:
+	 [Job finished] jobname: CSF_prior_mni_to_t1 jobid: 255
+130424-14:49:02,749 workflow INFO:
+	 [Job finished] jobname: link_60 jobid: 271
+130424-14:49:02,760 workflow INFO:
+	 [Job finished] jobname: sinker_42 jobid: 274
+130424-14:49:02,777 workflow INFO:
+	 Submitting 8 jobs
+130424-14:49:02,777 workflow INFO:
+	 Executing: sinker_41 ID: 66
+130424-14:49:02,781 workflow INFO:
+	 Executing: sinker_12 ID: 123
+130424-14:49:02,785 workflow INFO:
+	 Executing: link_11 ID: 125
+130424-14:49:02,787 workflow INFO:
+	 Executing: func_motion_correct.c0 ID: 130
+130424-14:49:02,789 workflow INFO:
+	 Executing: link_42 ID: 242
+130424-14:49:02,792 workflow INFO:
+	 Executing: overlap_GM_map_with_prior ID: 259
+130424-14:49:02,794 workflow INFO:
+	 Executing: overlap_CSF_map_with_prior ID: 305
+130424-14:49:02,796 workflow INFO:
+	 Executing: overlap_WM_map_with_prior ID: 311
+130424-14:49:02,798 workflow INFO:
+	 Executing node sinker_12 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/sinker_12
+130424-14:49:02,801 workflow INFO:
+	 Executing node sinker_41 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/sinker_41
+130424-14:49:02,802 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:02,806 workflow INFO:
+	 Executing node link_11 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/link_11
+130424-14:49:02,808 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:02,810 workflow INFO:
+	 Executing node link_42 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/link_42
+130424-14:49:02,812 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:02,816 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:02,823 workflow INFO:
+	 Executing node func_motion_correct.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct
+130424-14:49:02,828 workflow INFO:
+	 Collecting precomputed outputs
+/home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz
+/home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/segment/segment_prob_1.nii.gz
+130424-14:49:02,831 workflow INFO:
+	 Executing node overlap_GM_map_with_prior in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/GM/overlap_GM_map_with_prior
+/home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz
+130424-14:49:02,834 workflow INFO:
+	 Executing node overlap_CSF_map_with_prior in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/CSF/overlap_CSF_map_with_prior
+130424-14:49:02,834 workflow INFO:
+	 Collecting precomputed outputs
+/home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/segment/segment_prob_0.nii.gz
+/home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/segment/segment_prob_1.nii.gz
+/home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/segment/segment_prob_2.nii.gz
+130424-14:49:02,836 workflow INFO:
+	 Executing node overlap_WM_map_with_prior in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/WM/overlap_WM_map_with_prior
+130424-14:49:02,839 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:02,840 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:04,806 workflow INFO:
+	 [Job finished] jobname: sinker_41 jobid: 66
+130424-14:49:04,831 workflow INFO:
+	 [Job finished] jobname: sinker_12 jobid: 123
+130424-14:49:04,845 workflow INFO:
+	 [Job finished] jobname: link_11 jobid: 125
+130424-14:49:04,857 workflow INFO:
+	 [Job finished] jobname: func_motion_correct.c0 jobid: 130
+130424-14:49:04,868 workflow INFO:
+	 [Job finished] jobname: link_42 jobid: 242
+130424-14:49:04,880 workflow INFO:
+	 [Job finished] jobname: overlap_GM_map_with_prior jobid: 259
+130424-14:49:04,891 workflow INFO:
+	 [Job finished] jobname: overlap_CSF_map_with_prior jobid: 305
+130424-14:49:04,903 workflow INFO:
+	 [Job finished] jobname: overlap_WM_map_with_prior jobid: 311
+130424-14:49:04,919 workflow INFO:
+	 Submitting 6 jobs
+130424-14:49:04,919 workflow INFO:
+	 Executing: func_get_mean_motion.c0 ID: 96
+130424-14:49:04,920 workflow INFO:
+	 Executing: binarize_threshold_WM.c0 ID: 134
+130424-14:49:04,922 workflow INFO:
+	 Executing: link_41 ID: 179
+130424-14:49:04,925 workflow INFO:
+	 Executing: binarize_threshold_CSF.c0 ID: 191
+130424-14:49:04,927 workflow INFO:
+	 Executing: link_12 ID: 196
+130424-14:49:04,929 workflow INFO:
+	 Executing: binarize_threshold_GM.c0 ID: 289
+130424-14:49:04,941 workflow INFO:
+	 Executing node func_get_mean_motion.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_get_mean_motion
+130424-14:49:04,942 workflow INFO:
+	 Executing node binarize_threshold_WM.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/WM/_wm_threshold_0.98/binarize_threshold_WM
+130424-14:49:04,943 workflow INFO:
+	 Executing node link_41 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/link_41
+130424-14:49:04,944 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:04,945 workflow INFO:
+	 Executing node binarize_threshold_CSF.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/CSF/_csf_threshold_0.98/binarize_threshold_CSF
+130424-14:49:04,946 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:04,948 workflow INFO:
+	 Executing node link_12 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/link_12
+130424-14:49:04,948 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:04,949 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:04,953 workflow INFO:
+	 Executing node binarize_threshold_GM.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/GM/_gm_threshold_0.7/binarize_threshold_GM
+130424-14:49:04,953 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:04,957 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:06,939 workflow INFO:
+	 [Job finished] jobname: func_get_mean_motion.c0 jobid: 96
+130424-14:49:06,958 workflow INFO:
+	 [Job finished] jobname: binarize_threshold_WM.c0 jobid: 134
+130424-14:49:06,970 workflow INFO:
+	 [Job finished] jobname: link_41 jobid: 179
+130424-14:49:06,981 workflow INFO:
+	 [Job finished] jobname: binarize_threshold_CSF.c0 jobid: 191
+130424-14:49:06,993 workflow INFO:
+	 [Job finished] jobname: link_12 jobid: 196
+130424-14:49:07,5 workflow INFO:
+	 [Job finished] jobname: binarize_threshold_GM.c0 jobid: 289
+130424-14:49:07,21 workflow INFO:
+	 Submitting 4 jobs
+130424-14:49:07,21 workflow INFO:
+	 Executing: func_motion_correct_A.c0 ID: 67
+130424-14:49:07,22 workflow INFO:
+	 Executing: WM_mask.c0 ID: 110
+130424-14:49:07,24 workflow INFO:
+	 Executing: CSF_mask.c0 ID: 146
+130424-14:49:07,26 workflow INFO:
+	 Executing: GM_mask.c0 ID: 295
+130424-14:49:07,45 workflow INFO:
+	 Executing node WM_mask.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/WM/_wm_threshold_0.98/WM_mask
+130424-14:49:07,46 workflow INFO:
+	 Executing node func_motion_correct_A.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_motion_correct_A
+130424-14:49:07,48 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:07,50 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:07,57 workflow INFO:
+	 Executing node GM_mask.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/GM/_gm_threshold_0.7/GM_mask
+130424-14:49:07,60 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:07,61 workflow INFO:
+	 Executing node CSF_mask.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/seg_preproc_0/CSF/_csf_threshold_0.98/CSF_mask
+130424-14:49:07,66 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,36 workflow INFO:
+	 [Job finished] jobname: func_motion_correct_A.c0 jobid: 67
+130424-14:49:09,66 workflow INFO:
+	 [Job finished] jobname: WM_mask.c0 jobid: 110
+130424-14:49:09,81 workflow INFO:
+	 [Job finished] jobname: CSF_mask.c0 jobid: 146
+130424-14:49:09,93 workflow INFO:
+	 [Job finished] jobname: GM_mask.c0 jobid: 295
+130424-14:49:09,110 workflow INFO:
+	 Submitting 11 jobs
+130424-14:49:09,110 workflow INFO:
+	 Executing: calc_friston.c0 ID: 29
+130424-14:49:09,111 workflow INFO:
+	 Executing: sinker_13.c0 ID: 37
+130424-14:49:09,115 workflow INFO:
+	 Executing: sinker_7.c0 ID: 69
+130424-14:49:09,120 workflow INFO:
+	 Executing: gm_anat_to_2mm.c0 ID: 101
+130424-14:49:09,122 workflow INFO:
+	 Executing: csf_anat_to_2mm.c0 ID: 131
+130424-14:49:09,124 workflow INFO:
+	 Executing: sinker_44.c0 ID: 143
+130424-14:49:09,129 workflow INFO:
+	 Executing: func_get_brain_mask.c0 ID: 181
+130424-14:49:09,130 workflow INFO:
+	 Executing node calc_friston.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/fristons_parameter_model_0/_scan_rest_1_rest/calc_friston
+130424-14:49:09,131 workflow INFO:
+	 Executing: wm_anat_to_2mm.c0 ID: 237
+130424-14:49:09,133 workflow INFO:
+	 Executing: sinker_37.c0 ID: 250
+130424-14:49:09,134 workflow INFO:
+	 Executing node sinker_13.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_wm_threshold_0.98/sinker_13
+130424-14:49:09,135 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,138 workflow INFO:
+	 Executing: sinker_6.c0 ID: 261
+130424-14:49:09,139 workflow INFO:
+	 Executing node sinker_7.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_gm_threshold_0.7/sinker_7
+130424-14:49:09,140 workflow INFO:
+	 Executing: ho_mni_to_2mm.c0 ID: 307
+130424-14:49:09,141 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,144 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,149 workflow INFO:
+	 Executing node sinker_44.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_44
+130424-14:49:09,152 workflow INFO:
+	 Executing node func_get_brain_mask.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_get_brain_mask
+130424-14:49:09,154 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,155 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,156 workflow INFO:
+	 Executing node gm_anat_to_2mm.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_gm_threshold_0.7/gm_anat_to_2mm
+130424-14:49:09,157 workflow INFO:
+	 Executing node csf_anat_to_2mm.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_csf_threshold_0.98/csf_anat_to_2mm
+130424-14:49:09,160 workflow INFO:
+	 Executing node wm_anat_to_2mm.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_wm_threshold_0.98/wm_anat_to_2mm
+130424-14:49:09,161 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,162 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,164 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,172 workflow INFO:
+	 Executing node sinker_37.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_37
+130424-14:49:09,173 workflow INFO:
+	 Executing node sinker_6.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_csf_threshold_0.98/sinker_6
+130424-14:49:09,176 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,177 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:09,197 workflow INFO:
+	 Executing node ho_mni_to_2mm.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_csf_threshold_0.98/ho_mni_to_2mm
+130424-14:49:09,202 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,151 workflow INFO:
+	 [Job finished] jobname: calc_friston.c0 jobid: 29
+130424-14:49:11,181 workflow INFO:
+	 [Job finished] jobname: sinker_13.c0 jobid: 37
+130424-14:49:11,197 workflow INFO:
+	 [Job finished] jobname: sinker_7.c0 jobid: 69
+130424-14:49:11,209 workflow INFO:
+	 [Job finished] jobname: gm_anat_to_2mm.c0 jobid: 101
+130424-14:49:11,220 workflow INFO:
+	 [Job finished] jobname: csf_anat_to_2mm.c0 jobid: 131
+130424-14:49:11,232 workflow INFO:
+	 [Job finished] jobname: sinker_44.c0 jobid: 143
+130424-14:49:11,243 workflow INFO:
+	 [Job finished] jobname: func_get_brain_mask.c0 jobid: 181
+130424-14:49:11,288 workflow INFO:
+	 [Job finished] jobname: wm_anat_to_2mm.c0 jobid: 237
+130424-14:49:11,301 workflow INFO:
+	 [Job finished] jobname: sinker_37.c0 jobid: 250
+130424-14:49:11,312 workflow INFO:
+	 [Job finished] jobname: sinker_6.c0 jobid: 261
+130424-14:49:11,323 workflow INFO:
+	 [Job finished] jobname: ho_mni_to_2mm.c0 jobid: 307
+130424-14:49:11,339 workflow INFO:
+	 Submitting 12 jobs
+130424-14:49:11,340 workflow INFO:
+	 Executing: link_7.c0 ID: 4
+130424-14:49:11,341 workflow INFO:
+	 Executing: calc_motion_parameters.c0 ID: 36
+130424-14:49:11,344 workflow INFO:
+	 Executing: link_6.c0 ID: 43
+130424-14:49:11,346 workflow INFO:
+	 Executing: link_37.c0 ID: 112
+130424-14:49:11,349 workflow INFO:
+	 Executing: cal_DVARS.c0 ID: 133
+130424-14:49:11,351 workflow INFO:
+	 Executing: func_edge_detect.c0 ID: 140
+130424-14:49:11,352 workflow INFO:
+	 Executing: link_13.c0 ID: 171
+130424-14:49:11,355 workflow INFO:
+	 Executing: sinker_23.c0 ID: 174
+130424-14:49:11,358 workflow INFO:
+	 Executing: get_option_string.c0 ID: 195
+130424-14:49:11,360 workflow INFO:
+	 Executing: link_44.c0 ID: 211
+130424-14:49:11,362 workflow INFO:
+	 Executing: sinker_46.c0 ID: 269
+130424-14:49:11,364 workflow INFO:
+	 Executing node link_6.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_csf_threshold_0.98/link_6
+130424-14:49:11,365 workflow INFO:
+	 Executing: calculate_FD.c0 ID: 319
+130424-14:49:11,366 workflow INFO:
+	 Executing node link_13.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_wm_threshold_0.98/link_13
+130424-14:49:11,367 workflow INFO:
+	 Executing node link_37.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_37
+130424-14:49:11,368 workflow INFO:
+	 Executing node link_7.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_gm_threshold_0.7/link_7
+130424-14:49:11,369 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,370 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,373 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,373 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,379 workflow INFO:
+	 Executing node calc_motion_parameters.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/gen_motion_stats_0/_scan_rest_1_rest/calc_motion_parameters
+130424-14:49:11,384 workflow INFO:
+	 Executing node sinker_23.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_23
+130424-14:49:11,387 workflow INFO:
+	 Executing node cal_DVARS.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/gen_motion_stats_0/_scan_rest_1_rest/cal_DVARS
+130424-14:49:11,388 workflow INFO:
+	 Executing node func_edge_detect.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_edge_detect
+130424-14:49:11,388 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,389 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,391 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,392 workflow INFO:
+	 Executing node get_option_string.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/_scan_rest_1_rest/get_option_string
+130424-14:49:11,393 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,395 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,397 workflow INFO:
+	 Executing node link_44.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_44
+130424-14:49:11,401 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,404 workflow INFO:
+	 Executing node calculate_FD.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/gen_motion_stats_0/_scan_rest_1_rest/calculate_FD
+130424-14:49:11,406 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:11,408 workflow INFO:
+	 Executing node sinker_46.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_46
+130424-14:49:11,413 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,375 workflow INFO:
+	 [Job finished] jobname: link_7.c0 jobid: 4
+130424-14:49:13,396 workflow INFO:
+	 [Job finished] jobname: calc_motion_parameters.c0 jobid: 36
+130424-14:49:13,409 workflow INFO:
+	 [Job finished] jobname: link_6.c0 jobid: 43
+130424-14:49:13,421 workflow INFO:
+	 [Job finished] jobname: link_37.c0 jobid: 112
+130424-14:49:13,432 workflow INFO:
+	 [Job finished] jobname: cal_DVARS.c0 jobid: 133
+130424-14:49:13,444 workflow INFO:
+	 [Job finished] jobname: func_edge_detect.c0 jobid: 140
+130424-14:49:13,455 workflow INFO:
+	 [Job finished] jobname: link_13.c0 jobid: 171
+130424-14:49:13,466 workflow INFO:
+	 [Job finished] jobname: sinker_23.c0 jobid: 174
+130424-14:49:13,477 workflow INFO:
+	 [Job finished] jobname: get_option_string.c0 jobid: 195
+130424-14:49:13,489 workflow INFO:
+	 [Job finished] jobname: link_44.c0 jobid: 211
+130424-14:49:13,501 workflow INFO:
+	 [Job finished] jobname: sinker_46.c0 jobid: 269
+130424-14:49:13,512 workflow INFO:
+	 [Job finished] jobname: calculate_FD.c0 jobid: 319
+130424-14:49:13,529 workflow INFO:
+	 Submitting 8 jobs
+130424-14:49:13,529 workflow INFO:
+	 Executing: calc_power_parameters.c0.a0 ID: 20
+130424-14:49:13,530 workflow INFO:
+	 Executing: func_normalize.c0 ID: 95
+130424-14:49:13,532 workflow INFO:
+	 Executing: sinker_22.c0 ID: 106
+130424-14:49:13,536 workflow INFO:
+	 Executing: exclude_frames.c0.a0 ID: 116
+130424-14:49:13,539 workflow INFO:
+	 Executing: func_mean_skullstrip.c0 ID: 128
+130424-14:49:13,540 workflow INFO:
+	 Executing: link_23.c0 ID: 163
+130424-14:49:13,543 workflow INFO:
+	 Executing: link_46.c0 ID: 184
+130424-14:49:13,545 workflow INFO:
+	 Executing: sinker_45.c0 ID: 292
+130424-14:49:13,551 workflow INFO:
+	 Executing node func_normalize.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_normalize
+130424-14:49:13,553 workflow INFO:
+	 Executing node sinker_22.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_22
+130424-14:49:13,553 workflow INFO:
+	 Executing node exclude_frames.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/exclude_frames
+130424-14:49:13,555 workflow INFO:
+	 Executing node func_mean_skullstrip.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_mean_skullstrip
+130424-14:49:13,556 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,556 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,558 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,559 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,560 workflow INFO:
+	 Executing node calc_power_parameters.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/calc_power_parameters
+130424-14:49:13,561 workflow INFO:
+	 Executing node link_23.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_23
+130424-14:49:13,563 workflow INFO:
+	 Executing node link_46.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_46
+130424-14:49:13,564 workflow INFO:
+	 Executing node sinker_45.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_45
+130424-14:49:13,566 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,567 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,567 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:13,567 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,557 workflow INFO:
+	 [Job finished] jobname: calc_power_parameters.c0.a0 jobid: 20
+130424-14:49:15,582 workflow INFO:
+	 [Job finished] jobname: func_normalize.c0 jobid: 95
+130424-14:49:15,599 workflow INFO:
+	 [Job finished] jobname: sinker_22.c0 jobid: 106
+130424-14:49:15,610 workflow INFO:
+	 [Job finished] jobname: exclude_frames.c0.a0 jobid: 116
+130424-14:49:15,622 workflow INFO:
+	 [Job finished] jobname: func_mean_skullstrip.c0 jobid: 128
+130424-14:49:15,636 workflow INFO:
+	 [Job finished] jobname: link_23.c0 jobid: 163
+130424-14:49:15,647 workflow INFO:
+	 [Job finished] jobname: link_46.c0 jobid: 184
+130424-14:49:15,658 workflow INFO:
+	 [Job finished] jobname: sinker_45.c0 jobid: 292
+130424-14:49:15,674 workflow INFO:
+	 Submitting 10 jobs
+130424-14:49:15,674 workflow INFO:
+	 Executing: link_45.c0 ID: 88
+130424-14:49:15,676 workflow INFO:
+	 Executing: linear_func_to_anat.c0 ID: 98
+130424-14:49:15,678 workflow INFO:
+	 Executing: include_frames.c0.a0 ID: 114
+130424-14:49:15,681 workflow INFO:
+	 Executing: link_22.c0 ID: 142
+130424-14:49:15,683 workflow INFO:
+	 Executing: sinker_48.c0 ID: 147
+130424-14:49:15,687 workflow INFO:
+	 Executing: sinker_38.c0 ID: 151
+130424-14:49:15,691 workflow INFO:
+	 Executing: anat_to_func_register_0.c0 ID: 216
+130424-14:49:15,693 workflow INFO:
+	 Executing: sinker_47.c0.a0 ID: 219
+130424-14:49:15,695 workflow INFO:
+	 Executing node link_45.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_45
+130424-14:49:15,698 workflow INFO:
+	 Executing: func_mask_normalize.c0 ID: 248
+130424-14:49:15,701 workflow INFO:
+	 Executing: sinker_55.c0.a0 ID: 286
+130424-14:49:15,704 workflow INFO:
+	 Executing node link_22.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_22
+130424-14:49:15,710 workflow INFO:
+	 Executing node sinker_48.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_48
+130424-14:49:15,711 workflow INFO:
+	 Executing node include_frames.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/gen_motion_stats_0/_scan_rest_1_rest/_threshold_0.2/include_frames
+130424-14:49:15,712 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,712 workflow INFO:
+	 Executing node linear_func_to_anat.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_to_mni_0/_scan_rest_1_rest/linear_func_to_anat
+130424-14:49:15,713 workflow INFO:
+	 Executing node sinker_38.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_38
+130424-14:49:15,713 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,715 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,716 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,717 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,718 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,722 workflow INFO:
+	 Executing node sinker_47.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_47
+130424-14:49:15,725 workflow INFO:
+	 Executing node anat_to_func_register_0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/anat_to_func_register_0
+130424-14:49:15,726 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,728 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,733 workflow INFO:
+	 Executing node func_mask_normalize.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_preproc_0/_scan_rest_1_rest/func_mask_normalize
+130424-14:49:15,737 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:15,738 workflow INFO:
+	 Executing node sinker_55.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_55
+130424-14:49:15,742 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,713 workflow INFO:
+	 [Job finished] jobname: link_45.c0 jobid: 88
+130424-14:49:17,740 workflow INFO:
+	 [Job finished] jobname: linear_func_to_anat.c0 jobid: 98
+130424-14:49:17,757 workflow INFO:
+	 [Job finished] jobname: include_frames.c0.a0 jobid: 114
+130424-14:49:17,769 workflow INFO:
+	 [Job finished] jobname: link_22.c0 jobid: 142
+130424-14:49:17,780 workflow INFO:
+	 [Job finished] jobname: sinker_48.c0 jobid: 147
+130424-14:49:17,792 workflow INFO:
+	 [Job finished] jobname: sinker_38.c0 jobid: 151
+130424-14:49:17,804 workflow INFO:
+	 [Job finished] jobname: anat_to_func_register_0.c0 jobid: 216
+130424-14:49:17,816 workflow INFO:
+	 [Job finished] jobname: sinker_47.c0.a0 jobid: 219
+130424-14:49:17,827 workflow INFO:
+	 [Job finished] jobname: func_mask_normalize.c0 jobid: 248
+130424-14:49:17,838 workflow INFO:
+	 [Job finished] jobname: sinker_55.c0.a0 jobid: 286
+130424-14:49:17,856 workflow INFO:
+	 Submitting 12 jobs
+130424-14:49:17,856 workflow INFO:
+	 Executing: link_55.c0.a0 ID: 10
+130424-14:49:17,858 workflow INFO:
+	 Executing: sinker_9.c0 ID: 19
+130424-14:49:17,862 workflow INFO:
+	 Executing: link_47.c0.a0 ID: 124
+130424-14:49:17,865 workflow INFO:
+	 Executing: inv_anat_to_func_register_0.c0 ID: 162
+130424-14:49:17,867 workflow INFO:
+	 Executing: bbreg_func_to_anat.c0 ID: 185
+130424-14:49:17,915 workflow INFO:
+	 Executing: func_csf_0.c0.c0 ID: 202
+130424-14:49:17,918 workflow INFO:
+	 Executing: func_gm_0.c0.c0 ID: 213
+130424-14:49:17,921 workflow INFO:
+	 Executing: link_48.c0 ID: 220
+130424-14:49:17,923 workflow INFO:
+	 Executing: func_wm_0.c0.c0 ID: 268
+130424-14:49:17,926 workflow INFO:
+	 Executing: sinker_31.c0 ID: 290
+130424-14:49:17,929 workflow INFO:
+	 Executing node inv_anat_to_func_register_0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/inv_anat_to_func_register_0
+130424-14:49:17,930 workflow INFO:
+	 Executing node sinker_9.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_9
+130424-14:49:17,930 workflow INFO:
+	 Executing node link_47.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_threshold_0.2/link_47
+130424-14:49:17,930 workflow INFO:
+	 Executing node link_55.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_threshold_0.2/link_55
+130424-14:49:17,931 workflow INFO:
+	 Executing: link_38.c0 ID: 308
+130424-14:49:17,933 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,935 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,935 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,937 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,937 workflow INFO:
+	 Executing: sinker_56.c0.a0 ID: 323
+130424-14:49:17,952 workflow INFO:
+	 Executing node link_48.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_48
+130424-14:49:17,957 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,967 workflow INFO:
+	 Executing node func_gm_0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_gm_threshold_0.7/func_gm_0
+130424-14:49:17,968 workflow INFO:
+	 Executing node func_csf_0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/func_csf_0
+130424-14:49:17,971 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,973 workflow INFO:
+	 Executing node sinker_31.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_31
+130424-14:49:17,973 workflow INFO:
+	 Executing node link_38.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_38
+130424-14:49:17,974 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,976 workflow INFO:
+	 Executing node sinker_56.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_56
+130424-14:49:17,976 workflow INFO:
+	 Executing node bbreg_func_to_anat.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_to_mni_0/_scan_rest_1_rest/bbreg_func_to_anat
+130424-14:49:17,978 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,979 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,981 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:17,982 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:18,0 workflow INFO:
+	 Executing node func_wm_0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_wm_threshold_0.98/func_wm_0
+130424-14:49:18,85 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:19,955 workflow INFO:
+	 [Job finished] jobname: link_55.c0.a0 jobid: 10
+130424-14:49:19,983 workflow INFO:
+	 [Job finished] jobname: sinker_9.c0 jobid: 19
+130424-14:49:19,999 workflow INFO:
+	 [Job finished] jobname: link_47.c0.a0 jobid: 124
+130424-14:49:20,12 workflow INFO:
+	 [Job finished] jobname: inv_anat_to_func_register_0.c0 jobid: 162
+130424-14:49:20,23 workflow INFO:
+	 [Job finished] jobname: bbreg_func_to_anat.c0 jobid: 185
+130424-14:49:20,40 workflow INFO:
+	 [Job finished] jobname: func_csf_0.c0.c0 jobid: 202
+130424-14:49:20,52 workflow INFO:
+	 [Job finished] jobname: func_gm_0.c0.c0 jobid: 213
+130424-14:49:20,64 workflow INFO:
+	 [Job finished] jobname: link_48.c0 jobid: 220
+130424-14:49:20,75 workflow INFO:
+	 [Job finished] jobname: func_wm_0.c0.c0 jobid: 268
+130424-14:49:20,87 workflow INFO:
+	 [Job finished] jobname: sinker_31.c0 jobid: 290
+130424-14:49:20,98 workflow INFO:
+	 [Job finished] jobname: link_38.c0 jobid: 308
+130424-14:49:20,110 workflow INFO:
+	 [Job finished] jobname: sinker_56.c0.a0 jobid: 323
+130424-14:49:20,126 workflow INFO:
+	 Submitting 13 jobs
+130424-14:49:20,126 workflow INFO:
+	 Executing: func_to_2mm.c0.c0 ID: 3
+130424-14:49:20,127 workflow INFO:
+	 Executing: sinker_35.c0.c0 ID: 13
+130424-14:49:20,132 workflow INFO:
+	 Executing: link_31.c0 ID: 61
+130424-14:49:20,135 workflow INFO:
+	 Executing: sinker_32.c0 ID: 83
+130424-14:49:20,139 workflow INFO:
+	 Executing: sinker_39.c0 ID: 91
+130424-14:49:20,144 workflow INFO:
+	 Executing: mni_warp.c0 ID: 120
+130424-14:49:20,157 workflow INFO:
+	 Executing: sinker_25.c0.c0 ID: 160
+130424-14:49:20,165 workflow INFO:
+	 Executing: link_9.c0 ID: 197
+130424-14:49:20,169 workflow INFO:
+	 Executing: sinker_36.c0 ID: 243
+130424-14:49:20,170 workflow INFO:
+	 Executing node link_31.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_31
+130424-14:49:20,170 workflow INFO:
+	 Executing node sinker_35.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_wm_threshold_0.98/sinker_35
+130424-14:49:20,171 workflow INFO:
+	 Executing node sinker_39.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_39
+130424-14:49:20,172 workflow INFO:
+	 Executing node sinker_32.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_32
+130424-14:49:20,175 workflow INFO:
+	 Executing: sinker_27.c0.c0 ID: 246
+130424-14:49:20,184 workflow INFO:
+	 Executing: link_56.c0.a0 ID: 256
+130424-14:49:20,188 workflow INFO:
+	 Executing: functional_brain_mask_to_standard1_0.c0 ID: 264
+130424-14:49:20,195 workflow INFO:
+	 Executing: mni_affine.c0 ID: 275
+130424-14:49:20,206 workflow INFO:
+	 Executing node link_9.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_9
+130424-14:49:20,208 workflow INFO:
+	 Executing node sinker_25.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/sinker_25
+130424-14:49:20,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,234 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,234 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,248 workflow INFO:
+	 Executing node func_to_2mm.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.98/func_to_2mm
+130424-14:49:20,256 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,266 workflow INFO:
+	 Executing node mni_warp.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_to_mni_0/_scan_rest_1_rest/mni_warp
+130424-14:49:20,270 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,272 workflow INFO:
+	 Executing node sinker_36.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_36
+130424-14:49:20,274 workflow INFO:
+	 Executing node link_56.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_threshold_0.2/link_56
+130424-14:49:20,274 workflow INFO:
+	 Executing node sinker_27.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_gm_threshold_0.7/sinker_27
+130424-14:49:20,389 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,389 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,389 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,390 workflow INFO:
+	 Executing node mni_affine.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_to_mni_0/_scan_rest_1_rest/mni_affine
+130424-14:49:20,394 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:20,406 workflow INFO:
+	 Executing node functional_brain_mask_to_standard1_0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/functional_brain_mask_to_standard1_0
+130424-14:49:20,504 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,209 workflow INFO:
+	 [Job finished] jobname: func_to_2mm.c0.c0 jobid: 3
+130424-14:49:22,233 workflow INFO:
+	 [Job finished] jobname: sinker_35.c0.c0 jobid: 13
+130424-14:49:22,245 workflow INFO:
+	 [Job finished] jobname: link_31.c0 jobid: 61
+130424-14:49:22,257 workflow INFO:
+	 [Job finished] jobname: sinker_32.c0 jobid: 83
+130424-14:49:22,269 workflow INFO:
+	 [Job finished] jobname: sinker_39.c0 jobid: 91
+130424-14:49:22,280 workflow INFO:
+	 [Job finished] jobname: mni_warp.c0 jobid: 120
+130424-14:49:22,291 workflow INFO:
+	 [Job finished] jobname: sinker_25.c0.c0 jobid: 160
+130424-14:49:22,304 workflow INFO:
+	 [Job finished] jobname: link_9.c0 jobid: 197
+130424-14:49:22,315 workflow INFO:
+	 [Job finished] jobname: sinker_36.c0 jobid: 243
+130424-14:49:22,326 workflow INFO:
+	 [Job finished] jobname: sinker_27.c0.c0 jobid: 246
+130424-14:49:22,337 workflow INFO:
+	 [Job finished] jobname: link_56.c0.a0 jobid: 256
+130424-14:49:22,349 workflow INFO:
+	 [Job finished] jobname: functional_brain_mask_to_standard1_0.c0 jobid: 264
+130424-14:49:22,361 workflow INFO:
+	 [Job finished] jobname: mni_affine.c0 jobid: 275
+130424-14:49:22,376 workflow INFO:
+	 Submitting 12 jobs
+130424-14:49:22,377 workflow INFO:
+	 Executing: sinker_33.c0 ID: 2
+130424-14:49:22,380 workflow INFO:
+	 Executing: sinker_24.c0 ID: 24
+130424-14:49:22,385 workflow INFO:
+	 Executing: link_36.c0 ID: 63
+130424-14:49:22,387 workflow INFO:
+	 Executing: link_25.c0.c0 ID: 64
+130424-14:49:22,390 workflow INFO:
+	 Executing: resample_functional_mask_to_spatial_map_0.a0.c0 ID: 78
+130424-14:49:22,392 workflow INFO:
+	 Executing: link_32.c0 ID: 85
+130424-14:49:22,393 workflow INFO:
+	 Executing: link_35.c0.c0 ID: 145
+130424-14:49:22,397 workflow INFO:
+	 Executing: link_39.c0 ID: 177
+130424-14:49:22,399 workflow INFO:
+	 Executing: link_27.c0.c0 ID: 186
+130424-14:49:22,401 workflow INFO:
+	 Executing: inv_mni_affine.c0 ID: 199
+130424-14:49:22,403 workflow INFO:
+	 Executing: tissue_masks.c0.c0.c0.c0 ID: 207
+130424-14:49:22,406 workflow INFO:
+	 Executing: sinker_40.c0 ID: 294
+130424-14:49:22,476 workflow INFO:
+	 Executing node link_36.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_36
+130424-14:49:22,477 workflow INFO:
+	 Executing node sinker_33.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_33
+130424-14:49:22,478 workflow INFO:
+	 Executing node sinker_24.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_24
+130424-14:49:22,507 workflow INFO:
+	 Executing node link_32.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_32
+130424-14:49:22,508 workflow INFO:
+	 Executing node link_39.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_39
+130424-14:49:22,514 workflow INFO:
+	 Executing node link_25.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/link_25
+130424-14:49:22,515 workflow INFO:
+	 Executing node link_35.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_wm_threshold_0.98/link_35
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,541 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,558 workflow INFO:
+	 Executing node resample_functional_mask_to_spatial_map_0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_spatial_map_PNAS_Smith09_rsn10/resample_functional_mask_to_spatial_map_0
+130424-14:49:22,849 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:22,863 workflow INFO:
+	 Executing node inv_mni_affine.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/func_to_mni_0/_scan_rest_1_rest/inv_mni_affine
+130424-14:49:22,863 workflow INFO:
+	 Executing node sinker_40.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_40
+130424-14:49:22,863 workflow INFO:
+	 Executing node link_27.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_gm_threshold_0.7/link_27
+130424-14:49:23,232 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:23,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:23,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:23,388 workflow INFO:
+	 Executing node tissue_masks.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/tissue_masks
+130424-14:49:23,465 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:24,419 workflow INFO:
+	 [Job finished] jobname: sinker_33.c0 jobid: 2
+130424-14:49:24,438 workflow INFO:
+	 [Job finished] jobname: sinker_24.c0 jobid: 24
+130424-14:49:24,451 workflow INFO:
+	 [Job finished] jobname: link_36.c0 jobid: 63
+130424-14:49:24,463 workflow INFO:
+	 [Job finished] jobname: link_25.c0.c0 jobid: 64
+130424-14:49:24,474 workflow INFO:
+	 [Job finished] jobname: resample_functional_mask_to_spatial_map_0.a0.c0 jobid: 78
+130424-14:49:24,486 workflow INFO:
+	 [Job finished] jobname: link_32.c0 jobid: 85
+130424-14:49:24,497 workflow INFO:
+	 [Job finished] jobname: link_35.c0.c0 jobid: 145
+130424-14:49:24,509 workflow INFO:
+	 [Job finished] jobname: link_39.c0 jobid: 177
+130424-14:49:24,521 workflow INFO:
+	 [Job finished] jobname: link_27.c0.c0 jobid: 186
+130424-14:49:24,532 workflow INFO:
+	 [Job finished] jobname: inv_mni_affine.c0 jobid: 199
+130424-14:49:24,543 workflow INFO:
+	 [Job finished] jobname: tissue_masks.c0.c0.c0.c0 jobid: 207
+130424-14:49:24,554 workflow INFO:
+	 [Job finished] jobname: sinker_40.c0 jobid: 294
+130424-14:49:24,570 workflow INFO:
+	 Submitting 7 jobs
+130424-14:49:24,570 workflow INFO:
+	 Executing: link_33.c0 ID: 42
+130424-14:49:24,572 workflow INFO:
+	 Executing: residuals.bI.b1.c0.c0.c0.c0 ID: 54
+130424-14:49:24,575 workflow INFO:
+	 Executing: sinker_43.c0 ID: 86
+130424-14:49:24,579 workflow INFO:
+	 Executing: link_40.c0 ID: 173
+130424-14:49:24,581 workflow INFO:
+	 Executing: residuals.bI.b0.c0.c0.c0.c0 ID: 204
+130424-14:49:24,584 workflow INFO:
+	 Executing: sinker_28.a0.c0 ID: 234
+130424-14:49:24,588 workflow INFO:
+	 Executing: link_24.c0 ID: 283
+130424-14:49:24,611 workflow INFO:
+	 Executing node link_33.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_33
+130424-14:49:24,645 workflow INFO:
+	 Executing node link_40.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_40
+130424-14:49:24,646 workflow INFO:
+	 Executing node link_24.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_24
+130424-14:49:24,646 workflow INFO:
+	 Executing node sinker_28.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_spatial_map_PNAS_Smith09_rsn10/sinker_28
+130424-14:49:24,647 workflow INFO:
+	 Executing node sinker_43.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/sinker_43
+130424-14:49:25,212 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:25,596 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:25,596 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:25,597 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:25,597 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:25,995 workflow INFO:
+	 Executing node residuals.bI.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/residuals
+130424-14:49:26,26 workflow INFO:
+	 Executing node residuals.bI.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/nuisance_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/residuals
+130424-14:49:26,598 workflow INFO:
+	 [Job finished] jobname: link_33.c0 jobid: 42
+130424-14:49:26,623 workflow INFO:
+	 [Job finished] jobname: link_40.c0 jobid: 173
+130424-14:49:26,640 workflow INFO:
+	 [Job finished] jobname: link_24.c0 jobid: 283
+130424-14:49:27,516 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:27,555 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:28,658 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b1.c0.c0.c0.c0 jobid: 54
+130424-14:49:28,678 workflow INFO:
+	 [Job finished] jobname: sinker_43.c0 jobid: 86
+130424-14:49:28,689 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b0.c0.c0.c0.c0 jobid: 204
+130424-14:49:28,701 workflow INFO:
+	 [Job finished] jobname: sinker_28.a0.c0 jobid: 234
+130424-14:49:28,716 workflow INFO:
+	 Submitting 10 jobs
+130424-14:49:28,717 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 ID: 6
+130424-14:49:28,718 workflow INFO:
+	 Executing: sinker_30.b1.c0.c0.c0.c0 ID: 21
+130424-14:49:28,722 workflow INFO:
+	 Executing: stddev_unfltrd.b1.c0.c0.c0.c0 ID: 53
+130424-14:49:28,724 workflow INFO:
+	 Executing: stddev_unfltrd.b0.c0.c0.c0.c0 ID: 73
+130424-14:49:28,726 workflow INFO:
+	 Executing: link_43.c0 ID: 77
+130424-14:49:28,728 workflow INFO:
+	 Executing: link_28.a0.c0 ID: 157
+130424-14:49:28,731 workflow INFO:
+	 Executing: bandpass_filtering.b0.a0.c0.c0.c0.a0.c0 ID: 226
+130424-14:49:28,733 workflow INFO:
+	 Executing: sinker_30.b0.c0.c0.c0.c0 ID: 284
+130424-14:49:28,736 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 ID: 302
+130424-14:49:28,739 workflow INFO:
+	 Executing: bandpass_filtering.b1.a0.c0.c0.c0.a0.c0 ID: 321
+130424-14:49:28,804 workflow INFO:
+	 Executing node frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/frequency_filter_0
+130424-14:49:28,917 workflow INFO:
+	 Executing node sinker_30.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/sinker_30
+130424-14:49:29,33 workflow INFO:
+	 Executing node link_43.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/link_43
+130424-14:49:29,34 workflow INFO:
+	 Executing node link_28.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_spatial_map_PNAS_Smith09_rsn10/link_28
+130424-14:49:29,144 workflow INFO:
+	 Executing node bandpass_filtering.b0.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/bandpass_filtering
+130424-14:49:29,149 workflow INFO:
+	 Executing node sinker_30.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/sinker_30
+130424-14:49:30,502 workflow INFO:
+	 Executing node stddev_unfltrd.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/stddev_unfltrd
+130424-14:49:30,618 workflow INFO:
+	 Executing node stddev_unfltrd.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/stddev_unfltrd
+130424-14:49:30,678 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:30,755 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:31,840 workflow INFO:
+	 Collecting precomputed outputs
+,901 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:29,249 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:29,325 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:29,868 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:30,652 workflow INFO:
+	 [Job finished] jobname: link_28.a0.c0 jobid: 39
+130424-14:49:30,677 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:30,677 workflow INFO:
+	 [Job finished] jobname: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 jobid: 144
+130424-14:49:30,697 workflow INFO:
+	 [Job finished] jobname: link_43.c0 jobid: 217
+130424-14:49:30,712 workflow INFO:
+	 Submitting 3 jobs
+130424-14:49:30,712 workflow INFO:
+	 Executing: func_mni_warp_0.a0.b0.c0.c0.c0.c0 ID: 62
+130424-14:49:31,4 workflow INFO:
+	 Executing node sinker_30.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010031_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/sinker_30
+130424-14:49:31,429 workflow INFO:
+	 Executing node stddev_unfltrd.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010031_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/stddev_unfltrd
+665 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:21,680 workflow INFO:
+	 Executing node link_55.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/_scan_rest_1_rest/_threshold_0.2/link_55
+130424-14:49:21,715 workflow INFO:
+	 Executing node bbreg_func_to_anat.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/func_to_mni_0/_scan_rest_1_rest/bbreg_func_to_anat
+130424-14:49:21,737 workflow INFO:
+	 Executing node sinker_9.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010.gm0.compcor1.csf0/stddev_unfltrd
+130424-14:49:27,20 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:27,96 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:27,710 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:28,486 workflow INFO:
+	 Executing node bandpass_filtering.b0.c0.c0.c0.a0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010020_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/bandpass_filtering
+kflow INFO:
+	 [Job finished] jobname: link_48.c0 jobid: 283
+130424-14:49:23,558 workflow INFO:
+	 Executing node link_38.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/_scan_rest_2_rest/link_38
+130424-14:49:23,560 workflow INFO:
+	 [Job finished] jobname: func_csf_0.c0.c1 jobid: 344
+130424-14:49:23,579 workflow INFO:
+	 [Job finished] jobname: inv_anat_to_func_register_0.c0 jobid: 363
+130424-14:49:23,600 workflow INFO:
+	 [Job finished] jobname: sinker_31.c0 jobid: 375
+130424-14:49:23,619 workflow INFO:
+	 [Job finished] jobname: bbreg_func_to_anat.c0 jobid: 445
+130424-14:49:23,645 workflow INFO:
+	 [Job finished] jobname: sinker_56.a0.c1 jobid: 463
+130424-14:49:23,665 workflow INFO:
+	 [Job finished] jobname: link_47.a0.c0 jobid: 468
+130424-14:49:23,690 workflow INFO:
+	 Submitting 14 jobs
+130424-14:49:23,691 workflow INFO:
+	 Executing: link_9.c0 ID: 183
+130424-14:49:23,692 workflow INFO:
+	 Executing: sinker_32.c0 ID: 189
+130424-14:49:23,697 workflow INFO:
+	 Executing: mni_affine.c0 ID: 274
+130424-14:49:23,699 workflow INFO:
+	 Executing: func_to_2mm.c0.c0 ID: 280
+130424-14:49:23,701 workflow INFO:
+	 Executing: sinker_39.c0 ID: 321
+130424-14:49:23,708 workflow INFO:
+	 Executing: mni_warp.c0 ID: 337
+130424-14:49:23,709 workflow INFO:
+	 Executing: sinker_35.c0.c0 ID: 367
+130424-14:49:23,714 workflow INFO:
+	 Executing: sinker_35.c0.c1 ID: 391
+130424-14:49:23,719 workflow INFO:
+	 Executing: sinker_36.c0 ID: 409
+130424-14:49:23,723 workflow INFO:
+	 Executing: link_56.a0.c1 ID: 507
+130424-14:49:23,726 workflow INFO:
+	 Executing: link_31.c1 ID: 512
+130424-14:49:23,729 workflow INFO:
+	 Executing: link_31.c0 ID: 538
+130424-14:49:23,731 workflow INFO:
+	 Executing: functional_brain_mask_to_standard1_0.c0 ID: 554
+130424-14:49:23,733 workflow INFO:
+	 Executing: sinker_25.c0.c1 ID: 560
+130424-14:49:23,853 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:24,94 workflow INFO:
+	 Executing node sinker_56.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_56
+130424-14:49:24,187 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:24,609 workflow INFO:
+	 Executing node link_48.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010007_session_1/_scan_rest_2_rest/link_48
+130424-14:49:25,747 workflow INFO:
+	 [Job finished] jobname: link_38.c1 jobid: 508
+130424-14:49:25,786 workflow INFO:
+	 [Job finished] jobname: sinker_56.a0.c0 jobid: 515
+130424-14:49:25,812 workflow INFO:
+	 Submitting 1 jobs
+130424-14:49:25,812 workflow INFO:
+	 Executing: link_56.a0.c0 ID: 407
+130424-14:49:27,712 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:28,133 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:28,875 workflow INFO:
+	 [Job finished] jobname: sinker_28.c0.a0 jobid: 46
+130424-14:49:28,900 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b0.c0.c0.c0.c0 jobid: 172
+130424-14:49:28,912 workflow INFO:
+	 [Job finished] jobname: sinker_43.c0 jobid: 203
+130424-14:49:28,924 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b1.c0.c0.c0.c0 jobid: 262
+130424-14:49:28,940 workflow INFO:
+	 Submitting 10 jobs
+130424-14:49:28,940 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 ID: 72
+130424-14:49:28,941 workflow INFO:
+	 Executing: sinker_30.b1.c0.c0.c0.c0 ID: 81
+130424-14:49:28,946 workflow INFO:
+	 Executing: bandpass_filtering.b1.c0.a0.c0.c0.c0.a0 ID: 113
+130424-14:49:28,947 workflow INFO:
+	 Executing: stddev_unfltrd.b1.c0.c0.c0.c0 ID: 121
+130424-14:49:28,949 workflow INFO:
+	 Executing: stddev_unfltrd.b0.c0.c0.c0.c0 ID: 174
+130424-14:49:28,951 workflow INFO:
+	 Executing: link_43.c0 ID: 189
+130424-14:49:28,954 workflow INFO:
+	 Executing: bandpass_filtering.b0.c0.a0.c0.c0.c0.a0 ID: 236
+130424-14:49:28,955 workflow INFO:
+	 Executing: sinker_30.b0.c0.c0.c0.c0 ID: 246
+130424-14:49:28,959 workflow INFO:
+	 Executing: link_28.c0.a0 ID: 313
+130424-14:49:28,962 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 ID: 319
+130424-14:49:29,30 workflow INFO:
+	 Executing node bandpass_filtering.b1.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/bandpass_filtering
+130424-14:49:29,35 workflow INFO:
+	 Executing node frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/frequency_filter_0
+130424-14:49:29,36 workflow INFO:
+	 Executing node sinker_30.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/sinker_30
+130424-14:49:29,229 workflow INFO:
+	 Executing node link_43.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/link_43
+130424-14:49:29,267 workflow INFO:
+	 Executing node bandpass_filtering.b0.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resti130424-14:49:28,800 workflow INFO:
+	 [Job finished] jobname: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 jobid: 5
+130424-14:49:28,812 workflow INFO:
+	 [Job finished] jobname: link_28.c0.a0 jobid: 169
+130424-14:49:28,823 workflow INFO:
+	 [Job finished] jobname: frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 jobid: 189
+130424-14:49:28,839 workflow INFO:
+	 Submitting 6 jobs
+130424-14:49:28,839 workflow INFO:
+	 Executing: sinker_26.a0.b0.c0.c0.c0.c0 ID: 28
+130424-14:49:28,843 workflow INFO:
+	 Executing: sinker_26.a0.b1.c0.c0.c0.c0 ID: 66
+130424-14:49:28,847 workflow INFO:
+	 Executing: func_mni_warp_0.a0.b1.c0.c0.c0.c0 ID: 114
+130424-14:49:29,65 workflow INFO:
+	 Executing node link_43.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010020_session_1/_scan_rest_1_rest/link_43
+130424-14:49:29,132 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:29,219 workflow INFO:
+	 Executing node sinker_26.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010020_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_26
+130424-14:49:29,327 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:30,62 workflow INFO:
+	 Executing: func_mni_warp_0.a0.b0.c0.c0.c0.c0 ID: 202
+130424-14:49:30,64 workflow INFO:
+	 Executing: reho_map.a0.b0.c0.c0.c0.c0 ID: 239
+130424-14:49:30,65 workflow INFO:
+	 Executing: reho_map.a0.b1.c0.c0.c0.c0 ID: 318
+130424-14:49:30,225 workflow INFO:
+	 Executing node sinker_26.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010020_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/sinker_26
+130424-14:49:30,988 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:31,145 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:31,338 workflow INFO:
+	 Collecting precomputed outputs
+1130424-14:49:29,573 workflow INFO:
+	 [Job finished] jobname: sinker_28.a0.c0 jobid: 41
+130424-14:49:29,598 workflow INFO:
+	 [Job finished] jobname: sinker_43.c0 jobid: 106
+130424-14:49:29,612 workflow INFO:
+	 [Job finished] jobname: link_24.c0 jobid: 274
+130424-14:49:29,627 workflow INFO:
+	 Submitting 2 jobs
+130424-14:49:29,627 workflow INFO:
+	 Executing: link_28.a0.c0 ID: 52
+130424-14:49:29,629 workflow INFO:
+	 Executing: link_43.c0 ID: 195
+130424-14:49:29,729 workflow INFO:
+	 Executing node link_28.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010018_session_1/_scan_rest_1_rest/_spatial_map_PNAS_Smith09_rsn10/link_28
+130424-14:49:29,845 workflow INFO:
+	 Executing node link_43.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010018_session_1/_scan_rest_1_rest/link_43
+130424-14:49:30,368 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:30,407 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:31,638 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b1.c0.c0.c0.c0 jobid: 105
+130424-14:49:31,664 workflow INFO:
+	 [Job finished] jobname: residuals.bI.b0.c0.c0.c0.c0 jobid: 161
+130424-14:49:31,684 workflow INFO:
+	 [Job finished] jobname: link_28.a0.c0 jobid: 52
+130424-14:49:31,696 workflow INFO:
+	 [Job finished] jobname: link_43.c0 jobid: 195
+130424-14:49:31,712 workflow INFO:
+	 Submitting 8 jobs
+130424-14:49:31,712 workflow INFO:
+	 Executing: stddev_unfltrd.b0.c0.c0.c0.c0 ID: 4
+130424-14:49:31,713 workflow INFO:
+	 Executing: sinker_30.b1.c0.c0.c0.c0 ID: 47
+130424-14:49:31,718 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b0.c0.c0.c0.c0 ID: 204
+130424-14:49:31,720 workflow INFO:
+	 Executing: sinker_30.b0.c0.c0.c0.c0 ID: 209
+130424-14:49:31,724 workflow INFO:
+	 Executing: bandpass_filtering.b0.a0.c0.a0.c0.c0.c0 ID: 255
+130424-14:49:31,726 workflow INFO:
+	 Executing: frequency_filter_0.aI.a0.b1.c0.c0.c0.c0 ID: 283
+130424-14:49:31,728 workflow INFO:
+	 Executing: bandpass_filtering.b1.a0.c0130424-14:49:31,840 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:32,230 workflow INFO:
+	 Executing: sinker_26.a0.b0.c0.c0.c0.c0 ID: 269
+130424-14:49:32,239 workflow INFO:
+	 Executing: reho_map.a0.b0.c0.c0.c0.c0 ID: 270
+130424-14:49:32,714 workflow INFO:
+	 Executing node sinker_26.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010031_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_26
+130424-14:49:33,7 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:33,293 workflow INFO:
+	 Executing node reho_map.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010031_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpas130424-14:49:36,79 workflow INFO:
+	 [Job finished] jobname: include_frames.c1.a0 jobid: 150
+130424-14:49:38,553 workflow INFO:
+	 Submitting 1 jobs
+130424-14:49:38,554 workflow INFO:
+	 Executing: sinker_56.c1.a0 ID: 530
+[0, 1, 2, 3, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 84, 85, 86, 87, 88, 89, 129, 130, 131, 132, 133, 134, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176]
+130424-14:49:38,605 workflow INFO:
+	 Executing node sinker_47.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010030_session_1/_scan_rest_1_rest/_threshold_0.2/sinker_47
+130424-14:50:08,793 workflow INFO:
+	 [Job finished] jobname: link_45.c1 jobid: 74
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.98
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.98
+~~~~~~  pipeline  ~~~  pipeline_HackettCity
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.98
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.98
+~~~~~~  pipeline  ~~~  pipeline_HackettCity
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.98
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.98
+pipeline  ---------->  HackettCity
+scan_rest_2_rest  ~~~ /_scan_rest_2_rest/motion_parameters.txt
+.
+.
+ln -s /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010030_session_1/motion_params/_scan_rest_2_rest/motion_parameters.txt /home2/data/PreProc/ADHD200/sym_links/pipeline_HackettCity/_compcor_ncomponents_5_linear1.motion1.compcor1.CSF_0.98_GM_0.7_WM_0.98/0010030_session_1/scan_rest_2_rest/parameters/motion_params.txt
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1
+_csf_threshold  ---------->  0.98
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.98
+pipeline  ---------->  HackettCity
+scan_rest_2_rest  ~~~ /_scan_rest_2_rest/motion_parameters.txt
+.
+.
+ln -s /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010030_session_1/motion_params/_scan_rest_2_rest/motion_parameters.txt /home2/data/PreProc/ADHD200/sym_links/pipeline_HackettCity/linear1.wm1.global1.motion1.csf1_CSF_0.98_GM_0.7_WM_0.98/0010030_session_1/scan_rest_2_rest/parameters/motion_params.txt
+130424-14:50:11,656 workflow INFO:
+	 Executing node sinker_55.c1.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010030_session_1/_scan_rest_2_rest/_threshold_0.2/sinker_55
+49:40,49 workflow INFO:
+	 [Job finished] jobname: bandpass_filtering.b1.a0.c0.c0.c0.a0.c0 jobid: 321
+130424-14:49:40,64 workflow INFO:
+	 Submitting 5 jobs
+130424-14:49:40,64 workflow INFO:
+	 Executing: reho_map.a0.b0.c0.c0.c0.c0 ID: 164
+130424-14:49:40,66 workflow INFO:
+	 Executing: func_mni_warp_0.a0.b0.c0.c0.c0.c0 ID: 223
+130424-14:49:40,68 workflow INFO:
+	 Executing: sinker_26.a0.b0.c0.c0.c0.c0 ID: 278
+130424-14:49:40,72 workflow INFO:
+	 Executing: stddev_fltrd.b1.a0.c0.c0.c0.a0.c0 ID: 304
+130424-14:49:40,74 workflow INFO:
+	 Executing: stddev_fltrd.b0.a0.c0.c0.c0.a0.c0 ID: 309
+130424-14:49:40,449 workflow INFO:
+	 Executing node sinker_26.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_26
+130424-14:49:40,870 workflow INFO:
+	 Executing node reho_map.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/reho_map
+130424-14:49:41,44 workflow INFO:
+	 Executing node func_mni_warp_0.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/func_mni_warp_0
+130424-14:49:41,482 workflow INFO:
+	 Executing node stddev_fltrd.b1.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/stddev_fltrd
+130424-14:49:41,620 workflow INFO:
+	 Executing node func_mni_warp_0.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/func_mni_warp_0
+130424-14:49:42,41 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:42,84 workflow INFO:
+	 [Job finished] jobname: sinker_30.b1.c0.c0.c0.c0 jobid: 21
+130424-14:49:42,109 workflow INFO:
+	 [Job finished] jobname: sinker_30.b0.c0.c0.c0.c0 jobid: 284
+130424-14:49:42,118 workflow INFO:
+	 Executing node stddev_fltrd.b0.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/stddev_fltrd
+130424-14:49:42,126 workflow INFO:
+	 Submitting 2 jobs
+130424-14:49:42,127 workflow INFO:
+	 Executing: link_30.b0.c0.c0.c0.c0 ID: 80
+130424-14:49:42,128 workflow INFO:
+	 Executing: link_30.b1.c0.c0.c0.c0 ID: 94
+130424-14:49:42,706 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:43,243 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:43,857 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:44,48 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:44,275 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:44,276 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:45,707 workflow INFO:
+	 Executing node link_30.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/link_30
+130424-14:49:46,150 workflow INFO:
+	 [Job finished] jobname: sinker_26.a0.b1.c0.c0.c0.c0 jobid: 51
+130424-14:49:46,163 workflow INFO:
+	 Executing node link_30.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/link_30
+130424-14:49:46,175 workflow INFO:
+	 [Job finished] jobname: func_mni_warp_0.a0.b1.c0.c0.c0.c0 jobid: 144
+130424-14:49:46,197 workflow INFO:
+	 [Job finished] jobname: reho_map.a0.b1.c0.c0.c0.c0 jobid: 306
+130424-14:49:46,210 workflow INFO:
+	 [Job finished] jobname: reho_map.a0.b0.c0.c0.c0.c0 jobid: 164
+130424-14:49:46,222 workflow INFO:
+	 [Job finished] jobname: func_mni_warp_0.a0.b0.c0.c0.c0.c0 jobid: 223
+130424-14:49:46,233 workflow INFO:
+	 [Job finished] jobname: sinker_26.a0.b0.c0.c0.c0.c0 jobid: 278
+130424-14:49:46,245 workflow INFO:
+	 [Job finished] jobname: stddev_fltrd.b1.a0.c0.c0.c0.a0.c0 jobid: 304
+130424-14:49:46,257 workflow INFO:
+	 [Job finished] jobname: stddev_fltrd.b0.a0.c0.c0.c0.a0.c0 jobid: 309
+130424-14:49:46,273 workflow INFO:
+	 Submitting 24 jobs
+130424-14:49:46,273 workflow INFO:
+	 Executing: resample_functional_to_template_0.a0.b1.c0.c0.a0.c0.c0 ID: 9
+130424-14:49:46,274 workflow INFO:
+	 Executing: resample_functional_to_spatial_map_0.a0.b0.c0.c0.a0.c0.c0 ID: 12
+130424-14:49:46,277 workflow INFO:
+	 Executing: link_26.a0.b1.c0.c0.c0.c0 ID: 17
+130424-14:49:46,280 workflow INFO:
+	 Executing: mean.a0.b0.c0.c0.c0.c0 ID: 23
+130424-14:49:46,282 workflow INFO:
+	 Executing: standard_deviation.a0.b0.c0.c0.c0.c0 ID: 48
+130424-14:49:46,284 workflow INFO:
+	 Executing: sinker_4.b1.a0.c0.c0.c0.a0.c0 ID: 49
+130424-14:49:46,288 workflow INFO:
+	 Executing: sinker_29.a0.b1.c0.c0.c0.c0 ID: 57
+130424-14:49:46,293 workflow INFO:
+	 Executing: resample_functional_to_template_0.a0.b0.c0.c0.a0.c0.c0 ID: 79
+130424-14:49:46,294 workflow INFO:
+	 Executing: sinker_29.a0.b0.c0.c0.c0.c0 ID: 108
+130424-14:49:46,299 workflow INFO:
+	 Executing: link_26.a0.b0.c0.c0.c0.c0 ID: 118
+130424-14:49:46,303 workflow INFO:
+	 Executing: standard_deviation.b1.a0.c0.c0.c0.a0.c0 ID: 129
+130424-14:49:46,305 workflow INFO:
+	 Executing: mean.b1.a0.c0.c0.c0.a0.c0 ID: 135
+130424-14:49:46,307 workflow INFO:
+	 Executing: sinker_49.a0.b0.c0.c0.c0.c0 ID: 149
+130424-14:49:46,312 workflow INFO:
+	 Executing: sinker_4.b0.a0.c0.c0.c0.a0.c0 ID: 152
+130424-14:49:46,318 workflow INFO:
+	 Executing: standard_deviation.a0.b1.c0.c0.c0.c0 ID: 168
+130424-14:49:46,320 workflow INFO:
+	 Executing: mean.a0.b1.c0.c0.c0.c0 ID: 183
+130424-14:49:46,322 workflow INFO:
+	 Executing: sinker_49.a0.b1.c0.c0.c0.c0 ID: 189
+130424-14:49:46,327 workflow INFO:
+	 Executing: falff.b1.a0.c0.c0.c0.a0.c0 ID: 192
+130424-14:49:46,330 workflow INFO:
+	 Executing: resample_functional_to_roi_0.a0.b0.c0.c0.a0.c0.c0 ID: 221
+130424-14:49:46,333 workflow INFO:
+	 Executing: resample_functional_to_roi_0.a0.b1.c0.c0.a0.c0.c0 ID: 225
+130424-14:49:46,336 workflow INFO:
+	 Executing: resample_functional_to_spatial_map_0.a0.b1.c0.c0.a0.c0.c0 ID: 253
+130424-14:49:46,339 workflow INFO:
+	 Executing: falff.b0.a0.c0.c0.c0.a0.c0 ID: 267
+130424-14:49:46,342 workflow INFO:
+	 Executing: mean.b0.a0.c0.c0.c0.a0.c0 ID: 288
+130424-14:49:46,344 workflow INFO:
+	 Executing: standard_deviation.b0.a0.c0.c0.c0.a0.c0 ID: 324
+130424-14:49:46,706 workflow INFO:
+	 Executing node sinker_4.b1.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/sinker_4
+130424-14:49:47,12 workflow INFO:
+	 Executing node link_26.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/link_26
+130424-14:49:47,126 workflow INFO:
+	 Executing node mean.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/mean
+130424-14:49:47,203 workflow INFO:
+	 Executing node standard_deviation.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/standard_deviation
+130424-14:49:47,377 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:48,139 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:48,988 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:49,522 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:50,60 workflow INFO:
+	 Executing node sinker_29.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/sinker_29
+130424-14:49:50,60 workflow INFO:
+	 Executing node resample_functional_to_template_0.a0.b1.c0.c0.a0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/_mask_MaskOf85Percent_3mm_GM/resample_functional_to_template_0
+130424-14:49:50,100 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:50,176 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:50,364 workflow INFO:
+	 [Job finished] jobname: link_30.b0.c0.c0.c0.c0 jobid: 80
+130424-14:49:50,388 workflow INFO:
+	 [Job finished] jobname: link_30.b1.c0.c0.c0.c0 jobid: 94
+130424-14:49:50,603 workflow INFO:
+	 Executing node resample_functional_to_spatial_map_0.a0.b0.c0.c0.a0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/_spatial_map_PNAS_Smith09_rsn10/resample_functional_to_spatial_map_0
+130424-14:49:51,257 workflow INFO:
+	 Executing node sinker_29.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_29
+130424-14:49:51,468 workflow INFO:
+	 Executing node resample_functional_to_template_0.a0.b0.c0.c0.a0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/_mask_MaskOf85Percent_3mm_GM/resample_functional_to_template_0
+130424-14:49:51,565 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:52,408 workflow INFO:
+	 [Job finished] jobname: link_26.a0.b1.c0.c0.c0.c0 jobid: 17
+130424-14:49:52,432 workflow INFO:
+	 [Job finished] jobname: mean.a0.b0.c0.c0.c0.c0 jobid: 23
+130424-14:49:52,444 workflow INFO:
+	 [Job finished] jobname: standard_deviation.a0.b0.c0.c0.c0.c0 jobid: 48
+130424-14:49:52,459 workflow INFO:
+	 Submitting 1 jobs
+130424-14:49:52,460 workflow INFO:
+	 Executing: op_string.a0.b0.c0.c0.c0.c0 ID: 115
+130424-14:49:52,693 workflow INFO:
+	 Executing node link_26.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/link_26
+130424-14:49:52,918 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:53,20 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:53,134 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:53,839 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:54,190 workflow INFO:
+	 Executing node standard_deviation.b1.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/alff_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/standard_deviation
+130424-14:49:54,611 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:55,818 workflow INFO:
+	 Executing node mean.b1.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/alff_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/mean
+130424-14:49:56,92 workflow INFO:
+	 Executing node sinker_49.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/sinker_49
+130424-14:49:56,479 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_template_0.a0.b1.c0.c0.a0.c0.c0 jobid: 9
+130424-14:49:56,505 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_spatial_map_0.a0.b0.c0.c0.a0.c0.c0 jobid: 12
+130424-14:49:56,520 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_template_0.a0.b0.c0.c0.a0.c0.c0 jobid: 79
+130424-14:49:56,531 workflow INFO:
+	 [Job finished] jobname: link_26.a0.b0.c0.c0.c0.c0 jobid: 118
+130424-14:49:56,547 workflow INFO:
+	 Submitting 4 jobs
+130424-14:49:56,547 workflow INFO:
+	 Executing: sinker_34.a0.b0.c0.c0.a0.c0.c0 ID: 50
+130424-14:49:56,551 workflow INFO:
+	 Executing: spatial_regression.a0.b0.c0.c0.a0.c0.c0 ID: 70
+130424-14:49:56,553 workflow INFO:
+	 Executing: read_data.a0.b1.c0.c0.a0.c0.c0 ID: 203
+130424-14:49:56,556 workflow INFO:
+	 Executing: read_data.a0.b0.c0.c0.a0.c0.c0 ID: 293
+130424-14:49:57,116 workflow INFO:
+	 Executing node sinker_4.b0.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/sinker_4
+130424-14:49:58,154 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:58,154 workflow INFO:
+	 Executing node standard_deviation.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/standard_deviation
+130424-14:49:58,565 workflow INFO:
+	 [Job finished] jobname: sinker_4.b1.a0.c0.c0.c0.a0.c0 jobid: 49
+130424-14:49:58,594 workflow INFO:
+	 Submitting 1 jobs
+130424-14:49:58,594 workflow INFO:
+	 Executing: link_4.b1.a0.c0.c0.c0.a0.c0 ID: 280
+130424-14:49:58,861 workflow INFO:
+	 Executing node mean.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/mean
+130424-14:49:59,192 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:59,388 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:49:59,657 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:00,47 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:00,333 workflow INFO:
+	 Executing node sinker_49.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/sinker_49
+1304130424-14:50:01,74 workflow INFO:
+	 [Job finished] jobname: sinker_55.c0.a0 jobid: 105
+130424-14:50:03,60 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:03,60 workflow INFO:
+	 Executing: link_55.c0.a0 ID: 323
+130424-14:50:04,165 workflow INFO:
+	 Executing node sinker_38.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010035_session_1/_scan_rest_2_rest/sinker_38
+/_spatial_map_PNAS_Smith09_rsn10/resample_functional_to_spatial_map_0
+130424-14:50:02,988 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:03,8 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:03,275 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:03,820 workflow INFO:
+	 Executing: timeseries_roi.a0.b0.c0.c0.c0.c0.a0 ID: 244
+130424-14:50:04,144 workflow INFO:
+	 Executing node resample_functional_to_template_0.a0.b1.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/_mask_MaskOf85Percent_3mm_GM/resample_functional_to_template_0
+130424-14:50:05,144 workflow INFO:
+	 Executing node link_26.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/link_26
+130424-14:50:05,834 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_spatial_map_0.a0.b0.c0.c0.c0.c0.a0 jobid: 278
+130424-14:50:05,858 workflow INFO:
+	 [Job finished] jobname: link_26.a0.b0.c0.c0.c0.c0 jobid: 154
+130424-14:50:05,874 workflow INFO:
+	 Submitting 2 jobs
+130424-14:50:05,874 workflow INFO:
+	 Executing: sinker_34.a0.b0.c0.c0.c0.c0.a0 ID: 317
+130424-14:50:05,878 workflow INFO:
+	 Executing: spatial_regression.a0.b0.c0.c0.c0.c0.a0 ID: 324
+130424-14:50:06,544 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:06,734 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:07,104 workflow INFO:
+	 Executing node sinker_49.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/sinker_49
+130424-14:50:07,625 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:07,643 workflow INFO:
+	 Executing node op_string.b1.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/alff_0/alff_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/op_string
+130424-14:50:07,778 workflow INFO:
+	 Executing node mean.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/mean
+130424-14:50:07,886 workflow INFO:
+	 [Job finished] jobname: sinker_29.a0.b0.c0.c0.c0.c0 jobid: 292
+130424-14:50:07,893 workflow INFO:
+	 Executing node standard_deviation.a0.b1.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_bandpass_freqs_0.01.0.1/standard_deviation
+130424-14:50:07,903 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_template_0.a0.b0.c0.c0.c0.a0.c0 jobid: 300
+130424-14:50:07,915 workflow INFO:
+	 [Job finished] jobname: sinker_4.b0.c0.a0.c0.c0.c0.a0 jobid: 302
+130424-14:50:07,926 workflow INFO:
+	 [Job finished] jobname: sinker_29.a0.b1.c0.c0.c0.c0 jobid: 130
+130424-14:50:07,939 workflow INFO:
+	 [Job finished] jobname: resample_functiona130424-14:50:07,183 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_roi_0.a0.b1.c0.c0.a0.c0.c0 jobid: 199
+130424-14:50:07,272 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:07,273 workflow INFO:
+	 Executing: timeseries_roi.a0.b1.c0.c0.a0.c0.c0 ID: 64
+-14:50:07,961 workflow INFO:
+	 Executing: link_29.a0.b1.c0.c0.c0130424-14:50:08,618 workflow INFO:
+	 [Job finished] jobname: sinker_25.c0.c1 jobid: 38
+130424-14:50:10,319 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:10,320 workflow INFO:
+	 Executing: link_25.c0.c1 ID: 549
+130424-14:50:13,485 workflow INFO:
+	 Executing node sinker_32.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010019_session_1/_scan_rest_2_rest/sinker_32
+0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/sinker_21
+130424-14:50:09,974 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_spatial_map_0.a0.b1.c0.c0.c0.c0.a0 jobid: 223
+130424-14:50:09,998 workflow INFO:
+	 [Job finished] jobname: resample_functional_to_template_0.a0.b1.c0.c0.c0.a0.c0 jobid: 288
+130424-14:50:10,23 workflow INFO:
+	 Submitting 3 jobs
+130424-14:50:10,23 workflow INFO:
+	 Executing: spatial_regression.a0.b1.c0.c0.c0.c0.a0 ID: 71
+130424-14:50:10,24 workflow INFO:
+	 Executing: read_data.a0.b1.c0.c0.c0.a0.c0 ID: 93
+130424-14:50:10,25 workflow INFO:
+	 Executing: sinker_34.a0.b1.c0.c0.c0.c0.a0 ID: 234
+130424-14:50:10,154 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:10,383 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:10,477 workflow INFO:
+	 Executing node standard_deviation.b1.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/alff_0/falf_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/standard_deviation
+130424-14:50:10,536 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:10,651 workflow INFO:
+	 Collecting precomputed outpu130424-14:50:16,874 workflow INFO:
+	 [Job finished] jobname: sinker_38.c0 jobid: 236
+130424-14:50:16,912 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:16,912 workflow INFO:
+	 Executing: link_38.c0 ID: 418
+130424-14:50:20,627 workflow INFO:
+	 Executing node sinker_48.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010030_session_1/_scan_rest_2_rest/sinker_48
+130424-14:50:20,938 workflow INFO:
+	 [Job finished] jobname: sinker_47.c1.a0 jobid: 0
+130424-14:50:20,981 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:20,981 workflow INFO:
+	 Executing: link_47.c1.a0 ID: 427
+roc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/link_4
+130424-14:50:12,35 workflow INFO:
+	 [Job finished] jobname: link_26.a0.b1.c0.c0.c0.c0 jobid: 0
+130424-14:50:14,65 workflow INFO:
+	 [Job finished] jobname: op_string.b1.c0.a0.c0.c0.c0.a0 jobid: 132
+130424-14:50:14,89 workflow INFO:
+	 [Job finished] jobname: mean.a0.b1.c0.c0.c0.c0 jobid: 151
+130424-14:50:14,106 workflow INFO:
+	 [Job finished] jobname: standard_deviation.a0.b1.c0.c0.c0.c0 jobid: 152
+130424-14:50:14,122 workflow INFO:
+	 Submitting 2 jobs
+130424-14:50:14,122 workflow INFO:
+	 Executing: op_string.a0.b1.c0.c0.c0.c0 ID: 2
+130424-14:50:14,123 workflow INFO:
+	 Executing: z_score.b1.c0.a0.c0.c0.c0.a0 ID: 306
+130424-14:50:14,266 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:15,21 workflow INFO:
+	 Executing node op_string.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/reho_0/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/op_string
+130424-14:50:15,82 workflow INFO:
+	 Executing node mean.b0.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/alff_0/falf_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/mean
+130424-14:50:15,467 workflow INFO:
+	 Executing node standard_deviation.b0.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/alff_0/falf_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/standard_deviation
+130424-14:50:16,130 workflow INFO:
+	 [Job finished] jobname: sinker_49.a0.b1.c0.c0.c0.c0 jobid: 257
+130424-14:50:16,163 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:16,163 workflow INFO:
+	 Executing: link_49.a0.b1.c0.c0.c0.c0 ID: 206
+130424-14:50:17,233 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:17,272 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:17,482 workflow INFO:
+	 Executing node op_string.b0.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/alff_0/alff_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/op_string
+130424-14:50:17,581 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:17,599 workflow INFO:
+	 Executing node link_49.a0.b0.c0.c0.c0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_bandpass_freqs_0.01.0.1/link_49
+130424-14:50:18,177 workflow INFO:
+	 [Job finished] jobname: link_4.b1.c0.a0.c0.c0.c0.a0 jobid: 228
+130424-14:50:19,899 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:20,145 workflow INFO:
+	 Executing node sinker_21.b0.c0.a0.c0.c0.c0.a0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010006_session_1/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0/_hp_0.009/_lp_0.1/sinker_21
+130424-14:50:20,211 workflow INFO:
+	 [Job finished] jobname: standard_deviation.b1.c0.a0.c0.c0.c0.a0 jobid: 159
+130424-14:50:20,236 workflow INFO:
+	 [Job finished] jobname: op_string.a0.b0.c0.c0.c0.c0 jobid: 70
+130424-14:50:20,262 workflow INFO:
+	 Submitting 1 jobs
+130424-14:50:20,262 workflow INFO:
+	 Executing: z_score.a0.b0.c0.c0.c0.c0 ID: 15
+g: op_string.b0.a0.c0.c0.c0.a0.c0 ID: 172
+130424-14:50:15,692 workflow INFO:
+	 Executing: z_score.a0.b0.c0.c0.c0.c0 ID: 310
+130424-14:50:16,512 workflow INFO:
+	 Executing node op_string.b1.a0.c0.c0.c0.a0.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010003_session_1/alff_0/alff_zscore/_scan_rest_1_rest/_csf_threshold_0.98/_gm_threshold_0.7/_wm_threshold_0.98/_compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1/_hp_0.009/_lp_0.1/op_string
+130424-14:50:17,807 workflow INFO:
+	 Collecting precomputed outputs
+130424-14:50:19,314 workflow INFO:
+	 Collecting precomputed outputs
+_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.98
+pipeline  ---------->  HackettCity
+scan_rest_2_rest  ~~~ /_scan_rest_2_rest/mprage_noface_RPI_3dc_flirt.mat
+.
+ln -s /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010026_session_1/anatomical_to_functional_xfm/_scan_rest_2_rest/mprage_noface_RPI_3dc_flirt.mat /home2/data/PreProc/ADHD200/sym_links/pipeline_HackettCity/linear1.wm1.global1.motion1.csf1_CSF_0.98_GM_0.7_WM_0.98/0010026_session_1/scan_rest_2_rest/registration/anatomical_to_functional_xfm.mat
+130424-14:50:17,579 workflow INFO:
+	 Executing node func_to_2mm.c0.c1 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/restin130424-14:50:17,482 workflow INFO:
+	 [Job finished] jobname: link_9.c0 jobid: 192
+to_2mm
+_scan_rest_1_rest/_threshold_0.2/link_55
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.98
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.98
+~~~~~~  pipeline  ~~~  pipeline_HackettCity
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.98
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.98
+~~~~~~  pipeline  ~~~  pipeline_HackettCity
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.98
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.98
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.98
+~~~~~~  pipeline  ~~~  pipeline_HackettCity
+~~~~~~  _compcor_ncomponents_5_selector  ~~~  _compcor_ncomponents_5_selector_pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1
+~~~~~~  _csf_threshold  ~~~  _csf_threshold_0.98
+~~~~~~  _gm_threshold  ~~~  _gm_threshold_0.7
+~~~~~~  _target_angle_deg  ~~~  _target_angle_deg_90
+~~~~~~  _threshold  ~~~  _threshold_0.2
+~~~~~~  _wm_threshold  ~~~  _wm_threshold_0.98
+~~~~~~  pipeline  ~~~  pipeline_HackettCity
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm0.global0.motion1.quadratic0.gm0.compcor1.csf0
+_csf_threshold  ---------->  0.98
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.98
+pipeline  ---------->  HackettCity
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/mprage_noface_RPI_3dc_flirt.mat
+.
+ln -s /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010009_session_1/anatomical_to_functional_xfm/_scan_rest_1_rest/mprage_noface_RPI_3dc_flirt.mat /home2/data/PreProc/ADHD200/sym_links/pipeline_HackettCity/_compcor_ncomponents_5_linear1.motion1.compcor1.CSF_0.98_GM_0.7_WM_0.98/0010009_session_1/scan_rest_1_rest/registration/anatomical_to_functional_xfm.mat
+.
+_compcor_ncomponents_5_selector  ---------->  pc10.linear1.wm1.global1.motion1.quadratic0.gm0.compcor0.csf1
+_csf_threshold  ---------->  0.98
+_gm_threshold  ---------->  0.7
+_wm_threshold  ---------->  0.98
+pipeline  ---------->  HackettCity
+scan_rest_1_rest  ~~~ /_scan_rest_1_rest/mprage_noface_RPI_3dc_flirt.mat
+.
+ln -s /home2/data/PreProc/ADHD200/pipeline_HackettCity/0010009_session_1/anatomical_to_functional_xfm/_scan_rest_1_rest/mprage_noface_RPI_3dc_flirt.mat /home2/data/PreProc/ADHD200/sym_links/pipeline_HackettCity/linear1.wm1.global1.motion1.csf1_CSF_0.98_GM_0.7_WM_0.98/0010009_session_1/scan_rest_1_rest/registration/anatomical_to_functional_xfm.mat
+130424-14:50:20,605 workflow INFO:
+	 Executing node link_31.c0 in dir: /home2/data/Projects/ADHD200/nyu_rerun/working_dir/resting_preproc_0010009_session_1/_scan_rest_1_rest/link_31
+130424-14:50:20,734 workflow INFO:
+	 [Job finished] jobname: link_9.c0 jobid: 111

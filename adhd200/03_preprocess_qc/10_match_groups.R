@@ -4,17 +4,18 @@
 # Setup
 basedir <- "/home2/data/Projects/CWAS/share/adhd200"
 subdir <- file.path(basedir, "subinfo")
-subfile <- file.path(subdir, "02_subject_info_all.csv")
+subfile <- file.path(subdir, "03_subjects_qc.csv")
 
 # Read
 df <- read.csv(subfile)
 
 # Only want NYU
 sdf <- subset(df, site=="NYU")
+sdf$X <- 1:nrow(sdf)
 
 # Match ADHD-C with TDC Females
-inds.female.c <- sdf$group=="ADHD-C" & sdf$gender=="Female" # 10
-inds.female.t <- sdf$group=="TDC" & sdf$gender=="Female"    # 43 => 10
+inds.female.c <- sdf$group=="ADHD-C" & sdf$gender=="Female" # 9
+inds.female.t <- sdf$group=="TDC" & sdf$gender=="Female"    # 4? => 9
 
 comp.age <- sdf$age[inds.female.c]
 inds.female.t.use <- c()
@@ -22,6 +23,18 @@ for (age in comp.age) {
     i <- which.min(abs(sdf$age[inds.female.t] - age))
     inds.female.t.use <- c(inds.female.t.use, sdf$X[inds.female.t][i])
     inds.female.t[inds.female.t][i] <- F
+}
+
+# Match ADHD-I with ADHD Females
+inds.female.c <- sdf$group=="ADHD-C" & sdf$gender=="Female"    # ?
+inds.female.i <- sdf$group=="ADHD-I" & sdf$gender=="Female" # 11 => 9
+
+comp.age <- sdf$age[inds.female.c]
+inds.female.i.use <- c()
+for (age in comp.age) {
+    i <- which.min(abs(sdf$age[inds.female.i] - age))
+    inds.female.i.use <- c(inds.female.i.use, sdf$X[inds.female.i][i])
+    inds.female.i[inds.female.i][i] <- F
 }
 
 # Match ADHD-C with TDC Males
@@ -38,12 +51,13 @@ for (age in comp.age) {
 
 # Combine
 fdf <- rbind(
-    sdf[sdf$group=="ADHD-I",],
+    sdf[sdf$group=="ADHD-I" & sdf$gender=="Male",],
+    sdf[inds.female.i.use,], 
     sdf[inds.female.c,], 
-    sdf[sdf$X %in% inds.female.t.use,], 
     sdf[sdf$X %in% inds.male.c.use,], 
+    sdf[sdf$X %in% inds.female.t.use,], 
     sdf[inds.male.t,]
 )
 
 # Save
-write.csv(fdf, file="../subinfo/03_subjects_matched.csv")
+write.csv(fdf, file="../subinfo/04_subjects_matched.csv")

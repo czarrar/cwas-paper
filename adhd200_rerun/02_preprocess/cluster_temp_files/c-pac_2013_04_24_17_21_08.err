@@ -1,0 +1,97 @@
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input concat_xfm requires inputs: in_file2
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/nipype/interfaces/base.py:368: UserWarning: Input apply_xfm requires inputs: in_matrix_file
+  warn(msg)
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+<string>:87: ComplexWarning: Casting complex values to real discards the imaginary part
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))
+/usr/local/cmi/epd-7.2-2-rh5-x86_64/lib/python2.7/site-packages/CPAC/network_centrality/utils.py:268: RuntimeWarning: invalid value encountered in divide
+  r = np.dot(X.T, Y)/np.sqrt(np.multiply.outer(xx,yy))

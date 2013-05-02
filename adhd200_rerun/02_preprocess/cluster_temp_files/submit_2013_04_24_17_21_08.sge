@@ -1,0 +1,11 @@
+#! /bin/bash
+#$ -cwd
+#$ -S /bin/bash
+#$ -V
+#$ -t 1-12
+#$ -q all.q
+#$ -pe mpi_smp 4
+#$ -e /home2/data/Projects/CWAS/share/adhd200_rerun/02_preprocess/cluster_temp_files/c-pac_2013_04_24_17_21_08.err
+#$ -o /home2/data/Projects/CWAS/share/adhd200_rerun/02_preprocess/cluster_temp_files/c-pac_2013_04_24_17_21_08.out
+source ~/.bashrc
+python -c "import CPAC; CPAC.pipeline.cpac_pipeline.run(\"run_config.yml\" , \"CPAC_subject_list_subset03.yml\", \"$SGE_TASK_ID\" , \"/home2/data/Projects/CWAS/share/adhd200_rerun/02_preprocess/cluster_temp_files/strategies.obj\", \"/path/to/mask_definitions_file\" , \"/home2/data/Projects/NKI_TRT_paper/NewAnalysisWithCPAC/configs/configs_for_dual_regression_20130325/roiSpecification.txt\", \"/home2/data/Projects/NKI_TRT_paper/NewAnalysisWithCPAC/configs/configs_for_dual_regression_20130325/template_for_DC.txt\") " 

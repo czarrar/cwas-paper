@@ -47,9 +47,9 @@ for k in ${ks}; do
     
     # Subject Distances
     time connectir_subdist.R \
-        --infuncs1 ${indir}/subinfo/z_compcor_rois_random_k${k}.txt \
+        --infuncs1 ${indir}/subinfo/z_global_rois_random_k${k}.txt \
         --in2D1 \
-        --infuncs2 ${indir}/subinfo/04b_global_funcpaths_4mm.txt \
+        --infuncs2 ${indir}/subinfo/z_global_funcpaths_4mm.txt \
         --ztransform \
         --brainmask2 ${indir}/rois/mask_gray_4mm.nii.gz \
         --bg ${basedir}/rois/standard_4mm.nii.gz \

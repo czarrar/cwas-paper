@@ -1,0 +1,54 @@
+general:
+    # fixed
+    base_dir: /home2/data/Projects/CWAS
+    study: adhd200
+    preproc: global
+    k: 3200
+    group: tdc_adhdc
+    comparison: tdc_vs_adhdc
+    # inputs
+    base_input_dir: ${base_dir}/share/${study}
+    subinfo_dir: ${base_input_dir}/subinfo
+    script_dir: ${base_input_dir}/04_analysis/06_glm
+    roi_dir: ${base_input_dir}/rois
+    # outputs
+    base_output_dir: ${base_dir}/${study}
+    subdist_dir: ${base_output_dir}/cwas/rois_random_k${k}
+    glm_dir: ${base_output_dir}/glm/rois_random_k${k}
+
+
+# Below are options for commands that will be run in the order shown
+
+model:
+    formula: id ~ group + gender + center(age) + center(iq) + center(mean_FD)
+    model_file: ${subdist_dir}/${group}_model.csv
+    simple_con_file: ${script_dir}/y_simple_contrasts.txt
+    pred_file: ${script_dir}/y_predictors.txt
+    con_file: ${script_dir}/y_contrasts.txt
+    
+glm:
+    out_dir: ${glm_dir}
+    regressors: ${script_dir}/y_predictors.txt
+    contrasts: ${script_dir}/y_contrasts.txt
+    infuncs1: ${subinfo_dir}/z_${preproc}_${group}_rois_random_k${k}.txt
+    infuncs2: ${subinfo_dir}/z_${preproc}_${group}_funcpaths_4mm.txt
+    brainmask2: ${roi_dir}/mask_gray_4mm.nii.gz
+    forks: 1
+    threads: 10
+    memlimit: 24
+
+summarize:
+    out_dir: ${glm_dir}/summary
+    regressors: ${glm_dir}/model_evs.txt
+    mask: ${glm_dir}/mask2.nii.gz
+    tvals: 
+        - group ${glm_dir}/tvals_01.desc
+    rois: ${roi_dir}/rois_random_k${k}.nii.gz
+
+dataframe:
+    mask: ${glm_dir}/mask2.nii.gz
+    mdmr_pvals: ${subdist_dir}/${comparison}_gender+age+iq+mean_FD.mdmr/pvals.desc
+    glm_summary: ${glm_dir}/summary/both_*.rda
+    out_dir: ${glm_dir}/summary
+    
+    
