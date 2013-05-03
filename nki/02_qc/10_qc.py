@@ -212,7 +212,7 @@ names = ["short", "medium", "long"]
 for i in range(3):
     func = funcs[i]; name = names[i]
     motion_df = func[["Id", "release", "dir", "exists", "mean_FD", "max_relative_motion"]]
-    motion_df.to_csv("%s/03_meanFD_func_%s.csv" % (subinfo_dir, name))
+    motion_df.to_csv("%s/qc-1_meanFD_func_%s.csv" % (subinfo_dir, name))
 
 # QC table with 1 or 0 for good or bad
 qc_summaries = [ func[["Id", "release", "exists"]] for func in funcs ]
@@ -597,57 +597,47 @@ for i,qc_summary in enumerate(qc_summaries):
     qc_usable_scans[names[i]] = good
 qc_usable_scans["all"] = qc_usable_scans.ix[:,2:].sum(axis=1)
 
-
+# Save usable scan and phenotypic info together
 tmp = merge(details, qc_usable_scans, on='Id')
 tmp.to_csv(path.join(subinfo_dir, "qc-2_usable_scans.csv"), index=False)
 
+# Save full func information
+for i,func in enumerate(funcs):
+    outfile = path.join(subinfo_dir, "qc-3_func_%s.csv" % names[i])
+    func.to_csv(outfile, index=False)
+
+# Save full qc summaries
+for i,qc_summary in enumerate(qc_summaries):
+    outfile = path.join(subinfo_dir, "qc-4_summary_%s.csv" % names[i])
+    qc_summary.to_csv(outfile, index=False)
+    
 
 
 ###
-# Compile Other Measures
+# Combine data frames
 ###
 
+details["orig_index"] = details.index
 
+phenos = details[["Id", "Age", "Sex", "Handedness", "orig_index"]]
 
-###
-# Gather mask
-###
+# Remove subject with no sex data
+phenos = phenos[~phenos.Sex.isnull()]
+phenos.index = range(len(phenos))
 
-# masks for subjects/scans passing QC
-inds = [ (details.index == oi).nonzero()[0][0] for oi in df.orig_index ]
-filt_masks = all_masks[:,inds]
+# Add in usable scan information
+df = merge(phenos, qc_usable_scans, on="Id")
 
-# save all the included masks
-mask_shape               = tuple(list(ref_img.shape) + [filt_masks.shape[1]])
-mask_img                 = np.zeros(mask_shape, np.float32)
-mask_img[voxs_to_use,:]  = filt_masks
-mask_img                 = nib.Nifti1Image(mask_img, aff, hdr)
-mask_img.set_data_dtype(np.float32)
-mask_img.to_filename('%s/qc-4_all_masks_subs_to_use.nii.gz' % roi_dir)
+# Add in functional scan info
+for i,func in enumerate(funcs):
+    name = names[i]
+    tmp = func[["Id", "dir", "mean_FD"]]
+    tmp.dir[~func.exists] = np.nan
+    tmp.columns = ["Id", "%s_dir" % name, "%s_meanFD" % name]
+    df = merge(df, tmp, on="Id")
 
-# save the combined/overlap brain mask across to be used subjects
-mask_overlap             = filt_masks.mean(axis=1)
-mask_img                 = np.zeros(ref_img.shape, np.float32)
-mask_img[voxs_to_use,:]  = (mask_overlap==1)*1
-mask_img                 = nib.Nifti1Image(mask_img, aff, hdr)
-mask_img.set_data_dtype(np.float32)
-mask_img.to_filename('%s/mask_overlap_%imm.nii.gz' % (roi_dir, resolution))
-
-
-
-###
-# We're done! Save our slavish work
-###
-
-# Save the summaries
-qc_values.to_csv(path.join(subinfo_dir, "qc-2_values.csv"), index=False)
-qc_summary.to_csv(path.join(subinfo_dir, "qc-2_summary.csv"), index=False)
-# also save qc_usable_scans
-
-# Copy only needed stuff
-new_col_stuff = ["subject", "run", "diagnosis", "sex", "age", "handedness", "iq", "mean_FD", "funcdir", "orig_index"]
-save_df = df[new_col_stuff]
-save_df.to_csv(path.join(subinfo_dir, "20_subjects_qc.csv"), index=False)
+# Save
+df.to_csv(path.join(subinfo_dir, "30_phenos+qc+paths.csv"))
 
 
 
