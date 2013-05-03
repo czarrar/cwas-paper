@@ -51,7 +51,7 @@ pipelines <- c(
   "_compcor_ncomponents_5_linear1.motion1.compcor1.CSF_0.98_GM_0.7_WM_0.98", 
   "linear1.wm1.global1.motion1.csf1_CSF_0.98_GM_0.7_WM_0.98"
 )
-suffix <- "func/bandpass_freqs_0.01.0.1/functional_mni.nii.gz"
+suffix <- "func/bandpass_freqs_0.009.0.1/functional_mni.nii.gz"
 
 #' ## Two Scans
 #+ sm-setup
