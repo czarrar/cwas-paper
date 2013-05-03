@@ -250,17 +250,28 @@ cat(sprintf(&quot;# of subjects: %i\n&quot;, nrow(df.sml)))
 <p>Here we will create two sets of functional file lists for participants with
 2 scans and participants with 3 scans.</p>
 
+<pre><code class="r">basedir &lt;- &quot;/home2/data/Projects/NKI_ROCKLAND_CPAC_test/Sink/sym_links&quot;
+pipelines &lt;- c(&quot;_compcor_ncomponents_5_linear1.motion1.compcor1.CSF_0.98_GM_0.7_WM_0.98&quot;, 
+    &quot;linear1.wm1.global1.motion1.csf1_CSF_0.98_GM_0.7_WM_0.98&quot;)
+suffix &lt;- &quot;func/bandpass_freqs_0.01.0.1/functional_mni.nii.gz&quot;
+</code></pre>
+
 <h2>Two Scans</h2>
 
-<pre><code class="r">basedir &lt;- &quot;/home2/data/Projects/NKI_ROCKLAND_CPAC_test/Sink/sym_links&quot;
-outbase &lt;- sprintf(&quot;../subinfo/40_Set1_N%i&quot;, nrow(df.sm))
+<pre><code class="r">outbase &lt;- sprintf(&quot;../subinfo/40_Set1_N%i&quot;, nrow(df.sm))
+dir.create(outbase, F)
 fnames &lt;- c(&quot;short&quot;, &quot;medium&quot;, &quot;long&quot;)
 </code></pre>
 
 <pre><code class="r">for (i in 1:length(fnames)) {
     name &lt;- fnames[i]
-    funclist &lt;- file.path(basedir, df.sm[[paste(name, &quot;dir&quot;, sep = &quot;_&quot;)]])
-    outfile &lt;- sprintf(&quot;%s/%s_funcpaths.txt&quot;, outbase, name)
+    # compcor
+    funclist &lt;- file.path(basedir, df.sm[[paste(name, &quot;dir&quot;, sep = &quot;_&quot;)]], suffix)
+    outfile &lt;- sprintf(&quot;%s/%s_compcor_funcpaths.txt&quot;, outbase, name)
+    write.table(funclist, file = outfile, row.names = F, col.names = F)
+    # global
+    funclist &lt;- gsub(pipelines[1], pipelines[2], funclist)
+    outfile &lt;- sprintf(&quot;%s/%s_global_funcpaths.txt&quot;, outbase, name)
     write.table(funclist, file = outfile, row.names = F, col.names = F)
 }
 </code></pre>
@@ -272,15 +283,21 @@ write.csv(outdf, outfile)
 
 <h2>Three Scans</h2>
 
-<pre><code class="r">basedir &lt;- &quot;/home2/data/Projects/NKI_ROCKLAND_CPAC_test/Sink/sym_links&quot;
-outbase &lt;- sprintf(&quot;../subinfo/40_Set2_N%i&quot;, nrow(df.sml))
+<pre><code class="r">outbase &lt;- sprintf(&quot;../subinfo/40_Set2_N%i&quot;, nrow(df.sml))
+dir.create(outbase, F)
 fnames &lt;- c(&quot;short&quot;, &quot;medium&quot;, &quot;long&quot;)
 </code></pre>
 
 <pre><code class="r">for (i in 1:length(fnames)) {
     name &lt;- fnames[i]
-    funclist &lt;- file.path(basedir, df.sml[[paste(name, &quot;dir&quot;, sep = &quot;_&quot;)]])
-    outfile &lt;- sprintf(&quot;%s/%s_funcpaths.txt&quot;, outbase, name)
+    # compcor
+    funclist &lt;- file.path(basedir, df.sml[[paste(name, &quot;dir&quot;, sep = &quot;_&quot;)]], 
+        suffix)
+    outfile &lt;- sprintf(&quot;%s/%s_compcor_funcpaths.txt&quot;, outbase, name)
+    write.table(funclist, file = outfile, row.names = F, col.names = F)
+    # global
+    funclist &lt;- gsub(pipelines[1], pipelines[2], funclist)
+    outfile &lt;- sprintf(&quot;%s/%s_global_funcpaths.txt&quot;, outbase, name)
     write.table(funclist, file = outfile, row.names = F, col.names = F)
 }
 </code></pre>
