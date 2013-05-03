@@ -45,17 +45,29 @@ ggplot(df.sm, aes(Handedness, fill=factor(all))) + geom_bar() +
 
 #' Here we will create two sets of functional file lists for participants with
 #' 2 scans and participants with 3 scans.
+#+ list-setup
+basedir <- "/home2/data/Projects/NKI_ROCKLAND_CPAC_test/Sink/sym_links"
+pipelines <- c(
+  "_compcor_ncomponents_5_linear1.motion1.compcor1.CSF_0.98_GM_0.7_WM_0.98", 
+  "linear1.wm1.global1.motion1.csf1_CSF_0.98_GM_0.7_WM_0.98"
+)
+suffix <- "func/bandpass_freqs_0.01.0.1/functional_mni.nii.gz"
 
 #' ## Two Scans
 #+ sm-setup
-basedir <- "/home2/data/Projects/NKI_ROCKLAND_CPAC_test/Sink/sym_links"
 outbase <- sprintf("../subinfo/40_Set1_N%i", nrow(df.sm))
+dir.create(outbase, F)
 fnames <- c("short", "medium", "long")
 #+ sm-lists
 for (i in 1:length(fnames)) {
   name <- fnames[i]
-  funclist <- file.path(basedir, df.sm[[paste(name, "dir", sep="_")]])
-  outfile <- sprintf("%s/%s_funcpaths.txt", outbase, name)
+  # compcor
+  funclist <- file.path(basedir, df.sm[[paste(name, "dir", sep="_")]], suffix)
+  outfile <- sprintf("%s/%s_compcor_funcpaths.txt", outbase, name)
+  write.table(funclist, file=outfile, row.names=F, col.names=F)
+  # global
+  funclist <- gsub(pipelines[1], pipelines[2], funclist)
+  outfile <- sprintf("%s/%s_global_funcpaths.txt", outbase, name)
   write.table(funclist, file=outfile, row.names=F, col.names=F)
 }
 #+ sm-df
@@ -65,14 +77,19 @@ write.csv(outdf, outfile)
 
 #' ## Three Scans
 #+ sml-setup
-basedir <- "/home2/data/Projects/NKI_ROCKLAND_CPAC_test/Sink/sym_links"
 outbase <- sprintf("../subinfo/40_Set2_N%i", nrow(df.sml))
+dir.create(outbase, F)
 fnames <- c("short", "medium", "long")
 #+ sml-lists
 for (i in 1:length(fnames)) {
   name <- fnames[i]
-  funclist <- file.path(basedir, df.sml[[paste(name, "dir", sep="_")]])
-  outfile <- sprintf("%s/%s_funcpaths.txt", outbase, name)
+  # compcor
+  funclist <- file.path(basedir, df.sml[[paste(name, "dir", sep="_")]], suffix)
+  outfile <- sprintf("%s/%s_compcor_funcpaths.txt", outbase, name)
+  write.table(funclist, file=outfile, row.names=F, col.names=F)
+  # global
+  funclist <- gsub(pipelines[1], pipelines[2], funclist)
+  outfile <- sprintf("%s/%s_global_funcpaths.txt", outbase, name)
   write.table(funclist, file=outfile, row.names=F, col.names=F)
 }
 #+ sml-df
