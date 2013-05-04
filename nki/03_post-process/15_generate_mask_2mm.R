@@ -35,6 +35,7 @@ maskfiles <- sapply(funcpaths, function(funcpath) {
 ###
 
 library(niftir)
+library(plyr)
 
 roidir <- "/home2/data/Projects/CWAS/nki/rois"
 outfile <- file.path(roidir, "mask_gray_2mm.nii.gz")
@@ -43,8 +44,9 @@ std_mask_file <- file.path(roidir, "grey_matter_2mm.nii.gz")
 hdr <- read.nifti.header(std_mask_file)
 overlap_mask <- read.mask(std_mask_file)
 
-for (maskfile in maskfiles)
+l_ply(maskfiles, function(maskfile) {
   overlap_mask <- overlap_mask & read.mask(maskfile)
+}, .progress="text")
 
 write.nifti(overlap_mask*1, hdr, outfile=outfile, odt="int")
 
