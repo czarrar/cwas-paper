@@ -26,7 +26,7 @@ from make_local_connectivity_ones import *
   
 # name of the maskfile that we will be using
 roidir = "/home2/data/Projects/CWAS/nki/rois"
-maskfile = path.join(roidir, "mask_gray_2mm.nii.gz")
+maskfile = path.join(roidir, "mask_gray_4mm.nii.gz")
 
 
 ###
@@ -46,7 +46,7 @@ make_local_connectivity_ones(maskfile, outfile)
 print "3. Clustering"
 
 from binfile_parcellation import *
-  
+
 ks = [25,50,100,200,400,800,1600,3200,6400]
 
 # For random custering, this is all we need to do, there is no need for group
