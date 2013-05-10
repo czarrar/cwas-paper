@@ -51,6 +51,13 @@ ggplot(set1.combined, aes(x=FSIQ, fill=factor(all))) + geom_histogram(binwidth=5
 ggplot(set1.combined, aes(x=VIQ, fill=factor(all))) + geom_histogram(binwidth=5) + xlab("IQ Scores") + ggtitle("Verbal IQ")
 ggplot(set1.combined, aes(x=PIQ, fill=factor(all))) + geom_histogram(binwidth=5) + xlab("IQ Scores") + ggtitle("Performace IQ")
 
+#' These two plots might be relevant if we ran Verbal or Performance seperately afterwards.
+#+ viz-compare
+ggplot(set1.combined, aes(x=FSIQ, y=PIQ, color=factor(all))) + 
+  geom_point(size=3) + xlab("FSIQ") + ylab("PIQ") + ggtitle("Full-Scale vs Performace IQ")
+ggplot(set1.combined, aes(x=FSIQ, y=VIQ, color=factor(all))) + 
+  geom_point(size=3) + xlab("FSIQ") + ylab("VIQ") + ggtitle("Full-Scale vs Verbal IQ")
+
 #' # Save
 #+ save
 write.csv(set1.combined, file=file.path(subdir, "40_Set1_N104", "subject_info_with_iq.csv"))
