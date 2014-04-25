@@ -1,0 +1,53 @@
+general:
+    base_dir: /home2/data/Projects/CWAS
+    scan: medium
+    study: nki
+    preproc: compcor
+    k: fwhm08
+    group: FSIQ
+    comparison: iq
+    # inputs
+    base_input_dir: ${base_dir}/share/${study}
+    subinfo_dir: ${base_input_dir}/subinfo/40_Set1_N104
+    script_dir: ${base_input_dir}/07_glm
+    roi_dir: ${base_dir}/${study}/rois
+    # outputs
+    base_output_dir: ${base_dir}/${study}
+    subdist_dir: ${base_output_dir}/cwas/${scan}/${preproc}_kvoxs_${k}_to_kvoxs_${k}
+    glm_dir: ${base_output_dir}/glm/${scan}_${preproc}_kvoxs_${k}_to_kvoxs_${k}
+
+
+# Below are options for commands that will be run in the order shown
+
+model:
+#    formula: Id ~ center(FSIQ) + center(Age) + Sex + center(${scan}_meanFD) + center(${scan}_meanGcor)
+    formula: Id ~ center(FSIQ) + center(Age) + Sex + center(${scan}_meanFD)
+    model_file: ${subinfo_dir}/subject_info_with_iq_and_gcors.csv
+    simple_con_file: ${script_dir}/y_simple_contrasts.txt
+    pred_file: ${script_dir}/y_${scan}_predictors.txt
+    con_file: ${script_dir}/y_${scan}_contrasts.txt
+    
+glm:
+    out_dir: ${glm_dir}
+    regressors: ${script_dir}/y_${scan}_predictors.txt
+    contrasts: ${script_dir}/y_${scan}_contrasts.txt
+    infuncs1: ${subinfo_dir}/${scan}_${preproc}_funcpaths_4mm_${k}.txt
+    brainmask1: ${roi_dir}/mask_gray_4mm.nii.gz
+    forks: 1
+    threads: 12
+    memlimit: 30
+
+summarize:
+    out_dir: ${glm_dir}/summary
+    regressors: ${glm_dir}/model_evs.txt
+    mask: ${glm_dir}/mask.nii.gz
+    tvals: 
+        - iq ${glm_dir}/tvals_01.desc
+
+dataframe:
+    mask: ${glm_dir}/mask.nii.gz
+    mdmr_zstats: ${subdist_dir}/${comparison}_age+sex+meanFD.mdmr/cluster_correct_v05_c05/easythresh/zstat_${group}.nii.gz
+    glm_summary: ${glm_dir}/summary/both_*.rda
+    out_dir: ${glm_dir}/summary
+    
+    

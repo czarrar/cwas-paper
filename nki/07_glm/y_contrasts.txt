@@ -1,0 +1,2 @@
+ Intercept Sex[T.M] center(FSIQ) center(Age) center(short_meanFD) center(short_meanGcor)
+iq 0.0 0.0 1.0 0.0 0.0 0.0

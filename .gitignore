@@ -1,3 +1,10 @@
 .Rproj.user
 .Rhistory
 .RData
+*.rda
+*.nii
+*.nii.gz
+*.npz
+cluster_temp_files
+qsub_logs
+qsub_scripts
