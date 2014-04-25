@@ -44,9 +44,9 @@ std_mask_file <- file.path(roidir, "grey_matter_2mm.nii.gz")
 hdr <- read.nifti.header(std_mask_file)
 overlap_mask <- read.mask(std_mask_file)
 
-l_ply(maskfiles, function(maskfile) {
+for (maskfile in maskfiles) {
   overlap_mask <- overlap_mask & read.mask(maskfile)
-}, .progress="text")
+}
 
 write.nifti(overlap_mask*1, hdr, outfile=outfile, odt="int")
 

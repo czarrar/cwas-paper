@@ -41,13 +41,13 @@ distbase="${cwasdir}/${scan}"
 ###
 
 ## Only ROI-based
-##ks="0025 0050 0100 0200 0400 0800 1600 3200 6400"
-#ks="1600"
+#ks="0025 0050 0100 0200 0400 0800 1600 3200 6400"
+##ks="1600"
 #for k in ${ks}; do
 #    echo "K of ${k}"
 #    sdistdir="${distbase}/${strategy}_only_rois_random_k${k}${sm}"
 #    time connectir_mdmr.R -i ${sdistdir} \
-#        --formula "FSIQ + Age + Sex + ${scan}_meanFD" \
+#        --formula "FSIQ + Age + Sex + ${scan}_meanFD + ${scan}_meanGcor" \
 #        --model ${subdir}/subject_info_with_iq_and_gcors.csv \
 #        --factors2perm "FSIQ" \
 #        --permutations 14999 \
@@ -55,7 +55,7 @@ distbase="${cwasdir}/${scan}"
 #        --memlimit 12 \
 #        --save-perms \
 #        --ignoreprocerror \
-#        iq_age+sex+meanFD.mdmr
+#        iq_age+sex+meanFD+meanGcor.mdmr
 #done
 
 ## ROI-based
@@ -64,9 +64,10 @@ distbase="${cwasdir}/${scan}"
 #for k in ${ks}; do
 #    echo "K of ${k}"
 #    sdistdir="${distbase}/${strategy}_rois_random_k${k}${sm}"
+#    echo $sdistdir
 #    #sdistdir="${distbase}/extra_${strategy}_k${k}_to_kvoxs_${sm}"
 #    time connectir_mdmr.R -i ${sdistdir} \
-#        --formula "FSIQ + Age + Sex + ${scan}_meanFD" \
+#        --formula "FSIQ + Age + Sex + ${scan}_meanFD + ${scan}_meanGcor" \
 #        --model ${subdir}/subject_info_with_iq_and_gcors.csv \
 #        --factors2perm "FSIQ" \
 #        --permutations 14999 \
@@ -74,10 +75,10 @@ distbase="${cwasdir}/${scan}"
 #        --memlimit 12 \
 #        --save-perms \
 #        --ignoreprocerror \
-#        iq_age+sex+meanFD.mdmr
+#        iq_age+sex+meanFD+meanGcor.mdmr
 #done
 
-# Voxelwise
+# Voxelwise (IQ)
 echo "Voxelwise"
 sdistdir="${distbase}/${strategy}_kvoxs${sm}_to_kvoxs${sm}"
 
@@ -90,29 +91,15 @@ sdistdir="${distbase}/${strategy}_kvoxs${sm}_to_kvoxs${sm}"
 #echo "...archiving old mdmr results"
 #archive="${sdistdir}/archive_with_old_sdists"
 #mkdir ${archive} 2> /dev/null
-#mv ${sdistdir}/iq_age+sex+meanFD.mdmr ${archive}/
+#mv ${sdistdir}/iq_age+sex+meanFD+meanGcor.mdmr ${archive}/
 
-#echo "...archiving old mdmr results"
-#archive="${sdistdir}/archive_with_old_perms"
-#mkdir ${archive} 2> /dev/null
-#mv ${sdistdir}/iq_age+sex+meanFD.mdmr ${archive}/
-#
-#echo "...running new mdmr"
-#time connectir_mdmr.R -i ${sdistdir} \
-#    --formula "FSIQ + Age + Sex + ${scan}_meanFD" \
-#    --model ${subdir}/subject_info_with_iq_and_gcors.csv \
-#    --factors2perm "FSIQ" \
-#    --permutations 14999 \
-#    --forks 1 --threads 12 \
-#    --memlimit 12 \
-#    --save-perms \
-#    --ignoreprocerror \
-#    iq_age+sex+meanFD.mdmr
+echo "...archiving old mdmr results"
+archive="${sdistdir}/archive_with_old_perms"
+mkdir ${archive} 2> /dev/null
+mv ${sdistdir}/iq_age+sex+meanFD+meanGcor.mdmr ${archive}/
 
-echo "Voxelwise"
-sdistdir="${distbase}/${strategy}_kvoxs${sm}_to_kvoxs${sm}"
 time connectir_mdmr.R -i ${sdistdir} \
-    --formula "FSIQ + Age + Sex + ${scan}_meanFD" \
+    --formula "FSIQ + Age + Sex + ${scan}_meanFD + ${scan}_meanGcor" \
     --model ${subdir}/subject_info_with_iq_and_gcors.csv \
     --factors2perm "FSIQ" \
     --permutations 14999 \
@@ -120,13 +107,13 @@ time connectir_mdmr.R -i ${sdistdir} \
     --memlimit 12 \
     --save-perms \
     --ignoreprocerror \
-    reference_iq_age+sex+meanFD.mdmr
+    iq_age+sex+meanFD+meanGcor.mdmr
 
-## Unsmoothed -> Smoothed
+## Voxelwise (IQ)
 #echo "Voxelwise"
-#sdistdir="${distbase}/${strategy}_kvoxs_to_kvoxs${sm}"
+#sdistdir="${distbase}/${strategy}_kvoxs_smoothed_to_kvoxs"
 #time connectir_mdmr.R -i ${sdistdir} \
-#    --formula "FSIQ + Age + Sex + ${scan}_meanFD" \
+#    --formula "FSIQ + Age + Sex + ${scan}_meanFD + ${scan}_meanGcor" \
 #    --model ${subdir}/subject_info_with_iq_and_gcors.csv \
 #    --factors2perm "FSIQ" \
 #    --permutations 14999 \
@@ -134,12 +121,13 @@ time connectir_mdmr.R -i ${sdistdir} \
 #    --memlimit 12 \
 #    --save-perms \
 #    --ignoreprocerror \
-#    iq_age+sex+meanFD.mdmr
-
+#    iq_age+sex+meanFD+meanGcor.mdmr
+#
+## Voxelwise (IQ)
 #echo "Voxelwise"
-#sdistdir="${distbase}/${strategy}_kvoxs${sm}_to_kvoxs"
+#sdistdir="${distbase}/${strategy}_kvoxs_to_kvoxs_smoothed"
 #time connectir_mdmr.R -i ${sdistdir} \
-#    --formula "FSIQ + Age + Sex + ${scan}_meanFD" \
+#    --formula "FSIQ + Age + Sex + ${scan}_meanFD + ${scan}_meanGcor" \
 #    --model ${subdir}/subject_info_with_iq_and_gcors.csv \
 #    --factors2perm "FSIQ" \
 #    --permutations 14999 \
@@ -147,25 +135,24 @@ time connectir_mdmr.R -i ${sdistdir} \
 #    --memlimit 12 \
 #    --save-perms \
 #    --ignoreprocerror \
-#    iq_age+sex+meanFD.mdmr
+#    iq_age+sex+meanFD+meanGcor.mdmr
 
+# Voxelwise (Mean Global Correlations)
+echo "Voxelwise"
+sdistdir="${distbase}/${strategy}_kvoxs${sm}_to_kvoxs${sm}"
 
+echo "...archiving old mdmr results"
+archive="${sdistdir}/archive_with_old_sdists"
+mkdir ${archive} 2> /dev/null
+mv ${sdistdir}/meanGcor_iq+age+sex+meanFD.mdmr ${archive}/
 
-###
-# VIQ and PIQ
-###
-
-## Voxelwise
-#echo "Voxelwise"
-#sdistdir="${distbase}/${strategy}_kvoxs${sm}_to_kvoxs${sm}"
-#time connectir_mdmr.R -i ${sdistdir} \
-#    --formula "VIQ + PIQ + Age + Sex + ${scan}_meanFD" \
-#    --model ${subdir}/subject_info_with_iq_and_gcors.csv \
-#    --factors2perm "VIQ,PIQ" \
-#    --permutations 14999 \
-#    --forks 1 --threads 12 \
-#    --memlimit 12 \
-#    --save-perms \
-#    --ignoreprocerror \
-#    viq+piq_age+sex+meanFD.mdmr
-
+time connectir_mdmr.R -i ${sdistdir} \
+    --formula "FSIQ + Age + Sex + ${scan}_meanFD + ${scan}_meanGcor" \
+    --model ${subdir}/subject_info_with_iq_and_gcors.csv \
+    --factors2perm "${scan}_meanGcor" \
+    --permutations 14999 \
+    --forks 1 --threads 12 \
+    --memlimit 12 \
+    --save-perms \
+    --ignoreprocerror \
+    meanGcor_iq+age+sex+meanFD.mdmr
