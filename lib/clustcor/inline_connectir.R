@@ -11,7 +11,7 @@ plugin_bigmemory <- function() {
  #include "bigmemory/isna.hpp"     
     ')     
     
-    l$LinkingTo <- c("bigmemory", l$LinkingTo)     
+    l$LinkingTo <- c("bigmemory", "BH", l$LinkingTo)     
       
     l$Depends <- c("bigmemory", l$Depends)     
       
