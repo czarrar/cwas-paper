@@ -107,7 +107,7 @@ mat sizes(0,1); mat masses(0,1);
 
 for(size_t i = 0; i < n_voxs; ++i)
 {
-    c_ind = all_inds(i);
+    c_ind = all_inds(i) - 1;
     
     if (voxs_to_use(c_ind) == 0) continue;
     
